@@ -1,0 +1,11 @@
+.contentStyle {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    color: black;
+    background: black;
+    object-fit: contain;
+}
+
+.contentStyle>img {
+}
