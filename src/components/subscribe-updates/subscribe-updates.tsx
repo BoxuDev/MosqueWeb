@@ -1,4 +1,4 @@
-import { Button, Col, Form, Row } from 'antd';
+import { Button, Col, Form, Input, Row } from 'antd';
 import React from 'react';
 
 interface SubscribeEmailProps {
@@ -29,25 +29,14 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                         <h2>Subscribe to get exclusive updates</h2>
                     </Row>
                     <Row>
-                        <div style={{ backgroundColor: "grey" }}>
-                            <div style={{
-                                display: "flex",
-                                flexDirection: "column"
-                            }}>
-                                <span style={{
-                                    color: "black",
-                                    display: "flex"
-                                }}>E-Mail *</span>
-                                <input type="email" name="" id="" style={{
-                                    borderRadius: "1px",
-                                    border: "5px solid red"
-                                }} />
-                            </div>
-                            <Button style={{
-                                borderRadius: "1px",
-                                border: "5px solid red"
-                            }}>Join Our Mailing List</Button>
-                        </div>
+                        <span style={{
+                            color: "black",
+                            display: "flex"
+                        }}>E-Mail *</span>
+                        <Input.Group compact>
+                            <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="https://ant.design" />
+                            <Button type="primary">Submit</Button>
+                        </Input.Group>
                     </Row>
                 </div>
             </section>
