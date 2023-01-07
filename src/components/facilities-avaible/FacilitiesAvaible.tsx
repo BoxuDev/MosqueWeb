@@ -1,24 +1,57 @@
 import { Col, Row } from 'antd';
 import React from 'react';
+import { MenPrayerRoomIcon } from '../../utils/icons';
 import "./facilities-avaible.css";
 
-const FacilitiesAvaible = () => {
+interface IProps {
+
+}
+
+const FacilitiesAvaible = ({ }: IProps) => {
     return (
         <>
-            <Row>
-
-            </Row>
-            <Row>
-                <Col></Col>
-                <Col></Col>
-                <Col></Col>
-                <Col></Col>
-            </Row>
-            <Row>
-                <Col></Col>
-                <Col></Col>
-                <Col></Col>
-            </Row>
+            <section>
+                <div className="" style={{
+                    backgroundColor: "#045184",
+                    color: "white",
+                    height: "100%"
+                }}>
+                    <Row >
+                        <div style={{
+                            display: "flex",
+                            fontSize: "48px",
+                            marginTop: "20px",
+                            marginBottom: "20px",
+                            justifyContent: "center"
+                        }}>Facilities Available</div>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                        <Col>
+                            <MenPrayerRoomIcon />
+                        </Col>
+                    </Row>
+                </div>
+            </section>
         </>
     );
 }
