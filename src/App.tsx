@@ -16,14 +16,14 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        {/* <HeaderComp /> */}
+        <HeaderComp />
         <Content>
           {/* <Slider /> */}
           {/* <FacilitiesAvaible /> */}
           {/* <PrayerTime /> */}
           {/* <SubscribeEmail /> */}
           {/* <ImageSlider /> */}
-          <ContentSection />
+          {/* <ContentSection /> */}
         </Content>
         {/* <FooterCom /> */}
       </Layout>
