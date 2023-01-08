@@ -9,6 +9,7 @@ import { HeaderComp } from './components/header/Header';
 import { SubscribeEmail } from './components/subscribe-updates/subscribe-updates';
 import { ImageSlider } from './components/img-slider/ImageSlider';
 import { ContentSection } from './components/section/ContentSection';
+import { HadisSlider } from './components/hadis-slider/HadisSlider';
 
 const { Header, Footer, Content } = Layout;
 
@@ -18,14 +19,15 @@ function App() {
       <Layout>
         <HeaderComp />
         <Content>
-          {/* <Slider /> */}
-          {/* <FacilitiesAvaible /> */}
-          {/* <PrayerTime /> */}
-          {/* <SubscribeEmail /> */}
-          {/* <ImageSlider /> */}
-          {/* <ContentSection /> */}
+          <Slider />
+          <FacilitiesAvaible />
+          <PrayerTime />
+          <SubscribeEmail />
+          <HadisSlider />
+          <ImageSlider />
+          <ContentSection />
         </Content>
-        {/* <FooterCom /> */}
+        <FooterCom />
       </Layout>
     </div>
   );

@@ -21,8 +21,8 @@ export const HeaderComp = () => {
                 <nav className="navbar">
                     <div className="nav-container">
                         <p className="nav-logo">
-                            Suleymaniye
-                            <i className="fas fa-code"></i>
+                            Suleymaniye {"   "}   
+                            <i className="fas fa-mosque"></i>
                         </p>
 
                         <ul className={click ? "nav-menu active" : "nav-menu"}>
