@@ -7,6 +7,7 @@ import FacilitiesAvaible from './components/facilities-avaible/FacilitiesAvaible
 import PrayerTime from './components/prayer-time/PrayerTime';
 import { HeaderComp } from './components/header/Header';
 import { SubscribeEmail } from './components/subscribe-updates/subscribe-updates';
+import { ImageSlider } from './components/img-slider/ImageSlider';
 
 const { Header, Footer, Content } = Layout;
 
@@ -19,7 +20,8 @@ function App() {
           {/* <Slider /> */}
           {/* <FacilitiesAvaible /> */}
           {/* <PrayerTime /> */}
-          <SubscribeEmail />
+          {/* <SubscribeEmail /> */}
+          {/* <ImageSlider /> */}
         </Content>
         {/* <FooterCom /> */}
       </Layout>
