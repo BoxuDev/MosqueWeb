@@ -8,7 +8,9 @@ interface HadisSliderProps {
 export const HadisSlider = ({ }: HadisSliderProps) => {
     return (
         <>
-            <Carousel></Carousel>
+            <Carousel>
+                
+            </Carousel>
         </>
     );
 }
