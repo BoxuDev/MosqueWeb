@@ -17,6 +17,11 @@
     width: 50%;
 }
 
+.left > img {
+    height: inherit;
+    width: 100%;
+}
+
 .right {
     display: flex;
     flex: 1;

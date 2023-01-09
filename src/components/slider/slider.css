@@ -8,7 +8,7 @@
 
 .contentStyle>img {
     object-fit: cover;
-    width: auto;
+    width: 100%;
 }
 @media screen and (max-width: 900px) {
     .contentStyle {
