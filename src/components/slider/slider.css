@@ -4,8 +4,14 @@
     overflow: hidden;
     color: black;
     background: black;
-    object-fit: contain;
 }
 
 .contentStyle>img {
+    object-fit: cover;
+    width: auto;
 }
+@media screen and (max-width: 900px) {
+    .contentStyle {
+        height: 600px;
+    }
+  }
