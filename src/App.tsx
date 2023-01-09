@@ -22,10 +22,14 @@ function App() {
           <Slider />
           <FacilitiesAvaible />
           <PrayerTime />
-          <SubscribeEmail />
           <HadisSlider />
           <ImageSlider />
           <ContentSection />
+          <ContentSection />
+          <ContentSection />
+          <ContentSection />
+          <ContentSection />
+          <SubscribeEmail />
         </Content>
         <FooterCom />
       </Layout>

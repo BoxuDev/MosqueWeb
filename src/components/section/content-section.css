@@ -1,0 +1,52 @@
+.text-part-one {
+    color: white;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.text-part-two {
+    color: black;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    background-color: rgb(255, 187, 2);
+    float: right;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+
+    .left,
+    .right {
+        float: none;
+        width: auto;
+    }
+}
