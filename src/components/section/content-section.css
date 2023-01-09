@@ -11,16 +11,19 @@
 }
 
 .left {
+    display: flex;
+    flex: 1;
     float: left;
     width: 50%;
 }
 
 .right {
+    display: flex;
+    flex: 1;
     background-color: rgb(255, 187, 2);
-    float: right;
+    /* float: right; */
     width: 50%;
     justify-content: center;
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -29,6 +32,11 @@
 img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.group {
+    display: flex;
 }
 
 .group:after {
@@ -42,11 +50,19 @@ img {
     flex-direction: row;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 655px) {
 
-    .left,
-    .right {
+    .left {
+        display: contents;
         float: none;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    
+    .right {
+        display: flex;
         width: auto;
     }
 }

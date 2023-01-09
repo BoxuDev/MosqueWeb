@@ -58,14 +58,14 @@ export const ImageSlider = ({ }: ImageSliderProps) => {
 
     return (
         <>
-            <section style={{padding: "20px", margin: "10px"}}>
+            <section style={{marginBottom: "30px"}}>
                 <div style={{
                     padding: "20px"
                 }}>
                     <Caro
                         data={data}
                         time={2000}
-                        width="850px"
+                        width="1000px"
                         height="500px"
                         // captionStyle={captionStyle}
                         radius="10px"
