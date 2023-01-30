@@ -1,9 +1,6 @@
 import { Row } from 'antd';
-import React from 'react';
 
-interface IProps {
-
-}
+interface IProps { }
 
 export const MenPrayerRoomIcon = ({ }: IProps) => {
     return (

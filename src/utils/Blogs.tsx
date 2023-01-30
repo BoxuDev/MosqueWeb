@@ -1,7 +1,9 @@
 function Blogs() {
-    return ( <>
-        BLOG SAYFASI
-    </> );
+    return (
+        <>
+            BLOG SAYFASI
+        </>
+    );
 }
 
 export default Blogs;

@@ -1,13 +1,8 @@
 import { Button, Col, Row } from "antd";
 import "./content-section.css";
-
-interface ContentSectionProps {
-
-}
+interface ContentSectionProps { }
 
 export const ContentSection = ({ }: ContentSectionProps) => {
-
-
     return (
         <>
             <section style={{ padding: "20px" }}>
@@ -22,9 +17,7 @@ export const ContentSection = ({ }: ContentSectionProps) => {
                                 <span className="text-part-two">AID</span>
                             </Col>
                         </Row>
-                        <Row style={{
-
-                        }}>
+                        <Row>
                             <span>International Response</span>
                             <ul>
                                 <li>Established a water fund in places such as Africa, Pakistan and Bangladesh.</li>

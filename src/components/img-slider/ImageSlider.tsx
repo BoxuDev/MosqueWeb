@@ -3,7 +3,7 @@ import * as React from 'react';
 
 interface ImageSliderProps { }
 
-export const ImageSlider = (props : ImageSliderProps) => {
+export const ImageSlider = (props: ImageSliderProps) => {
     const data = [
         {
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
@@ -54,7 +54,7 @@ export const ImageSlider = (props : ImageSliderProps) => {
 
     return (
         <>
-            <section style={{marginBottom: "30px"}}>
+            <section style={{ marginBottom: "30px" }}>
                 <div style={{
                     padding: "20px"
                 }}>

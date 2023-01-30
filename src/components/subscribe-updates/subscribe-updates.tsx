@@ -1,9 +1,6 @@
-import { Button, Col, Form, Input, Row } from 'antd';
-import React from 'react';
+import { Button, Col, Input, Row } from 'antd';
 
-interface SubscribeEmailProps {
-
-}
+interface SubscribeEmailProps { }
 
 export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
     return (
@@ -30,10 +27,6 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                     </Row>
                     <Row>
                         <Col span={4}>
-                            {/* <span style={{
-                                color: "black",
-                                display: "flex",
-                            }}>E-Mail *</span> */}
                         </Col>
                         <Input.Group compact>
                             <Input
