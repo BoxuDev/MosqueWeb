@@ -1,5 +1,4 @@
 import { Carousel } from 'antd';
-import React from 'react';
 import "./slider.css";
 
 export const Slider = () => {
@@ -14,22 +13,22 @@ export const Slider = () => {
             >
                 <div>
                     <h3 className="contentStyle">
-                        <img src="https://picsum.photos/1920/1080" alt="IMG"/>
+                        <img src="https://picsum.photos/1920/1080" alt="IMG" />
                     </h3>
                 </div>
                 <div>
                     <h3 className="contentStyle">
-                        <img src="https://picsum.photos/1920/1080" alt="IMG"/>
+                        <img src="https://picsum.photos/1920/1080" alt="IMG" />
                     </h3>
                 </div>
                 <div>
                     <h3 className="contentStyle">
-                        <img src="https://picsum.photos/1920/1080" alt="IMG"/>
+                        <img src="https://picsum.photos/1920/1080" alt="IMG" />
                     </h3>
                 </div>
                 <div>
                     <h3 className="contentStyle">
-                        <img src="https://picsum.photos/1920/1080" alt="IMG"/>
+                        <img src="https://picsum.photos/1920/1080" alt="IMG" />
                     </h3>
                 </div>
             </Carousel>

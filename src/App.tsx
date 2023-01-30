@@ -11,7 +11,7 @@ import { ImageSlider } from './components/img-slider/ImageSlider';
 import { ContentSection } from './components/section/ContentSection';
 import { HadisSlider } from './components/hadis-slider/HadisSlider';
 
-const { Header, Footer, Content } = Layout;
+const { Content } = Layout;
 
 function App() {
   return (

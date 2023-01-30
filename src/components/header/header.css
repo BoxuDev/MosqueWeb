@@ -67,12 +67,12 @@
     .nav-menu {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         position: absolute;
         top: 64px;
-        left: -110%;
+        /* left: -110%; */
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s linear;
     }
 
     .nav-menu.active {
@@ -84,7 +84,7 @@
     }
 
     .nav-links {
-        padding: 1.5rem;
+        padding: 15px;
         width: 100%;
         display: table;
     }

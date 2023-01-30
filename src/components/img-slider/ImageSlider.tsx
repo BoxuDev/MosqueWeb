@@ -1,13 +1,9 @@
 import { Carousel as Caro } from 'react-carousel-minimal';
 import * as React from 'react';
 
+interface ImageSliderProps { }
 
-interface ImageSliderProps {
-
-}
-
-export const ImageSlider = ({ }: ImageSliderProps) => {
-
+export const ImageSlider = (props : ImageSliderProps) => {
     const data = [
         {
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
