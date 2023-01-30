@@ -44,10 +44,11 @@ export const HeaderComp = () => {
                             </li>
                         </ul>
                         <div className="nav-icon">
-                            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
+                            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i>  */}
                         </div>
                     </div>
                 </nav>
+
             </Header>
         </>
     );
