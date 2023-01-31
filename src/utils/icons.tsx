@@ -1,4 +1,6 @@
 import { Row } from 'antd';
+import * as React from 'react';
+
 
 interface IProps { }
 

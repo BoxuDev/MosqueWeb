@@ -1,4 +1,4 @@
-.nav-container {
+/* .nav-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -38,7 +38,7 @@
 .nav-item {
     line-height: 40px;
     margin-right: 1rem;
-}
+} */
 
 /* .nav-item:after {
     content: "";

@@ -2,6 +2,7 @@ import Layout from 'antd/es/layout';
 import './styles/App.css';
 import { FooterCom } from './components/footer/FooterCom';
 import { HeaderComp } from './components/header/Header';
+import * as React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './utils/Home';
 import Blogs from './utils/Blogs';
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        {/* <HeaderComp /> */}
+        <HeaderComp />
         <>
           <Route path="/" exact><Content><Home /></Content></Route>
           <Route path="/Blog"><Content><Blogs /></Content></Route>

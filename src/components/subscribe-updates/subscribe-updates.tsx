@@ -1,4 +1,7 @@
 import { Button, Col, Input, Row } from 'antd';
+import * as React from 'react';
+
+
 
 interface SubscribeEmailProps { }
 
