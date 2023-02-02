@@ -1,51 +1,36 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import * as React from 'react';
 
-import './Navbar.css'
 
-export default function Navbar({
-    backgroundColor,
-    fontColor,
-    brand,
-    links
-}: any) {
-
-    const [isMenuClosed, setMenuClosed] = useState(true);
-
+function MyNavbar() {
     return (
-        <div className="nav-container" style={{ backgroundColor: backgroundColor, color: fontColor }}>
-            <nav>
-                <div className="nav-brand">{brand}</div>
-                <div className="nav-hamburguer-icon" onClick={() => setMenuClosed(!isMenuClosed)}>☰</div>
-                <div className="nav-links">
-                    {links.map((node: any) => {
-                        return (<Link key={node.text} to={node.link} style={{ color: fontColor }}>{node.text}</Link>);
-                    })}
-                </div>
-            </nav>
-            <div className={`overlay-container${isMenuClosed ? "-hidden" : "-show"}`}>
-                <div style={{ backgroundColor: backgroundColor }}>
-                    <div className="overlay-buttonClose" onClick={() => setMenuClosed(!isMenuClosed)}><span>&times;</span></div>
-                    <div className="overlay-menu-wrapper">
-                        <div className="overlay-menu">
-                            {links.map((node: any) => {
-                                return (<Link key={node.text} to={node.link} onClick={() => setMenuClosed(!isMenuClosed)} className="overlay-menu-item" style={{ color: fontColor }}>{node.text}</Link>);
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+        <Navbar bg="light" expand="lg">
+            <Container>
+                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#link">Link</Nav.Link>
+                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }
 
-Navbar.defaultProps = {
-    backgroundColor: 'black',
-    fontColor: 'white',
-    brand: 'Navbar',
-    links: [
-        { text: "Home", link: "/" },
-        { text: "Portfolio", link: "/portfolio" },
-        { text: "Blog", link: "/blog" }
-    ]
-}
+export default MyNavbar;

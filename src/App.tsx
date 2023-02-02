@@ -2,6 +2,7 @@ import Layout from 'antd/es/layout';
 import './styles/App.css';
 import { FooterCom } from './components/footer/FooterCom';
 import { HeaderComp } from './components/header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './utils/Home';
