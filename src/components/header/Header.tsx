@@ -1,4 +1,3 @@
-import { Layout } from 'antd';
 import "./header.css";
 import * as React from 'react';
 import MyNavbar from './Navbar';
