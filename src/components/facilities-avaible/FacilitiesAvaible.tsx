@@ -1,8 +1,7 @@
 import { Col, Row } from 'antd';
 import { MenPrayerRoomIcon } from '../../utils/icons';
 import "./facilities-avaible.css";
-import * as React from 'react';
-
+import React from 'react';
 
 interface IProps { }
 

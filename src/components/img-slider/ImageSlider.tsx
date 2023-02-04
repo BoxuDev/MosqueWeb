@@ -1,5 +1,5 @@
 import { Carousel as Caro } from 'react-carousel-minimal';
-import * as React from 'react';
+import React from 'react';
 
 interface ImageSliderProps { }
 
@@ -55,9 +55,7 @@ export const ImageSlider = (props: ImageSliderProps) => {
     return (
         <>
             <section style={{ marginBottom: "30px" }}>
-                <div style={{
-                    padding: "20px"
-                }}>
+                <div style={{ padding: "20px" }}>
                     <Caro
                         data={data}
                         time={2000}

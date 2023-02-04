@@ -1,9 +1,6 @@
-import { Layout } from 'antd';
 import { MDBFooter, MDBIcon, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import React from 'react';
 import "./footer.css";
-
-const { Footer } = Layout;
 
 export const FooterCom = () => {
     return (

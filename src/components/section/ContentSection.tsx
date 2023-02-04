@@ -1,7 +1,6 @@
 import { Button, Col, Row } from "antd";
 import "./content-section.css";
-import * as React from 'react';
-
+import React from 'react';
 
 interface ContentSectionProps { }
 

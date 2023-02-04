@@ -1,7 +1,6 @@
 import { Col, Row } from 'antd';
 import "./prayer-time.css";
-import * as React from 'react';
-
+import React from 'react';
 
 const PrayerTime = () => {
     return (
