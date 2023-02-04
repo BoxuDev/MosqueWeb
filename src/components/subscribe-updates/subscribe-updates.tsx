@@ -1,7 +1,5 @@
 import { Button, Col, Input, Row } from 'antd';
-import * as React from 'react';
-
-
+import React from 'react';
 
 interface SubscribeEmailProps { }
 
@@ -52,6 +50,7 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                                 }}
                                 onClick={() => {
                                     console.log("Buton Click Subscribe")
+                                    alert("Buton Click Subscribe");
                                 }}
                             >Join Our Mailing List</Button>
                         </Input.Group>
