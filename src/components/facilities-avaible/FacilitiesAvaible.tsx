@@ -10,7 +10,7 @@ const FacilitiesAvaible = ({ }: IProps) => {
         <>
             <section>
                 <div className="" style={{
-                    backgroundColor: "#045184",
+                    backgroundColor: "#008696",
                     color: "white",
                     height: "100%"
                 }}>
