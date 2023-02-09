@@ -5,12 +5,9 @@ import React from 'react';
 import Abouts from '../../utils/Abouts';
 
 export const ContentSection = () => {
-
-
-
     return (
-            <Container>
-                 <Abouts />
-            </Container>
+        <Container>
+            <Abouts />
+        </Container>
     );
 }
