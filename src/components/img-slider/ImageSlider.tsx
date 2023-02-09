@@ -1,5 +1,6 @@
 import { Carousel as Caro } from 'react-carousel-minimal';
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 interface ImageSliderProps { }
 
@@ -47,6 +48,7 @@ export const ImageSlider = (props: ImageSliderProps) => {
         fontSize: '2em',
         fontWeight: 'bold',
     }
+
     const slideNumberStyle = {
         fontSize: '20px',
         fontWeight: 'bold',

@@ -1,6 +1,6 @@
-import { Carousel } from 'antd';
 import "./slider.css";
 import React from 'react';
+import { Carousel } from "antd";
 
 export const Slider = () => {
     return (

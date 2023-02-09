@@ -1,0 +1,24 @@
+.navbar-nav  {
+    font-weight: bolder !important;
+}
+
+.navbar-nav > a {
+    color: #e2cd9f !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.navbar-toggler {
+    color: #e2cd9f !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    border-bottom-right-radius: 36px;
+}

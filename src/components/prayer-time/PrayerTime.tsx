@@ -1,8 +1,14 @@
 import { Col, Row } from 'antd';
 import "./prayer-time.css";
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 const PrayerTime = () => {
+    const selectTitle = () => {
+        let node = ReactDOM.findDOMNode(this)
+        
+    }
+
     return (
         <>
             <section style={{ height: "464px" }}>
