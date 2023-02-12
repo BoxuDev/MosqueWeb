@@ -57,6 +57,14 @@ a:hover {
 	width: 40%;
 }
 
+input :focus-visible {
+	display: none;
+}
+
+.tm-contact-form>input:focus-visible {
+	border: none;
+}
+
 .tm-contact-info {
 	padding-top: 20px;
 }
@@ -131,7 +139,6 @@ textarea {
 	width: 40px;
 	height: 40px;
 	margin-right: 15px;
-	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -204,7 +211,7 @@ address {
 	}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
 	.tm-contact {
 		flex-direction: column;
 	}
@@ -215,12 +222,11 @@ address {
 		width: 100%;
 	}
 
-	.tm-contact-form-container {
-		margin-bottom: 20px;
-	}
-
-	.tm-contact-info {
-		margin-bottom: 30px;
+	iframe {
+		margin-left: -20px !important;
+		border-radius: 23px !important;
+		width: calc(100vw - 100px) !important;
+		height: calc(20vh) !important;
 	}
 }
 
@@ -281,4 +287,18 @@ address {
 
 .tm-border-rounded {
 	border-radius: 15px;
+}
+
+.map iframe {
+	border-radius: 23px;
+	margin-bottom: -7px;
+	width: calc(100vw - 300px);
+	height: calc(20vh);
+}
+
+iframe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
 }

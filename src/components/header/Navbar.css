@@ -1,8 +1,8 @@
-.navbar-nav  {
+.navbar-nav {
     font-weight: bolder !important;
 }
 
-.navbar-nav > a {
+.navbar-nav>a {
     color: #e2cd9f !important;
     display: flex;
     justify-content: center;

@@ -1,18 +1,21 @@
 import React from 'react';
 import './styles/templatemo-style.css';
 
-function Abouts() {
+const frameSource: string = "https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed";
+
+export default function Abouts() {
     return (
         <section className="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
             <div className="tm-contact-header tm-flex-center">
                 <i className="fas fa-map-pin fa-3x"></i>
-                <h2>Contact</h2>
+                <h2 style={{ color: "#f4eaca" }}>Contact</h2>
             </div>
             <div className="tm-contact-info">
-                <address className="tm-mb-30">
-                    120 Curabitur sed tortor ultrices,
-                    congue odio eget, posuere urna.
-                    Praesent at rhoncus 10680
+                <address className="tm-mb-30" style={{ textAlign: "justify", color: "#f4eaca" }}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean posuere eleifend feugiat.
+                    Ut porta at felis rutrum congue.
+                    Nullam nulla arcu, pellentesque quis elit nec, efficitur sagittis massa
                 </address>
                 <div className="tm-text-white tm-mb-40">Tel: <a href="tel:0100200340" className="tm-link-white">010-020-0340</a></div>
                 <div className="tm-flex">
@@ -26,11 +29,22 @@ function Abouts() {
                     <input type="text" name="name" placeholder="name" required />
                     <input type="email" name="email" placeholder="email" required />
                     <textarea rows={5} name="message" className="tm-mb-30" placeholder="message" required></textarea>
-                    <button type="submit" className="tm-right tm-btn-submit">send</button>
+                    <button type="submit" className="tm-right tm-btn-submit">SEND</button>
                 </form>
             </div>
         </section>
     );
 }
 
-export default Abouts;
+export function AboutWithMap() {
+    return (
+        <section className="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
+            <div className="map">
+                <iframe
+                    src={frameSource}
+                    width="100%"
+                />
+            </div>
+        </section>
+    );
+}
