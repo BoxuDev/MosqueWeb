@@ -2,11 +2,16 @@
     font-weight: bolder !important;
 }
 
-.navbar-nav>a {
+.navbar-nav>a>a {
     color: #e2cd9f !important;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.navbar-nav>a>a:hover {
+    color: #e2cd9f !important;
+    font-size: 24px;
 }
 
 .navbar {
@@ -21,4 +26,21 @@
 .navbar-toggler:focus {
     text-decoration: none;
     border-bottom-right-radius: 36px;
+}
+
+.linkStyleDonate {
+    color: #e2cd9f;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid #e2cd9f;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkStyleDonate:hover {
+    color: #008696;
+    border: none;
+    font-size: 24px;
+    background-color: #e2cd9f;
 }

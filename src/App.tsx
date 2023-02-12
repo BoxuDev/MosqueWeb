@@ -24,10 +24,10 @@ function App() {
         <HadisSlider />
 
         <Route path="/" exact><Content><Home /></Content></Route>
-        <Route path="/Blog"><Content><Blogs /></Content></Route>
-        <Route path="/About"><Content><Abouts /></Content></Route>
+        <Route path="/Blogs"><Content><Blogs /></Content></Route>
+        <Route path="/Abouts"><Content><Abouts /></Content></Route>
+        <Route path="/Contact"><Content><Abouts /></Content></Route>
         <Route path="/Donate"><Content><Donate /></Content></Route>
-        <Route path="/Contact"><Content><Donate /></Content></Route>
 
         <FooterCom />
       </Layout>
