@@ -11,6 +11,9 @@ export const Slider = () => {
                 arrows
                 draggable
                 effect="fade"
+                style={{
+                    padding: "50px"
+                }}
             >
                 <div>
                     <h3 className="contentStyle">

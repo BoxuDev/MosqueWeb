@@ -9,7 +9,7 @@ import Home from './utils/Home';
 import Blogs from './utils/Blogs';
 import Abouts from './utils/Abouts';
 import Donate from './utils/Donate';
-import { ContentSection } from './components/section/RespContent';
+import { RespContent } from './components/section/RespContent';
 import { HadisSlider } from './components/hadis-slider/HadisSlider';
 
 const { Content } = Layout;
@@ -20,12 +20,13 @@ function App() {
       <Layout>
         <HeaderComp />
 
-        <ContentSection></ContentSection>
+        {/* <ContentSection></ContentSection> */}
         <HadisSlider />
 
         <Route path="/" exact><Content><Home /></Content></Route>
+        <Route path="/Home" exact><Content><Home /></Content></Route>
         <Route path="/Blogs"><Content><Blogs /></Content></Route>
-        <Route path="/Abouts"><Content><Abouts /></Content></Route>
+        <Route path="/Abouts"><Content><RespContent /></Content></Route>
         <Route path="/Contact"><Content><Abouts /></Content></Route>
         <Route path="/Donate"><Content><Donate /></Content></Route>
 
