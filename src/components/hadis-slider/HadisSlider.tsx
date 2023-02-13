@@ -1,5 +1,6 @@
 import { Carousel } from 'antd';
 import React, { ReactNode, useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 
 interface HadisSliderProps { }
 
@@ -92,17 +93,19 @@ export const HadisSlider = ({ }: HadisSliderProps) => {
                     textOverflow: "ellipsis",
                     backgroundColor: "#4398c7"
                 }}>
-                    <Carousel
-                        autoplay
-                        autoplaySpeed={1000}
-                        arrows
-                        
-                        // draggable
-                        effect="scrollx"
-                        style={{ height: "200px" }}
-                    >
-                        {makeHadithSlider(hadithsData)}
-                    </Carousel>
+                    <Container>
+                        <Carousel
+                            autoplay
+                            autoplaySpeed={1000}
+                            arrows
+
+                            // draggable
+                            effect="scrollx"
+                            style={{ height: "200px" }}
+                        >
+                            {makeHadithSlider(hadithsData)}
+                        </Carousel>
+                    </Container>
                 </div>
             </section>
         </>
