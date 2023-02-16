@@ -37,7 +37,7 @@ export interface Hadith {
     chapter: Chapter;
 }
 
-export const HadisSlider = ({ }: HadisSliderProps) => {
+export const HadisSlider = (props: HadisSliderProps) => {
     const [hadithsData, setHadithsData] = useState<Hadith[]>([]);
 
     useEffect(() => {
