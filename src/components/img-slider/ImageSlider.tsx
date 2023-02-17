@@ -1,6 +1,7 @@
 import { Carousel as Caro } from 'react-carousel-minimal';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Container } from 'react-bootstrap';
 
 interface ImageSliderProps { }
 
@@ -56,33 +57,35 @@ export const ImageSlider = (props: ImageSliderProps) => {
 
     return (
         <>
-            <section style={{ marginBottom: "30px" }}>
+            <section style={{ marginBottom: "50px" }}>
                 <div style={{ padding: "20px" }}>
-                    <Caro
-                        data={data}
-                        time={2000}
-                        width="1000px"
-                        height="500px"
-                        // captionStyle={captionStyle}
-                        radius="10px"
-                        slideNumber={false}
-                        slideNumberStyle={slideNumberStyle}
-                        // captionPosition="bottom"
-                        automatic={true}
-                        dots={true}
-                        pauseIconColor="white"
-                        pauseIconSize="40px"
-                        slideBackgroundColor="darkgrey"
-                        slideImageFit="cover"
-                        thumbnails={true}
-                        thumbnailWidth="100px"
-                        style={{
-                            textAlign: "center",
-                            maxWidth: "850px",
-                            maxHeight: "500px",
-                            margin: "40px auto",
-                        }}
-                    />
+                    <Container>
+                        <Caro
+                            data={data}
+                            time={2000}
+                            width="1000px"
+                            height="500px"
+                            // captionStyle={captionStyle}
+                            radius="10px"
+                            slideNumber={false}
+                            slideNumberStyle={slideNumberStyle}
+                            // captionPosition="bottom"
+                            automatic={true}
+                            dots={true}
+                            pauseIconColor="white"
+                            pauseIconSize="40px"
+                            slideBackgroundColor="darkgrey"
+                            slideImageFit="cover"
+                            thumbnails={true}
+                            thumbnailWidth="100px"
+                            style={{
+                                textAlign: "center",
+                                maxWidth: "850px",
+                                maxHeight: "500px",
+                                margin: "40px auto",
+                            }}
+                        />
+                    </Container>
                 </div>
             </section>
         </>

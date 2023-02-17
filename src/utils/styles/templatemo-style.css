@@ -222,7 +222,7 @@ address {
 		width: 100%;
 	}
 
-	iframe {
+	.map iframe {
 		margin-left: -20px !important;
 		border-radius: 23px !important;
 		width: calc(100vw - 100px) !important;
@@ -294,11 +294,4 @@ address {
 	margin-bottom: -7px;
 	width: calc(100vw - 300px);
 	height: calc(20vh);
-}
-
-iframe {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
 }

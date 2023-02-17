@@ -86,14 +86,14 @@ export const HadisSlider = (props: HadisSliderProps) => {
             <section style={{
                 padding: "15px"
             }}>
-                <div style={{
-                    border: "1px solid red",
-                    padding: "15px",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    backgroundColor: "#4398c7"
-                }}>
-                    <Container>
+                <Container>
+                    <div style={{
+                        border: "1px solid red",
+                        padding: "15px",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        backgroundColor: "#4398c7"
+                    }}>
                         <Carousel
                             autoplay
                             autoplaySpeed={1000}
@@ -105,8 +105,8 @@ export const HadisSlider = (props: HadisSliderProps) => {
                         >
                             {makeHadithSlider(hadithsData)}
                         </Carousel>
-                    </Container>
-                </div>
+                    </div>
+                </Container>
             </section>
         </>
     );
