@@ -4,12 +4,10 @@ import { ContentSection } from '../components/section/ContentSection';
 
 function Blogs() {
     return (
-        <>
-            <section>
-                <ContentSection />
-                <AnotherContent />
-            </section>
-        </>
+        <section>
+            <ContentSection />
+            <AnotherContent />
+        </section>
     );
 }
 

@@ -8,9 +8,7 @@ export const FooterCom = () => {
             <MDBFooter className='text-center text-lg-start text-muted'>
                 <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
                     <div className='me-5 d-none d-lg-block'>
-                        <span>
-                            Get connected with us on social networks:
-                        </span>
+                        <span>Get connected with us on social networks: </span>
                     </div>
                     <div>
                         <a href='' className='me-4 text-reset'><MDBIcon fab icon="facebook-f" /></a>
@@ -30,7 +28,8 @@ export const FooterCom = () => {
                                     Company name
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                                    Here you can use rows and columns to organize your footer content.
+                                    Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit.
                                 </p>
                             </MDBCol>

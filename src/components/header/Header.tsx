@@ -1,4 +1,3 @@
-import "./header.css";
 import React from 'react';
 import MyNavbar from './Navbar';
 

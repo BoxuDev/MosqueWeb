@@ -1,18 +1,15 @@
 import { Button, Col, Input, Row } from 'antd';
-import React from 'react';
 import { Container } from 'react-bootstrap';
+import React from 'react';
 
-interface SubscribeEmailProps { }
-
-export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
+export const SubscribeEmail = () => {
     return (
         <>
             <section style={{
                 height: "200px",
                 alignItems: "center",
                 display: "flex",
-                justifyContent: "center",
-                //width: "100vw"
+                justifyContent: "center"
             }}>
                 <div style={{
                     display: "flex",
@@ -29,8 +26,7 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                             <h2 style={{ paddingInline: "12px", position: "relative" }}>Subscribe to get exclusive updates</h2>
                         </Row>
                         <Row>
-                            <Col span={4}>
-                            </Col>
+                            <Col span={4} />
                             <Input.Group compact>
                                 <Input
                                     style={{
@@ -38,7 +34,8 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                                         borderRadius: "1px",
                                         border: "3px solid rgb(246, 235, 228)"
                                     }}
-                                    placeholder="email@example.com" />
+                                    placeholder="email@example.com" 
+                                    />
                                 <Button
                                     type="primary"
                                     style={{
@@ -50,10 +47,7 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                                         color: "black",
                                         boxShadow: "none"
                                     }}
-                                    onClick={() => {
-                                        console.log("Buton Click Subscribe")
-                                        alert("Buton Click Subscribe");
-                                    }}
+                                    onClick={() => { }}
                                 >Join Our Mailing List</Button>
                             </Input.Group>
                         </Row>
