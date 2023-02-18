@@ -1,9 +1,14 @@
 import React from 'react';
+import AnotherContent from '../components/section/AnotherContent';
+import { ContentSection } from '../components/section/ContentSection';
 
 function Blogs() {
     return (
         <>
-            BLOG SAYFASI
+            <section>
+                <ContentSection />
+                <AnotherContent />
+            </section>
         </>
     );
 }

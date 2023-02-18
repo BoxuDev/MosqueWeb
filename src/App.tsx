@@ -21,7 +21,7 @@ function App() {
         <HeaderComp />
 
         {/* <ContentSection></ContentSection> */}
-        <HadisSlider />
+        {/* <HadisSlider /> */}
 
         <Route path="/" exact><Content><Home /></Content></Route>
         <Route path="/Home" exact><Content><Home /></Content></Route>

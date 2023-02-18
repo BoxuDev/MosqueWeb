@@ -12,13 +12,13 @@ function Home() {
         <>
             <Slider />
             <FacilitiesAvaible />
+            <ContentSection />
             <PrayerTime />
-            <HadisSlider />
+            <ContentSection />
+            <ContentSection />
             <ImageSlider />
             <ContentSection />
-            <ContentSection />
-            <ContentSection />
-            <ContentSection />
+            <HadisSlider />
             <ContentSection />
             <SubscribeEmail />
         </>

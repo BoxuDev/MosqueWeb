@@ -84,11 +84,13 @@ export const HadisSlider = (props: HadisSliderProps) => {
     return (
         <>
             <section style={{
-                padding: "15px"
+                padding: "15px",
+                marginTop: ""
             }}>
                 <Container>
                     <div style={{
                         border: "1px solid red",
+                        borderRadius: "18px",
                         padding: "15px",
                         overflow: "hidden",
                         textOverflow: "ellipsis",
@@ -101,7 +103,7 @@ export const HadisSlider = (props: HadisSliderProps) => {
 
                             // draggable
                             effect="scrollx"
-                            style={{ height: "200px" }}
+                            style={{ maxHeight: "500px" }}
                         >
                             {makeHadithSlider(hadithsData)}
                         </Carousel>

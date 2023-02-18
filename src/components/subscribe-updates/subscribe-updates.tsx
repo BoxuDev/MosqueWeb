@@ -12,7 +12,7 @@ export const SubscribeEmail = ({ }: SubscribeEmailProps) => {
                 alignItems: "center",
                 display: "flex",
                 justifyContent: "center",
-                width: "100vw"
+                //width: "100vw"
             }}>
                 <div style={{
                     display: "flex",
