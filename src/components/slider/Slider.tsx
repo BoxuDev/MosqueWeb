@@ -1,19 +1,17 @@
-import "./slider.css";
 import React from 'react';
 import { Carousel } from "antd";
+import { Container } from "react-bootstrap";
+import "./Slider.css";
 
 export const Slider = () => {
     return (
-        <>
+        <Container>
             <Carousel
                 autoplay
-                autoplaySpeed={1000}
+                autoplaySpeed={3800}
                 arrows
                 draggable
-                effect="fade"
-                style={{
-                    padding: "50px"
-                }}
+                effect='scrollx'
             >
                 <div>
                     <h3 className="contentStyle">
@@ -36,7 +34,7 @@ export const Slider = () => {
                     </h3>
                 </div>
             </Carousel>
-        </>
+        </Container>
     );
 }
 

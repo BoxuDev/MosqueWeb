@@ -1,43 +1,10 @@
 import { Carousel } from 'antd';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import { Hadith } from '../../models/HadithModels';
+import './HadithSlider.css';
 
-interface HadisSliderProps { }
-
-export interface Book {
-    id: number;
-    bookName: string;
-    writerName: string;
-    aboutWriter?: any;
-    writerDeath: string;
-    bookSlug: string;
-}
-
-export interface Chapter {
-    id: number;
-    chapterNumber: string;
-    chapterEnglish: string;
-    chapterUrdu: string;
-    chapterArabic: string;
-    bookSlug: string;
-}
-
-export interface Hadith {
-    id: number;
-    hadithNumber: string;
-    englishNarrator: string;
-    hadithEnglish: string;
-    hadithUrdu: string;
-    urduNarrator: string;
-    hadithArabic: string;
-    chapterId: string;
-    bookSlug: string;
-    volume: string;
-    book: Book;
-    chapter: Chapter;
-}
-
-export const HadisSlider = (props: HadisSliderProps) => {
+export const HadisSlider = () => {
     const [hadithsData, setHadithsData] = useState<Hadith[]>([]);
 
     useEffect(() => {
@@ -55,61 +22,38 @@ export const HadisSlider = (props: HadisSliderProps) => {
     const makeHadithSlider = (hadiths: Hadith[]): ReactNode[] => {
         let hadithSlide: any[] = []
         hadiths.map((e: Hadith) => {
+            if ((e.hadithArabic.length > 250) && (e.hadithEnglish.length > 350)) return;
             hadithSlide.push(
                 <div>
-                    <h3
-                        style={{
-
-                        }}>
-                        {e.englishNarrator}
-                    </h3>
-                    <p
-                        style={{
-
-                        }}>
-                        {e.hadithEnglish}
-                    </p>
-                    <p style={{
-
-                    }}>
-                        {e.hadithArabic}
-                    </p>
+                    <p className='hadith-english'>{e.hadithEnglish}</p>
+                    <p className='hadith-arabic'>{e.hadithArabic}</p>
                 </div>
             );
         })
-
         return hadithSlide;
     }
 
     return (
-        <>
-            <section style={{
-                padding: "15px",
-                marginTop: ""
-            }}>
-                <Container>
-                    <div style={{
-                        border: "1px solid red",
-                        borderRadius: "18px",
-                        padding: "15px",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                        backgroundColor: "#4398c7"
-                    }}>
-                        <Carousel
-                            autoplay
-                            autoplaySpeed={1000}
-                            arrows
-
-                            // draggable
-                            effect="scrollx"
-                            style={{ maxHeight: "500px" }}
-                        >
-                            {makeHadithSlider(hadithsData)}
-                        </Carousel>
-                    </div>
-                </Container>
-            </section>
-        </>
+        <section style={{ padding: "15px" }}>
+            <Container>
+                <div style={{
+                    border: "1px solid red",
+                    borderRadius: "18px",
+                    padding: "15px",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    backgroundColor: "#4398c7"
+                }}>
+                    <Carousel
+                        autoplay
+                        autoplaySpeed={10000}
+                        arrows
+                        effect="scrollx"
+                        style={{ maxHeight: "500px" }}
+                        children={makeHadithSlider(hadithsData)}
+                    />
+                </div>
+            </Container>
+        </section>
     );
 }

@@ -1,11 +1,8 @@
 import { Carousel as Caro } from 'react-carousel-minimal';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Container } from 'react-bootstrap';
 
-interface ImageSliderProps { }
-
-export const ImageSlider = (props: ImageSliderProps) => {
+export const ImageSlider = () => {
     const data = [
         {
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
@@ -45,49 +42,36 @@ export const ImageSlider = (props: ImageSliderProps) => {
         }
     ];
 
-    const captionStyle = {
-        fontSize: '2em',
-        fontWeight: 'bold',
-    }
-
     const slideNumberStyle = {
         fontSize: '20px',
         fontWeight: 'bold',
     }
 
     return (
-        <>
-            <section style={{ marginBottom: "50px" }}>
-                <div style={{ padding: "20px" }}>
-                    <Container>
-                        <Caro
-                            data={data}
-                            time={2000}
-                            width="1000px"
-                            height="500px"
-                            // captionStyle={captionStyle}
-                            radius="10px"
-                            slideNumber={false}
-                            slideNumberStyle={slideNumberStyle}
-                            // captionPosition="bottom"
-                            automatic={true}
-                            dots={true}
-                            pauseIconColor="white"
-                            pauseIconSize="40px"
-                            slideBackgroundColor="darkgrey"
-                            slideImageFit="cover"
-                            thumbnails={true}
-                            thumbnailWidth="100px"
-                            style={{
-                                textAlign: "center",
-                                maxWidth: "850px",
-                                maxHeight: "500px",
-                                margin: "40px auto",
-                            }}
-                        />
-                    </Container>
-                </div>
-            </section>
-        </>
+        <Container>
+            <Caro
+                data={data}
+                time={2000}
+                width="1000px"
+                height="500px"
+                radius="10px"
+                slideNumber={false}
+                slideNumberStyle={slideNumberStyle}
+                automatic={true}
+                dots={true}
+                pauseIconColor="white"
+                pauseIconSize="40px"
+                slideBackgroundColor="darkgrey"
+                slideImageFit="cover"
+                thumbnails={true}
+                thumbnailWidth="100px"
+                style={{
+                    textAlign: "center",
+                    maxWidth: "850px",
+                    maxHeight: "500px",
+                    margin: "40px auto",
+                }}
+            />
+        </Container>
     );
 }
