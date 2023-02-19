@@ -2,7 +2,7 @@
 
 ### TODO 
 
-- [] CSS
+- [x] CSS
 - [] CSS
 - [] CSS
 - [] CSS
