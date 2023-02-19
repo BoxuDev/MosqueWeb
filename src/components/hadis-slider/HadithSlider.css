@@ -1,10 +1,29 @@
 .hadith-english {
     color: #e2cd9f;
-    font-size: 14px;
+    font-size: 24px;
+    text-align: justify;
 }
 
 .hadith-arabic {
     color: #e2cd9f;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cont-hadith {
+    background-color: #008696;
+    border-radius: 36px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #008696;
+}
+
+.hadith {
+    display: flex;
+    padding: 15px;
+}
+
+@media screen {
+    
 }

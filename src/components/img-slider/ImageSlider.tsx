@@ -1,6 +1,7 @@
-import { Carousel as Caro } from 'react-carousel-minimal';
-import React from 'react';
+import { Carousel } from 'react-carousel-minimal';
 import { Container } from 'react-bootstrap';
+import React from 'react';
+import './ImageSlider.css';
 
 export const ImageSlider = () => {
     const data = [
@@ -42,36 +43,27 @@ export const ImageSlider = () => {
         }
     ];
 
-    const slideNumberStyle = {
-        fontSize: '20px',
-        fontWeight: 'bold',
-    }
-
     return (
         <Container>
-            <Caro
-                data={data}
-                time={2000}
-                width="1000px"
-                height="500px"
-                radius="10px"
-                slideNumber={false}
-                slideNumberStyle={slideNumberStyle}
-                automatic={true}
-                dots={true}
-                pauseIconColor="white"
-                pauseIconSize="40px"
-                slideBackgroundColor="darkgrey"
-                slideImageFit="cover"
-                thumbnails={true}
-                thumbnailWidth="100px"
-                style={{
-                    textAlign: "center",
-                    maxWidth: "850px",
-                    maxHeight: "500px",
-                    margin: "40px auto",
-                }}
-            />
+            <Container className='cont-image-slide'>
+                <Carousel
+                    data={data}
+                    time={3500}
+                    width="1100px"
+                    height="500px"
+                    radius="36px"
+                    slideNumber={false}
+                    automatic={true}
+                    dots={true}
+                    pauseIconColor="white"
+                    pauseIconSize="40px"
+                    slideBackgroundColor="darkgrey"
+                    slideImageFit="cover"
+                    thumbnailWidth="100px"
+                    thumbnails={true}
+                    thumbnailsStyle
+                />
+            </Container>
         </Container>
     );
 }

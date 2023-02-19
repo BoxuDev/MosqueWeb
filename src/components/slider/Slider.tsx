@@ -5,12 +5,13 @@ import "./Slider.css";
 
 export const Slider = () => {
     return (
-        <Container>
+        <Container className='cont'>
             <Carousel
                 autoplay
                 autoplaySpeed={3800}
                 arrows
                 draggable
+                className='cont'
                 effect='scrollx'
             >
                 <div>

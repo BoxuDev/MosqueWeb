@@ -16,3 +16,9 @@
         height: 600px;
     }
 }
+
+.cont {
+    border-radius: 36px;
+    overflow: hidden;
+    margin-bottom: 26px;
+}
