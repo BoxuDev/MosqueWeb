@@ -1,14 +1,14 @@
 import './styles/App.css';
 import React from 'react';
 import Layout from 'antd/es/layout';
-import { FooterCom } from './components/footer/FooterCom';
-import { HeaderComp } from './components/header/Header';
+import { FooterCom } from './components/Footer/FooterCom';
+import { HeaderComp } from './components/Header/Header';
 import { Route } from 'react-router-dom';
-import Home from './utils/Home';
-import Blogs from './utils/Blogs';
-import Abouts from './utils/Abouts';
-import Donate from './utils/Donate';
-import { RespContent } from './components/section/RespContent';
+import Home from './pages/Home';
+import Blogs from './pages/Blogs';
+import Abouts from './pages/Abouts';
+import Donate from './pages/Donate';
+import { RespContent } from './components/Sections/RespContent';
 
 const { Content } = Layout;
 

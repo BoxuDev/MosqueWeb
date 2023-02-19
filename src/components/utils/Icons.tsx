@@ -1,7 +1,7 @@
 import { Row } from 'antd';
 import React from 'react';
 
-export const MenPrayerRoomIcon = () => {
+const MenPrayerRoomIcon = () => {
     return (
         <div style={{
             marginLeft: "32px",
@@ -32,3 +32,5 @@ export const MenPrayerRoomIcon = () => {
         </div>
     )
 }
+
+export default MenPrayerRoomIcon;
