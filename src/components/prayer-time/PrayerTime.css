@@ -1,0 +1,8 @@
+.frameSize {
+    height: 507px;
+}
+
+.cont-frame {
+    border-radius: 36px !important;
+    overflow: hidden;
+}
