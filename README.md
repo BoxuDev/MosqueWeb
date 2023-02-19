@@ -1,5 +1,10 @@
 # MosqueWeb
 
-TODO 
+### TODO 
 
-[] CSS
+- [] CSS
+- [] CSS
+- [] CSS
+- [] CSS
+- [] CSS
+- [] CSS

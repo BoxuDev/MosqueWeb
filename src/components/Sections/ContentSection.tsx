@@ -1,4 +1,4 @@
-import "./content-section.css";
+import "./ContentSection.css";
 import React from 'react';
 import { Container } from "react-bootstrap";
 import testimg from "../../assets/test.jpg";

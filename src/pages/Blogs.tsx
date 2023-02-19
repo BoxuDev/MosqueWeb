@@ -1,6 +1,6 @@
 import React from 'react';
-import AnotherContent from '../components/section/AnotherContent';
-import { ContentSection } from '../components/section/ContentSection';
+import AnotherContent from '../components/Sections/AnotherContent';
+import { ContentSection } from '../components/Sections/ContentSection';
 
 function Blogs() {
     return (
