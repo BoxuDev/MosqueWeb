@@ -9,7 +9,7 @@ export default function Abouts() {
         <Container>
             <section className="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
                 <div className="tm-contact-header tm-flex-center">
-                    <i className="fas fa-map-pin fa-3x"></i>
+                    <i className="fas fa-map-pin fa-3x" />
                     <h2 style={{ color: "#f4eaca" }}>Contact</h2>
                 </div>
                 <div className="tm-contact-info">
@@ -21,9 +21,9 @@ export default function Abouts() {
                     </address>
                     <div className="tm-text-white tm-mb-40">Tel: <a href="tel:0100200340" className="tm-link-white">010-020-0340</a></div>
                     <div className="tm-flex">
-                        <a href="https://facebook.com" className="tm-social-link"><i className="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com" className="tm-social-link"><i className="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com" className="tm-social-link"><i className="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" className="tm-social-link"><i className="fab fa-facebook" /></a>
+                        <a href="https://twitter.com" className="tm-social-link"><i className="fab fa-twitter" /></a>
+                        <a href="https://instagram.com" className="tm-social-link"><i className="fab fa-instagram" /></a>
                     </div>
                 </div>
                 <div className="tm-contact-form-container">
@@ -43,10 +43,12 @@ export function AboutWithMap() {
     return (
         <Container>
             <section className="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
-                <div className="map">
-                    <iframe
+                <div className="embed-responsive embed-responsive-21by9">
+                    <iframe title="embedsPage"
+                        className="embed-responsive-item"
                         src={frameSource}
-                        width="100%"
+                        allowFullScreen
+                        style={{ zIndex: 1 }}
                     />
                 </div>
             </section>
