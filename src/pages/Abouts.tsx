@@ -48,7 +48,6 @@ export function AboutWithMap() {
                         className="embed-responsive-item"
                         src={frameSource}
                         allowFullScreen
-                        style={{ zIndex: 1 }}
                     />
                 </div>
             </section>

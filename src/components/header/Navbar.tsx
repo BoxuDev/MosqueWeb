@@ -21,20 +21,18 @@ function MyNavbar() {
                     <Nav className="me-auto"></Nav>
                     <Nav>
                         <Nav.Link>
-                            <Link to="/Home" className='navvLink' >Home</Link>
+                            <Link to="/Home">Home</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/Blogs" className='navvLink' >Blogs</Link>
+                            <Link to="/Blogs">Blogs</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/Abouts" className='navvLink' >About</Link>
+                            <Link to="/Abouts">About</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/Contacts" className='navvLink' >Contact</Link>
+                            <Link to="/Contact">Contact</Link>
                         </Nav.Link>
-                        <Nav.Link className='linkStyleDonate'>
-                            <a href={donateLink} target="_self" rel="noopener noreferrer" className='private-link' >Donate</a>
-                        </Nav.Link>
+                        <Nav.Link className='private-link' href={donateLink}>DONATE</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

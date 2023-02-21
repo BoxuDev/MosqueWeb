@@ -28,23 +28,6 @@
     border-bottom-right-radius: 36px;
 }
 
-.linkStyleDonate {
-    color: #e2cd9f;
-    text-decoration: none;
-    display: flex;
-    border: 1px solid #e2cd9f;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-}
-
-.linkStyleDonate:hover {
-    color: white;
-    border: none;
-    font-size: 24px;
-    background-color: #e2cd9f;
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: #e2cd9f;
 }
@@ -63,20 +46,29 @@
     margin-bottom: 25px;
 }
 
-.navvLink {
-    color: black;
-    text-decoration: none;
-}
-
 .navIcon {
     width: 36px;
     height: 36px;
 }
 
 .private-link {
+    display: flex !important;
     color: #e2cd9f !important;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 .private-link:hover {
+    display: flex !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #008696 !important;
+    font-size: 24px;
+    border-radius: 16px;
+    background-color: #e2cd9f;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }

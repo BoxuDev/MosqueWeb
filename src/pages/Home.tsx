@@ -6,7 +6,7 @@ import { ContentSection } from "../components/Sections/ContentSection";
 import { Slider } from "../components/Slider/Slider";
 import React from 'react';
 import { SubscribeEmail } from "../components/SubscribeUpdates/SubscribeUpdates";
-import AnotherContent from "../components/Sections/AnotherContent";
+import AnotherContent from "../components/Sections/AnotherContent/AnotherContent";
 
 function Home() {
     return (

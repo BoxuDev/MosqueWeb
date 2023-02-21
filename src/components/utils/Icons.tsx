@@ -4,8 +4,8 @@ import React from 'react';
 const MenPrayerRoomIcon = () => {
     return (
         <div style={{
-            marginLeft: "32px",
-            marginBottom: "46px"
+            marginLeft: "16px",
+            marginBottom: "10px"
         }}>
             <Row>
                 <div style={{ width: "78px", height: "78px" }}>
@@ -28,7 +28,7 @@ const MenPrayerRoomIcon = () => {
                 </div>
             </Row>
             <Row><span style={{ marginTop: "10px" }}>Men's Prayer Room</span></Row>
-            <Row><span style={{ marginTop: "16px" }}>1200 Places</span></Row>
+            <Row><span style={{ marginTop: "6px" }}>1200 Places</span></Row>
         </div>
     )
 }
