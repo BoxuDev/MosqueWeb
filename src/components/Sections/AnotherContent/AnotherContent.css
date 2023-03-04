@@ -1,0 +1,21 @@
+.goButton {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    margin: 20px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background: rgb(55, 59, 77);
+}
+
+.cont-another {
+    border-radius: 36px !important;
+    overflow: hidden;
+    box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #008696;
+    background-color: #008696;
+    margin-bottom: 50px;
+    padding: 15px;
+}

@@ -1,0 +1,16 @@
+.ant-row {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .text-content-area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 90% !important;
+  }
+}

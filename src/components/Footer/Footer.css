@@ -1,0 +1,17 @@
+.bg-light,
+.text-center,
+.text-lg-start,
+.text-muted {
+    background-color: #008696 !important;
+    color: #e2cd9f !important;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+}
+
+.d-flex,
+.justify-content-center,
+.justify-content-lg-between,
+.p-4,
+.border-bottom {
+    color: #e2cd9f !important;
+}
