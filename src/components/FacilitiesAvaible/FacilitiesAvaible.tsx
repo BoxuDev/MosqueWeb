@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd';
-import MenPrayerRoomIcon from '../utils/Icons';
+import MenPrayerRoomIcon from '../Utils/Icons';
 import "./FacilitiesAvaible.css";
 import React from 'react';
 import { Container } from 'react-bootstrap';
