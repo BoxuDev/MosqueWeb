@@ -8,6 +8,7 @@ import Home from '../pages/Home';
 import Blogs from '../pages/Blogs';
 import Abouts from '../pages/Abouts';
 import { RespContent } from '../components/Sections/RespContent/RespContent';
+import DoComponent from '../pages/DoComponent';
 
 const { Content } = Layout;
 
@@ -44,6 +45,12 @@ function App() {
         <Route path="/Contact">
           <Content>
             <RespContent />
+          </Content>
+        </Route>
+
+        <Route path="/DoSomething">
+          <Content>
+            <DoComponent/>
           </Content>
         </Route>
 

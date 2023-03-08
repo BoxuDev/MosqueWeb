@@ -48,7 +48,9 @@ function MyNavbar() {
 
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
 
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/DoSomething">Do Something</Link></NavDropdown.Item>
+
+                            <NavDropdown.Item><Link to="/IslamicEbook">Manuel Islamic Ebook</Link></NavDropdown.Item>
 
                         </NavDropdown>
 
