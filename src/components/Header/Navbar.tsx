@@ -5,6 +5,7 @@ import React, { ReactNode } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import { NavDropdown } from 'react-bootstrap';
 
 function MyNavbar() {
     const donateLink: string = 'https://www.paypal.com/donate/?hosted_button_id=G9CAQRRMGDQGN';
@@ -18,21 +19,39 @@ function MyNavbar() {
                     <MenuIcon className='navIcon' />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto"></Nav>
+                    <Nav className="me-auto" />
                     <Nav>
-                        <Nav.Link>
-                            <Link to="/Home">Home</Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/Blogs">Blogs</Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/Abouts">About</Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/Contact">Contact</Link>
-                        </Nav.Link>
-                        <Nav.Link className='private-link' href={donateLink}>DONATE</Nav.Link>
+
+                        <Nav.Link><Link to="/Home">Home</Link></Nav.Link>
+
+                        <Nav.Link><Link to="/EarthQuake">Earth Quake</Link></Nav.Link>
+
+                        <Nav.Link><Link to="/Blogs">Blogs</Link></Nav.Link>
+
+                        <Nav.Link><Link to="/Abouts">About</Link></Nav.Link>
+
+                        <Nav.Link><Link to="/Contact">Contact</Link></Nav.Link>
+
+                        <NavDropdown title="Donate" id="collasible-nav-dropdown">
+
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+
+                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+
+                        </NavDropdown>
+
+                        <NavDropdown title="More" id="nav-dropdown">
+
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+
+                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+
+                        </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>

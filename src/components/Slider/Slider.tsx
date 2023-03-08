@@ -5,7 +5,7 @@ import "./Slider.css";
 
 export const Slider = () => {
     return (
-        <Container className='cont'>
+        <Container>
             <Carousel
                 autoplay
                 autoplaySpeed={3800}

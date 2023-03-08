@@ -70,7 +70,6 @@ img {
     }
 }
 
-/***/
 @media (max-width: 991px) {
     .tm-intro-text-container {
         padding-left: 15px;
@@ -128,4 +127,8 @@ img {
 .tm-btn-primary:focus {
     color: white;
     background-color: #73c1f6;
+}
+
+.cont {
+    box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #008696;
 }

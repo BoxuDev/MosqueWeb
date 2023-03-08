@@ -5,8 +5,8 @@ import testimg from "../../assets/test.jpg";
 
 export const ContentSection = () => {
     return (
-        <>
-            <Container style={{ marginBottom: "50px" }}>
+        <Container>
+            <Container className="cont" style={{ marginBottom: "50px" }}>
                 <div className="container" style={{
                     borderRadius: "36px",
                     overflow: "hidden",
@@ -16,7 +16,7 @@ export const ContentSection = () => {
                     minHeight: "350px"
                 }}>
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" style={{ marginTop: "24px" }}>
                             <div className="tm-intro-text-container">
                                 <h2 className="tm-text-primary mb-4 tm-section-title">Introduction</h2>
                                 <p className="mb-4 tm-intro-text">
@@ -28,7 +28,7 @@ export const ContentSection = () => {
                                     Curabitur dapibus tristique enim a imperdiet. Etiam
                                     tristique sem sed condimentum posuere.
                                 </p>
-                                <div className="tm-next">
+                                <div className="tm-next" style={{ marginBottom: "8px" }}>
                                     <a href="#work" className="tm-intro-text tm-btn-primary">Read More</a>
                                 </div>
                             </div>
@@ -42,6 +42,6 @@ export const ContentSection = () => {
                     </div>
                 </div>
             </Container>
-        </>
+        </Container>
     );
 }

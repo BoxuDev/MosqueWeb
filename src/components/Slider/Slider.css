@@ -2,8 +2,6 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    color: black;
-    background: black;
 }
 
 .contentStyle>img {
@@ -18,7 +16,13 @@
 }
 
 .cont {
-    border-radius: 36px;
+    border-radius: 36px !important;
     overflow: hidden;
-    margin-bottom: 26px;
+    background-color: #008696;
+    box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #008696;
+    margin-bottom: 50px;
+}
+
+.slick-slider .cont .slick-initialized {
+    margin: 0 !important;
 }
