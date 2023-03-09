@@ -53,6 +53,12 @@ function App() {
             <DoComponent/>
           </Content>
         </Route>
+        
+        <Route path="/IslamicEbook">
+          <Content>
+            <DoComponent/>
+          </Content>
+        </Route>
 
         <FooterCom />
       </Layout>

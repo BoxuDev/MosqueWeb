@@ -7,15 +7,6 @@ function IslamicEbook() {
         <Container style={{ marginBottom: "30px" }}>
             <div className="container">
 
-                <div className="row align-items-center">
-                    <div className="col-12">
-                        <div className="row justify-content-center">
-                            <div className="col-md-10 text-center hero-text">
-                                <h1 data-aos="fade-up" data-aos-delay="">Chrome now alerts you when someone steals your password</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <section className="row tm-section tm-mb-30">
                     <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8">
                         <div className="tm-flex-center pl-5 pr-5 pt-5 pb-5">
@@ -29,7 +20,8 @@ function IslamicEbook() {
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-xl-right text-md-center text-center mt-5 mt-lg-0 pr-lg-0">
-                          </div>
+                       
+                    </div>
                 </section>
 
 
