@@ -21,37 +21,35 @@ function MyNavbar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" />
                     <Nav>
-
                         <Nav.Link><Link to="/Home">Home</Link></Nav.Link>
-
                         <Nav.Link><Link to="/EarthQuake">Earth Quake</Link></Nav.Link>
-
                         <Nav.Link><Link to="/Blogs">Blogs</Link></Nav.Link>
-
                         <Nav.Link><Link to="/Abouts">About</Link></Nav.Link>
-
                         <Nav.Link><Link to="/Contact">Contact</Link></Nav.Link>
-
-                        <NavDropdown title="Donate" id="collasible-nav-dropdown">
-
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-
+                        <Nav.Link><Link to="/PrayerTime">PrayerTime</Link></Nav.Link>
+                        <NavDropdown title="Services">
+                            <NavDropdown.Item><Link to="/Funeral">Funeral</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Merriage">Merriage</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/HelalFood">Helal Food</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Education">Education</Link></NavDropdown.Item>
                         </NavDropdown>
-
-                        <NavDropdown title="More" id="nav-dropdown">
-
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-
+                        <NavDropdown title="Donate">
+                            <NavDropdown.Item href={donateLink}>Zekah</NavDropdown.Item>
+                            <NavDropdown.Item href={donateLink}>Charity</NavDropdown.Item>
+                            <NavDropdown.Item href={donateLink}>Iftar</NavDropdown.Item>
+                            <NavDropdown.Item href={donateLink}>Sacrifice</NavDropdown.Item>
+                            <NavDropdown.Item href={donateLink}>Other</NavDropdown.Item>
                         </NavDropdown>
-
+                        <NavDropdown title="More">
+                            <NavDropdown.Item><Link to="/AboutIslam">About Islam</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/PrayerIslam">Prayer Islam</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/ZekahCharity">Zekah & Charity</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Contact">Contact</Link></NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

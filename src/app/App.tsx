@@ -47,6 +47,72 @@ function App() {
           </Content>
         </Route>
 
+        <Route path="/EarthQuake">
+          <Content>
+            EarthQuake
+          </Content>
+        </Route>
+
+        <Route path="/AboutIslam">
+          <Content>
+            About Islam
+          </Content>
+        </Route>
+
+        <Route path="/PrayerIslam">
+          <Content>
+            Prayer Islam
+          </Content>
+        </Route>
+
+        <Route path="/PrayerTime">
+          <Content>
+            PrayerTime
+          </Content>
+        </Route>
+
+        <Route path="/FastingRamadan">
+          <Content>
+            FastingRamadan
+          </Content>
+        </Route>
+
+        <Route path="/ZekahCharity">
+          <Content>
+            ZekahCharity
+          </Content>
+        </Route>
+
+        <Route path="/Education">
+          <Content>
+            Education
+          </Content>
+        </Route>
+
+        <Route path="/HajjUmrah">
+          <Content>
+            HajjUmrah
+          </Content>
+        </Route>
+
+        <Route path="/Funeral">
+          <Content>
+            Funeral
+          </Content>
+        </Route>
+
+        <Route path="/Merriage">
+          <Content>
+            Merriage
+          </Content>
+        </Route>
+
+        <Route path="/HelalFood">
+          <Content>
+            HelalFood
+          </Content>
+        </Route>
+
         <FooterCom />
       </Layout>
     </div>
