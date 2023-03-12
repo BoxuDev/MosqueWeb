@@ -1,10 +1,10 @@
 import React from 'react';
- 
+
 const EartQuake = () => {
-    return ( 
+    return (
         <>
         </>
-     );
+    );
 }
- 
+
 export default EartQuake;

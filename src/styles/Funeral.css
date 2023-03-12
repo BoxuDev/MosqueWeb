@@ -1,0 +1,37 @@
+.ant-btn.buttonVis {
+    width: 200px !important;
+    height: 56px !important;
+    background-color: #a53654 !important;
+    border: none !important;
+    border-radius: 18px !important;
+    box-shadow: 1px 14px 34px -4px rgba(0, 0, 0, 1) !important;
+    color: white !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.15em !important;
+}
+
+.ant-btn.buttonVis:hover {
+    background-color: #BF778A !important;
+    color: white !important;
+}
+
+.ant-btn.callBtn {
+    transition: all 0.2s ease, visibility 0s !important;
+    background: #FFFFFF !important;
+    border-radius: 50px !important;
+    border: 2px solid #C74300 !important;
+    box-shadow: 0 1px 10px #000000 !important;
+    width: 200px !important;
+    height: 56px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.15em !important;
+    color: #C74300 !important;
+}
+
+.ant-btn.callBtn:hover {
+    border-radius: 20px !important;
+    background: #C74300 !important;
+    border: 2px solid #C74300 !important;
+    color: white !important;
+}
