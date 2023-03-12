@@ -2,7 +2,7 @@ import "./PrayerTime.css";
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const PrayerTime = () => {
+const PrayerTimer = () => {
     const uri: string = "https://www-suleymaniye-org.filesusr.com/html/9be301_33a31ba185d27d2b57ff9618f3d66898.html";
 
     return (
@@ -27,4 +27,4 @@ const PrayerTime = () => {
     );
 }
 
-export default PrayerTime;
+export default PrayerTimer;

@@ -8,6 +8,18 @@ import Home from '../pages/Home';
 import Blogs from '../pages/Blogs';
 import Abouts from '../pages/Abouts';
 import { RespContent } from '../components/Sections/RespContent/RespContent';
+import AboutIslam from '../pages/AboutIslam';
+import FastingRamadan from '../pages/FastingRamadan';
+import ZekahCharity from '../pages/ZekahCharity';
+import HajjUmrah from '../pages/HajjUmrah';
+import PrayerTime from '../pages/PrayerTime';
+import BriefIntroduction from '../pages/BriefIntroduction';
+import EarthQuake from '../pages/EarthQuake';
+import Education from '../pages/Education';
+import Funeral from '../pages/Funeral';
+import HelalFood from '../pages/HelalFood';
+import Merriage from '../pages/Merriage';
+import PrayerIslam from '../pages/PrayerIslam';
 
 const { Content } = Layout;
 
@@ -49,67 +61,73 @@ function App() {
 
         <Route path="/EarthQuake">
           <Content>
-            EarthQuake
+            <EarthQuake />
           </Content>
         </Route>
 
         <Route path="/AboutIslam">
           <Content>
-            About Islam
+            <PrayerIslam />
           </Content>
         </Route>
 
         <Route path="/PrayerIslam">
           <Content>
-            Prayer Islam
+            <AboutIslam />
           </Content>
         </Route>
 
         <Route path="/PrayerTime">
           <Content>
-            PrayerTime
+            <PrayerTime />
           </Content>
         </Route>
 
         <Route path="/FastingRamadan">
           <Content>
-            FastingRamadan
+            <FastingRamadan />
           </Content>
         </Route>
 
         <Route path="/ZekahCharity">
           <Content>
-            ZekahCharity
+            <ZekahCharity />
           </Content>
         </Route>
 
         <Route path="/Education">
           <Content>
-            Education
+            <Education />
           </Content>
         </Route>
 
         <Route path="/HajjUmrah">
           <Content>
-            HajjUmrah
+            <HajjUmrah />
           </Content>
         </Route>
 
         <Route path="/Funeral">
           <Content>
-            Funeral
+            <Funeral />
           </Content>
         </Route>
 
         <Route path="/Merriage">
           <Content>
-            Merriage
+            <Merriage />
           </Content>
         </Route>
 
         <Route path="/HelalFood">
           <Content>
-            HelalFood
+            <HelalFood />
+          </Content>
+        </Route>
+
+        <Route path="/BriefIntroduction">
+          <Content>
+            <BriefIntroduction />
           </Content>
         </Route>
 

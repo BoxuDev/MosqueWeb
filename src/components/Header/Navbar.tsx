@@ -43,6 +43,7 @@ function MyNavbar() {
                         </NavDropdown>
                         <NavDropdown title="More">
                             <NavDropdown.Item><Link to="/AboutIslam">About Islam</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/BriefIntroduction">Brief Introduction</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/PrayerIslam">Prayer Islam</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/ZekahCharity">Zekah & Charity</Link></NavDropdown.Item>

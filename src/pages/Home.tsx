@@ -1,7 +1,7 @@
 import FacilitiesAvaible from "../components/FacilitiesAvaible/FacilitiesAvaible";
 import { HadisSlider } from "../components/HadisSlider/HadisSlider";
 import { ImageSlider } from "../components/ImgSlider/ImageSlider";
-import PrayerTime from "../components/PrayerTime/PrayerTime";
+import PrayerTimer from "../components/PrayerTime/PrayerTimer";
 import { ContentSection } from "../components/Sections/ContentSection";
 import { Slider } from "../components/Slider/Slider";
 import React from 'react';
@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <Slider />
-            <PrayerTime />
+            <PrayerTimer />
             <ContentSection />
             <ImageSlider />
             <FacilitiesAvaible />
