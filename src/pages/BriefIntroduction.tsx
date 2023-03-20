@@ -23,21 +23,24 @@ const BriefIntroduction = () => {
                         marginTop: "20px",
                         borderRadius: "12px",
                         height: "32px",
-                        backgroundColor: "gray",
+                        backgroundColor: "#008696",
                         padding: "30px",
                         display: "flex",
                         justifyContent: "flex-start",
-                        alignItems: "center"
+                        alignItems: "center",
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696"
                     }}>
                         <Link to="/AboutIslam">About Islam&nbsp;&nbsp;&nbsp;</Link>{">"}
                         <span>&nbsp;&nbsp;&nbsp;Brief Introduction</span>
                     </div>
                     <div style={{
                         borderRadius: "12px",
-                        backgroundColor: "gray",
-                        padding: "16px",
+                        backgroundColor: "aliceblue",
+                        padding: "20px",
                         textAlign: "justify",
+                        fontSize: "16px",
                         marginTop: "20px",
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696",
                         marginBottom: "20px"
                     }}>
                         <h1 style={{}}>Islam</h1>

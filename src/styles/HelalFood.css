@@ -1,0 +1,16 @@
+.orderButton {
+    width: 250px !important;
+    height: 40px !important;
+    color: #9F2747 !important;
+    background-color: #b57586 !important;
+    border: 1px solid #9F2747 !important;
+}
+
+.orderButton:hover {
+    color: white !important;
+    background-color: white !important;
+}
+
+.linkOrder {
+    color: white !important;
+}

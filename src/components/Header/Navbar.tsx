@@ -15,15 +15,12 @@ function MyNavbar() {
         <Navbar bg="#4398c7" className='navbar-settings' expand="lg">
             <Container>
                 <Navbar.Brand>{Icon}</Navbar.Brand>
-                <Navbar.Toggle>
-                    <MenuIcon className='navIcon' />
-                </Navbar.Toggle>
+                <Navbar.Toggle> <MenuIcon className='navIcon'/></Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" />
                     <Nav>
                         <Nav.Link><Link to="/Home">Home</Link></Nav.Link>
-                        <Nav.Link><Link to="/EarthQuake">Earth Quake</Link></Nav.Link>
-                        <Nav.Link><Link to="/Blogs">Blogs</Link></Nav.Link>
+                        <Nav.Link href="https://www.suleymaniye.org/earthquakeappeal">Earth Quake</Nav.Link>
                         <Nav.Link><Link to="/Abouts">About</Link></Nav.Link>
                         <Nav.Link><Link to="/Contact">Contact</Link></Nav.Link>
                         <Nav.Link><Link to="/PrayerTime">PrayerTime</Link></Nav.Link>

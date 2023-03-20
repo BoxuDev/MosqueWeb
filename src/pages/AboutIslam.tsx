@@ -23,10 +23,11 @@ const AboutIslam = () => {
                         marginTop: "20px",
                         borderRadius: "12px",
                         height: "32px",
-                        backgroundColor: "gray",
+                        backgroundColor: "#008696",
                         padding: "30px",
                         display: "flex",
                         justifyContent: "flex-start",
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696",
                         alignItems: "center"
                     }}>
                         <Link to="/AboutIslam">About Islam&nbsp;&nbsp;&nbsp;</Link>{">"}
@@ -34,9 +35,11 @@ const AboutIslam = () => {
                     </div>
                     <div style={{
                         borderRadius: "12px",
-                        backgroundColor: "gray",
-                        padding: "16px",
+                        backgroundColor: "aliceblue",
+                        padding: "20px",
+                        fontSize: "16px",
                         textAlign: "justify",
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696",
                         marginTop: "20px",
                         marginBottom: "20px"
                     }}>

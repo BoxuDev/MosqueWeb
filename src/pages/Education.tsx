@@ -1,6 +1,7 @@
 import { Button, Col, Row } from 'antd';
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import '../styles/Education.css';
 
 const Education = () => {
     return (
@@ -14,13 +15,15 @@ const Education = () => {
                             </Col>
                             <Col className="right">
                                 <Container>
-                                    <h1>Children's Education</h1>
-                                    <p>We have classes for both boys and girls from age 5 till 16 years old. </p>
-                                    <p>Classes are from 16:30 - 18:30 Monday to Friday. Saturday from 10:00 - 14:00</p>
-                                    <p>Lessons are from 10:00 to 14:00 during school term holidays. </p>
-                                    <p>We also run full time summer school, please phone the number below if you are interested for your children.</p>
-                                    <p>For more details please speak to the imam on 075 4557 1241.</p>
-                                    <Button className="goButton">Learn More</Button>
+                                    <div style={{ color: "white", textAlign: "justify" }}>
+                                        <h1>Children's Education</h1>
+                                        <p>We have classes for both boys and girls from age 5 till 16 years old. </p>
+                                        <p>Classes are from 16:30 - 18:30 Monday to Friday. Saturday from 10:00 - 14:00</p>
+                                        <p>Lessons are from 10:00 to 14:00 during school term holidays. </p>
+                                        <p>We also run full time summer school, please phone the number below if you are interested for your children.</p>
+                                        <p>For more details please speak to the imam on 075 4557 1241.</p>
+                                        <button className="eduMoreButton"><a href="http://marathonschool.com/" className='linkMoreB'>Learn More</a></button>
+                                    </div>
                                 </Container>
                             </Col>
                         </Row>
@@ -64,27 +67,30 @@ const Education = () => {
                                 <Container>
                                     <h1>If you are interested in a Boarding School for your Child (Secondary School)</h1>
                                     <br /> <br />
-                                    <Button>http://marathonschool.com/</Button>
+                                    <a href='http://marathonschool.com/' style={{ border: "1px solid white", padding: "10px", fontSize: "16px" }}>Go to Marathon School</a>
                                     <br /> <br />
-
                                     <p>Please get in touch with our Marathon Boys School staff</p>
                                     <br /> <br />
-                                    <Row>
+                                    <Row gutter={[48, 0]}>
                                         <Col>
-                                            <i><svg data-bbox="20 20 160 159.999" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
-                                                <g>
-                                                    <path d="M174.754 137.015l-16.878-17.024c-7.055-7.116-18.563-7.186-25.705-.156l-.283.278-.803.794c-5.874 5.808-15.363 5.761-21.178-.105L78.719 89.344c-5.798-5.849-5.75-15.271.108-21.061l.001.001.283-.279c7.142-7.03 7.211-18.499.156-25.615L62.404 25.383c-7.061-7.122-18.581-7.185-25.72-.14l-.001-.001-11.238 11.11c-4.496 4.445-6.458 10.916-4.936 17.042 14.422 58.077 66.325 112.081 124.426 126.073 6.239 1.503 12.817-.21 17.377-4.711l12.003-11.848.284-.279c7.14-7.03 7.21-18.498.155-25.614z"></path>
-                                                </g>
-                                            </svg></i>
+                                            <div style={{ color: "white", width: "24px", height: "24px" }}>
+                                                <i><svg data-bbox="20 20 160 159.999" viewBox="0 0 200 200" height="48" width="48" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+                                                    <g>
+                                                        <path d="M174.754 137.015l-16.878-17.024c-7.055-7.116-18.563-7.186-25.705-.156l-.283.278-.803.794c-5.874 5.808-15.363 5.761-21.178-.105L78.719 89.344c-5.798-5.849-5.75-15.271.108-21.061l.001.001.283-.279c7.142-7.03 7.211-18.499.156-25.615L62.404 25.383c-7.061-7.122-18.581-7.185-25.72-.14l-.001-.001-11.238 11.11c-4.496 4.445-6.458 10.916-4.936 17.042 14.422 58.077 66.325 112.081 124.426 126.073 6.239 1.503 12.817-.21 17.377-4.711l12.003-11.848.284-.279c7.14-7.03 7.21-18.498.155-25.614z"></path>
+                                                    </g>
+                                                </svg></i>
+                                            </div>
                                         </Col>
                                         <Col>
-                                            <Row>School's Landline Phone</Row>
-                                            <Row>+44 (0) 20 7231 3232</Row>
-                                            <Row>School's Mobile Phone</Row>
-                                            <Row>+44 (0) 7599 012224</Row>
+                                            <div style={{ display: "flex", flexDirection: "column", color: "white" }}>
+                                                <span>School's Landline Phone</span>
+                                                <span>+44 (0) 20 7231 3232</span>
+                                                <span>School's Mobile Phone</span>
+                                                <span>+44 (0) 7599 012224</span>
+                                            </div>
                                         </Col>
                                     </Row>
-                                    <Row>
+                                    <Row gutter={[48, 0]}>
                                         <Col>
                                             <i><svg data-bbox="20 44.5 160 110.999" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
                                                 <g>
@@ -115,10 +121,12 @@ const Education = () => {
                             </Col>
                             <Col className="right">
                                 <Container>
-                                    <h1>Islamic education for adults</h1>
-                                    <p>For brothers you can get one to one lessons from one of our imam.</p>
-                                    <p>For sisters, you can join one of the classes arranged for ladies only.</p>
-                                    <p>Please speak to imam Mustafa 075 4557 1241 for all arrangements.</p>
+                                    <div style={{color: "white"}}>
+                                        <h1>Islamic education for adults</h1>
+                                        <p>For brothers you can get one to one lessons from one of our imam.</p>
+                                        <p>For sisters, you can join one of the classes arranged for ladies only.</p>
+                                        <p>Please speak to imam Mustafa 075 4557 1241 for all arrangements.</p>
+                                    </div>
                                 </Container>
                             </Col>
                         </Row>
