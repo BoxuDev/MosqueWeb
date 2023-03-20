@@ -3,7 +3,7 @@
 .text-lg-start,
 .text-muted {
     background-color: #008696 !important;
-    color: #e2cd9f !important;
+    color: white !important;
     border-top-left-radius: 36px;
     border-top-right-radius: 36px;
 }
@@ -13,5 +13,5 @@
 .justify-content-lg-between,
 .p-4,
 .border-bottom {
-    color: #e2cd9f !important;
+    color: white !important;
 }

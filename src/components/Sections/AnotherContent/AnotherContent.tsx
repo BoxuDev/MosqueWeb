@@ -31,7 +31,7 @@ const AnotherContent = () => {
                                         <li>Assisting in ‘green projects’ (such as planting trees and installing solar panels) for the betterment of our plant and the survival of future generations.</li>
                                     </ul>
                                 </div>
-                                <a href="https://www.suleymaniyeaid.com/" style={{border: "1px solid", padding: ""}}>Suleymaniye Aid</a>
+                                <a href="https://www.suleymaniyeaid.com/" style={{border: "1px solid", padding: "16px"}}>Suleymaniye Aid</a>
                             </Row>
                         </Container>
                     </Col>

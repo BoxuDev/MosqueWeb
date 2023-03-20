@@ -13,7 +13,6 @@ function Home() {
         <>
             <Slider />
             <PrayerTimer />
-            <ContentSection />
             <ImageSlider />
             <FacilitiesAvaible />
             <HadisSlider />

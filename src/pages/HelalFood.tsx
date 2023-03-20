@@ -45,8 +45,10 @@ const HelalFood = () => {
                                         <span style={{
                                             color: "#045184",
                                             fontSize: "25px",
-                                            fontFamily: "reklamescriptw00-medium,cursive"
+                                            fontFamily: "reklamescriptw00-medium,cursive",
+                                            marginBottom: "10px"
                                         }}>073 4025 9101</span>
+                                        <br /><br />
                                     </div>
                                 </Row>
                             </Container>
@@ -55,7 +57,7 @@ const HelalFood = () => {
                 </Container>
             </Container>
             <Container style={{ marginBottom: "30px" }}>
-                <div className="container">
+                <div className="container" style={{ boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696" }}>
                     <section className="row tm-section">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center ">

@@ -15,14 +15,14 @@
     height: auto;
     background: rgb(246, 235, 228);
     align-items: center;
-    border: 3px solid #e2cd9f;
-    color: #e2cd9f;
+    border: 3px solid white;
+    color: white;
     box-shadow: none;
 }
 
 .sub-input {
     border-radius: 1px;
-    border: 3px solid #e2cd9f;
+    border: 3px solid white;
 }
 
 .sub-input>input {
@@ -32,7 +32,7 @@
 .sub-title {
     padding-inline: 12px;
     position: relative;
-    color: #e2cd9f;
+    color: white;
     margin-bottom: 10px !important;
 }
 
@@ -43,12 +43,12 @@
 }
 
 .ant-input-group>button {
-    background-color: #e2cd9f;
+    background-color: white;
     color: rgb(0, 134, 150) !important;
 }
 
 .ant-input-group>button:hover {
-    color: #e2cd9f !important;
-    border: 3px solid #e2cd9f;
+    color: white !important;
+    border: 3px solid white;
     background-color: rgb(0, 134, 150) !important;
 }
