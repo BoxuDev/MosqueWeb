@@ -16,21 +16,23 @@ const AnotherContent = () => {
                             <Row>
                                 <Col className="title">
                                     <Container>
-                                    <span className="text-part-one">SULEYMANIYE</span>
-                                    <span className="text-part-two">AID</span>
+                                        <span className="text-part-one">SULEYMANIYE</span>
+                                        <span className="text-part-two">AID</span>
                                     </Container>
                                 </Col>
                             </Row>
                             <Row>
-                                <span>International Response</span>
-                                <ul>
-                                    <li>Established a water fund in places such as Africa, Pakistan and Bangladesh.</li>
-                                    <li>Aiding in the practice of ‘Qurbani’ every year during ‘Dhul Hijjah’ and subsequently helping in food distribution to struggling and/or third-world countries.</li>
-                                    <li>Providing humanitarian aid for the welfare and wellbeing of children worldwide.</li>
-                                    <li>Assisting in ‘green projects’ (such as planting trees and installing solar panels) for the betterment of our plant and the survival of future generations.</li>
-                                </ul>
+                                <div style={{ color: "white", textAlign: "justify", fontSize: "16px", }}>
+                                    <span style={{ marginTop: "20px" }}>International Response</span>
+                                    <ul style={{ marginTop: "16px" }}>
+                                        <li style={{ marginBottom: "8px" }}>Established a water fund in places such as Africa, Pakistan and Bangladesh.</li>
+                                        <li style={{ marginBottom: "8px" }}>Aiding in the practice of ‘Qurbani’ every year during ‘Dhul Hijjah’ and subsequently helping in food distribution to struggling and/or third-world countries.</li>
+                                        <li style={{ marginBottom: "8px" }}>Providing humanitarian aid for the welfare and wellbeing of children worldwide.</li>
+                                        <li>Assisting in ‘green projects’ (such as planting trees and installing solar panels) for the betterment of our plant and the survival of future generations.</li>
+                                    </ul>
+                                </div>
+                                <a href="https://www.suleymaniyeaid.com/" style={{border: "1px solid", padding: ""}}>Suleymaniye Aid</a>
                             </Row>
-                            <Button className="goButton">Learn More</Button>
                         </Container>
                     </Col>
                 </Row>
