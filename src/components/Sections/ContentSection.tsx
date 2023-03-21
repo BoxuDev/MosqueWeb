@@ -1,7 +1,6 @@
 import "./ContentSection.css";
 import React from 'react';
 import { Container } from "react-bootstrap";
-import testimg from "../../assets/test.jpg";
 
 export const ContentSection = () => {
     return (
@@ -34,7 +33,7 @@ export const ContentSection = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <img src={testimg} alt="Image" className="img-fluid tm-intro-img" style={{
+                            <img src="" alt="Image" className="img-fluid tm-intro-img" style={{
                                 padding: "20px",
                                 borderRadius: "36px"
                             }} />
