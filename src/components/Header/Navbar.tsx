@@ -16,7 +16,7 @@ function MyNavbar() {
         <Navbar bg="#4398c7" className='navbar-settings' expand="lg">
             <Container>
                 <Navbar.Brand>{Icon}</Navbar.Brand>
-                <Navbar.Toggle> <MenuIcon className='navIcon'/></Navbar.Toggle>
+                <Navbar.Toggle><MenuIcon className='navIcon'/></Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" />
                     <Nav>
@@ -32,10 +32,10 @@ function MyNavbar() {
                             <NavDropdown.Item><Link to="/Education">Education</Link></NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Donate">
-                            <NavDropdown.Item href={donateLink}>Zekah</NavDropdown.Item>
-                            <NavDropdown.Item href={donateLink}>Charity</NavDropdown.Item>
-                            <NavDropdown.Item href={donateLink}>Iftar</NavDropdown.Item>
-                            <NavDropdown.Item href={donateLink}>Sacrifice</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Zekah">Zekah</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Charity">Charity</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Iftar">Iftar</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Qurbani">Qurbani</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Other">Other</Link></NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="More">

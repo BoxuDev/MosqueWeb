@@ -11,9 +11,9 @@ export const FooterCom = () => {
                         <span>Get connected with us on social networks: </span>
                     </div>
                     <div>
-                        <a href='www.facebook.com' className='me-4 text-reset'><MDBIcon fab icon="facebook-f" /></a>
-                        <a href='www.twitter.com' className='me-4 text-reset'><MDBIcon fab icon="twitter" /></a>
-                        <a href='www.instagram.com' className='me-4 text-reset'><MDBIcon fab icon="instagram" /></a>
+                        <a href='www.facebook.com' target="_blank" className='me-4 text-reset'><MDBIcon fab icon="facebook-f" /></a>
+                        <a href='www.twitter.com' target="_blank" className='me-4 text-reset'><MDBIcon fab icon="twitter" /></a>
+                        <a href='www.instagram.com' target="_blank" className='me-4 text-reset'><MDBIcon fab icon="instagram" /></a>
                     </div>
                 </section>
                 <section className=''>
