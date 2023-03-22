@@ -19,11 +19,11 @@ const CharityDon = () => {
                                     <p>Sadaqa is charity given voluntarily in order to please God. Sadaqa also describes a voluntary charitable act towards others, whether through generosity, love, compassion or faith. These acts are not necessarily physical or monetary. Simple good deeds such as a smile, or a helping hand, are seen as acts of sadaqa.</p>
                                 </div>
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66KJJM0'>5 -€ (Subscribe)</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66PKB1Z'>10-€ (Subscribe)</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66R0Q2T'>20-€ (Subscribe)</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66TJJDD'>30-€ (Subscribe)</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66Y6MXD'>50-€ (Subscribe)</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66KJJM0'>5  €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66PKB1Z'>10 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66R0Q2T'>20 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66TJJDD'>30 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66Y6MXD'>50 €</a>
                                 </div>
                                 <a className='paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=G9CAQRRMGDQGN'>Paypal</a>
                             </Container>

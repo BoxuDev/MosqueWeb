@@ -8,6 +8,10 @@
 .list>a {
     margin-right: 6px !important;
     border: 1px solid white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px !important;
     padding: 10px !important;
     color: #136833 !important;
     background-color: #caf0d0 !important;
