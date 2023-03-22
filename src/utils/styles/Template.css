@@ -1,11 +1,11 @@
 a {
 	text-decoration: none;
 	transition: all 0.3s ease;
-	color: #38CCCC;
+	color: #136833;
 }
 
 a:hover {
-	color: #30ADAD;
+	color: #136833;
 }
 
 .tm-about-text a {
@@ -54,7 +54,7 @@ a:hover {
 
 .tm-contact-form-container,
 .tm-contact-info {
-	width: 40%;
+	width: 60% !important;
 }
 
 input :focus-visible {
@@ -112,7 +112,6 @@ textarea {
 	color: white;
 }
 
-/* Edge */
 :-ms-input-placeholder {
 	color: white;
 }
@@ -145,20 +144,20 @@ textarea {
 }
 
 .tm-social-link i {
-	color: #99CCCC;
+	color: white;
 	transition: all 0.3s ease;
 }
 
 .tm-social-link:hover i.fa-facebook {
-	color: #3b5998;
+	color: white;
 }
 
 .tm-social-link:hover i.fa-twitter {
-	color: #00acee;
+	color: white;
 }
 
 .tm-social-link:hover i.fa-instagram {
-	color: #3f729b;
+	color: white;
 }
 
 .tm-flex {
@@ -187,6 +186,10 @@ address {
 
 .tm-gallery {
 	margin: -10px;
+}
+
+.tm-text-white {
+	color: white;
 }
 
 .tm-gallery-item {
@@ -219,7 +222,7 @@ address {
 	.tm-contact-form-container,
 	.tm-contact-info,
 	.tm-contact-header {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -267,15 +270,15 @@ address {
 }
 
 .tm-bgcolor-1 {
-	background-color: #F96699;
+	background-color: #136833;
 }
 
 .tm-bgcolor-2 {
-	background-color: #38CCCC;
+	background-color: #136833;
 }
 
 .tm-bgcolor-3 {
-	background-color: #99CCCC;
+	background-color: #136833;
 }
 
 .tm-border-rounded {

@@ -2,7 +2,6 @@ import FacilitiesAvaible from "../components/FacilitiesAvaible/FacilitiesAvaible
 import { HadisSlider } from "../components/HadisSlider/HadisSlider";
 import { ImageSlider } from "../components/ImgSlider/ImageSlider";
 import PrayerTimer from "../components/PrayerTime/PrayerTimer";
-import { ContentSection } from "../components/Sections/ContentSection";
 import { Slider } from "../components/Slider/Slider";
 import React from 'react';
 import { SubscribeEmail } from "../components/SubscribeUpdates/SubscribeUpdates";

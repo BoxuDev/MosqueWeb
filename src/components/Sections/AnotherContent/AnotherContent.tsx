@@ -1,4 +1,4 @@
-import { Button, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import { Container } from "react-bootstrap";
 import "./AnotherContent.css";
 import "../ContentSection.css";
@@ -15,7 +15,7 @@ const AnotherContent = () => {
                         <Container>
                             <Row>
                                 <Col className="title">
-                                    <Container>
+                                    <Container style={{ marginBottom: "20px" }}>
                                         <span className="text-part-one">SULEYMANIYE</span>
                                         <span className="text-part-two">AID</span>
                                     </Container>
@@ -31,7 +31,7 @@ const AnotherContent = () => {
                                         <li>Assisting in ‘green projects’ (such as planting trees and installing solar panels) for the betterment of our plant and the survival of future generations.</li>
                                     </ul>
                                 </div>
-                                <a href="https://www.suleymaniyeaid.com/" style={{border: "1px solid", padding: "16px"}}>Suleymaniye Aid</a>
+                                <a href="https://www.suleymaniyeaid.com/" style={{ border: "1px solid", padding: "16px", marginBottom: "10px" }}>Suleymaniye Aid</a>
                             </Row>
                         </Container>
                     </Col>

@@ -23,7 +23,7 @@ const AboutIslam = () => {
                         marginTop: "20px",
                         borderRadius: "12px",
                         height: "32px",
-                        backgroundColor: "#008696",
+                        backgroundColor: "#136833",
                         padding: "30px",
                         display: "flex",
                         justifyContent: "flex-start",
@@ -39,7 +39,7 @@ const AboutIslam = () => {
                         padding: "20px",
                         fontSize: "16px",
                         textAlign: "justify",
-                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696",
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #136833",
                         marginTop: "20px",
                         marginBottom: "20px"
                     }}>

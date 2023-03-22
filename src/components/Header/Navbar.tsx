@@ -21,8 +21,7 @@ function MyNavbar() {
                     <Nav>
                         <Nav.Link><Link to="/Home">Home</Link></Nav.Link>
                         <Nav.Link href="https://www.suleymaniye.org/earthquakeappeal">Earth Quake</Nav.Link>
-                        <Nav.Link><Link to="/Abouts">About</Link></Nav.Link>
-                        <Nav.Link><Link to="/Contact">Contact</Link></Nav.Link>
+                        <Nav.Link><Link to="/Ramadan">Ramadan</Link></Nav.Link>
                         <Nav.Link><Link to="/PrayerTime">PrayerTime</Link></Nav.Link>
                         <NavDropdown title="Services">
                             <NavDropdown.Item><Link to="/Funeral">Funeral</Link></NavDropdown.Item>
@@ -36,13 +35,12 @@ function MyNavbar() {
                             <NavDropdown.Item href={donateLink}>Charity</NavDropdown.Item>
                             <NavDropdown.Item href={donateLink}>Iftar</NavDropdown.Item>
                             <NavDropdown.Item href={donateLink}>Sacrifice</NavDropdown.Item>
-                            <NavDropdown.Item href={donateLink}>Other</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Other">Other</Link></NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="More">
                             <NavDropdown.Item><Link to="/AboutIslam">About Islam</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/BriefIntroduction">Brief Introduction</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/PrayerIslam">Prayer Islam</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/ZekahCharity">Zekah & Charity</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item>

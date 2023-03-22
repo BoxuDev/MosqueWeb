@@ -9,7 +9,7 @@ export const ContentSection = () => {
                 <div className="container" style={{
                     borderRadius: "36px",
                     overflow: "hidden",
-                    backgroundColor: "#008696",
+                    backgroundColor: "#136833",
                     marginBottom: "15px",
                     marginTop: "15px",
                     minHeight: "350px"
@@ -33,10 +33,15 @@ export const ContentSection = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <img src="" alt="Image" className="img-fluid tm-intro-img" style={{
-                                padding: "20px",
-                                borderRadius: "36px"
-                            }} />
+                            <img
+                                src=""
+                                alt="Image"
+                                className="img-fluid tm-intro-img"
+                                style={{
+                                    padding: "20px",
+                                    borderRadius: "36px"
+                                }}
+                            />
                         </div>
                     </div>
                 </div>

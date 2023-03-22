@@ -40,14 +40,14 @@ const HelalFood = () => {
                                         <p>All our products not just stamped halal, but guaranteed halal via our own cuts.</p>
                                         <p>You can also order some products online..</p>
                                         <br />
-                                        <button className='orderButton'><a href="https://www.akdeniztoros.co.uk/" className='linkOrder'>Order Online</a></button>
+                                        <button className='orderButton'><a href="https://tunafood.com/en/home-page/" target='_blank' className='linkOrder'>Order Online</a></button>
                                         <br />
                                         <span style={{
-                                            color: "#045184",
+                                            color: "white",
                                             fontSize: "25px",
                                             fontFamily: "reklamescriptw00-medium,cursive",
                                             marginBottom: "10px"
-                                        }}>073 4025 9101</span>
+                                        }}>+353 (87) 406 6894</span>
                                         <br /><br />
                                     </div>
                                 </Row>
@@ -57,7 +57,7 @@ const HelalFood = () => {
                 </Container>
             </Container>
             <Container style={{ marginBottom: "30px" }}>
-                <div className="container" style={{ boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696" }}>
+                <div className="container" style={{ boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #136833" }}>
                     <section className="row tm-section">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center ">

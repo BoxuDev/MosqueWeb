@@ -21,7 +21,7 @@ const Education = () => {
                                         <p>Classes are from 16:30 - 18:30 Monday to Friday. Saturday from 10:00 - 14:00</p>
                                         <p>Lessons are from 10:00 to 14:00 during school term holidays. </p>
                                         <p>We also run full time summer school, please phone the number below if you are interested for your children.</p>
-                                        <p>For more details please speak to the imam on 075 4557 1241.</p>
+                                        <p>For more details please speak to the imam on +353 (87) 406 6894.</p>
                                         <button className="eduMoreButton"><a href="http://marathonschool.com/" className='linkMoreB'>Learn More</a></button>
                                     </div>
                                 </Container>
@@ -68,7 +68,7 @@ const Education = () => {
                                     <div style={{ color: "white" }}>
                                         <h1>If you are interested in a Boarding School for your Child (Secondary School)</h1>
                                         <br /> <br />
-                                        <a href='http://marathonschool.com/' style={{ border: "1px solid white", padding: "10px", fontSize: "16px" }}>Go to Marathon School</a>
+                                        <a href='http://marathonschool.com/' target='_blank' style={{ border: "1px solid white", padding: "10px", fontSize: "16px" }}>Go to Marathon School</a>
                                         <br /> <br />
                                         <p>Please get in touch with our Marathon Boys School staff</p>
                                         <br /> <br />
@@ -130,7 +130,7 @@ const Education = () => {
                                         <h1>Islamic education for adults</h1>
                                         <p>For brothers you can get one to one lessons from one of our imam.</p>
                                         <p>For sisters, you can join one of the classes arranged for ladies only.</p>
-                                        <p>Please speak to imam Mustafa 075 4557 1241 for all arrangements.</p>
+                                        <p>Please speak to imam <strong>Tunahan</strong> +353 (87) 406 6894 for all arrangements.</p>
                                     </div>
                                 </Container>
                             </Col>

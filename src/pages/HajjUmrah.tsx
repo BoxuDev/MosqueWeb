@@ -23,12 +23,12 @@ const HajjUmrah = () => {
                         marginTop: "20px",
                         borderRadius: "12px",
                         height: "32px",
-                        backgroundColor: "#008696",
+                        backgroundColor: "#136833",
                         padding: "30px",
                         display: "flex",
                         justifyContent: "flex-start",
                         alignItems: "center",
-                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696"
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #136833"
                     }}>
                         <Link to="/AboutIslam">About Islam&nbsp;&nbsp;&nbsp;</Link>{">"}
                         <span>&nbsp;&nbsp;&nbsp;Hajj & Umrah</span>
@@ -40,7 +40,7 @@ const HajjUmrah = () => {
                         textAlign: "justify",
                         fontSize: "16px",
                         marginTop: "20px",
-                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696",
+                        boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #136833",
                         marginBottom: "20px"
                     }}>
                         <h1 style={{}}>Hajj & Umrah</h1>

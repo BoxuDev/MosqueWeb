@@ -8,9 +8,14 @@
 
 .orderButton:hover {
     color: white !important;
-    background-color: white !important;
+    background-color: #9F2747 !important;
 }
 
 .linkOrder {
     color: white !important;
+}
+
+.linkOrder:hover {
+    color: white !important;
+    background-color: #9F2747 !important;
 }

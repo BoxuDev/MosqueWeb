@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 const PrayerTimer = () => {
-    const uri: string = "https://www-suleymaniye-org.filesusr.com/html/9be301_33a31ba185d27d2b57ff9618f3d66898.html";
+    const uri: string = "https://masjidbox.com/prayer-times/imo-dublin";
 
     return (
         <Container>
@@ -12,12 +12,12 @@ const PrayerTimer = () => {
                 src={uri}
                 style={{
                     width: "100%",
-                    minHeight: "450px",
-                    boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #008696",
+                    minHeight: "550px",
+                    boxShadow: "0 1px 20px 0 gray, 0 1px 20px 0 #136833",
                     borderRadius: "36px",
                     overflow: "hidden",
-                    backgroundColor: "#008696",
-                    marginBottom: "50px",
+                    backgroundColor: "#136833",
+                    marginBottom: "30px",
                     padding: "24px",
                 }}
                 allowFullScreen

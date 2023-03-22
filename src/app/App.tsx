@@ -20,6 +20,8 @@ import Funeral from '../pages/Funeral';
 import HelalFood from '../pages/HelalFood';
 import Merriage from '../pages/Merriage';
 import PrayerIslam from '../pages/PrayerIslam';
+import Ramadan from '../pages/Ramadan';
+import OtherDon from '../pages/Donates/OtherDon';
 
 const { Content } = Layout;
 
@@ -128,6 +130,18 @@ function App() {
         <Route path="/BriefIntroduction">
           <Content>
             <BriefIntroduction />
+          </Content>
+        </Route>
+
+        <Route path="/Ramadan">
+          <Content>
+            <Ramadan />
+          </Content>
+        </Route>
+
+        <Route path="/Donate/Other">
+          <Content>
+            <OtherDon />
           </Content>
         </Route>
 

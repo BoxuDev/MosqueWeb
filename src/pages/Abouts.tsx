@@ -2,24 +2,19 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import '../utils/styles/Template.css';
 
-const frameSource: string = "https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed";
-
 export default function Abouts() {
     return (
         <Container>
             <section className="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
                 <div className="tm-contact-header tm-flex-center">
                     <i className="fas fa-map-pin fa-3x" />
-                    <h2 style={{ color: "#f4eaca" }}>Contact</h2>
+                    <h2 style={{ color: "white" }}>Contact</h2>
                 </div>
                 <div className="tm-contact-info">
-                    <address className="tm-mb-30" style={{ textAlign: "justify", color: "#f4eaca" }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenean posuere eleifend feugiat.
-                        Ut porta at felis rutrum congue.
-                        Nullam nulla arcu, pellentesque quis elit nec, efficitur sagittis massa
+                    <address className="tm-mb-30" style={{ textAlign: "justify", color: "white" }}>
+                        16 Hardwicke Lane, Hardwicke Street, Dublin 1, DO1 Y223
                     </address>
-                    <div className="tm-text-white tm-mb-40">Tel: <a href="tel:0100200340" className="tm-link-white">010-020-0340</a></div>
+                    <div className="tm-text-white tm-mb-40">TEL&nbsp;&nbsp;{'=>'}&nbsp;&nbsp;<a href="tel:+353874066894" className="tm-link-white">+353 (87) 406 6894</a></div>
                     <div className="tm-flex">
                         <a href="https://facebook.com" className="tm-social-link"><i className="fab fa-facebook" /></a>
                         <a href="https://twitter.com" className="tm-social-link"><i className="fab fa-twitter" /></a>
@@ -40,6 +35,7 @@ export default function Abouts() {
 }
 
 export function AboutWithMap() {
+    const frameSource: string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.290179637719!2d-6.264485899999999!3d53.3559615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80a8670e41%3A0xcbbf1b798e3f2e9c!2s16%20Hardwicke%20Ln%2C%20Rotunda%2C%20Dublin%201!5e0!3m2!1str!2sie!4v1679438764521!5m2!1str!2sie";
     return (
         <Container>
             <section className="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">

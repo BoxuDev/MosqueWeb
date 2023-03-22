@@ -51,7 +51,7 @@ const Funeral = () => {
                             <Button
                                 className='buttonVis'
                                 onClick={() => { alert("TAD") }}
-                            >Wisit Funeral WebSite</Button>
+                            ><a href="https://www.suleymaniyefunerals.com/en">Wisit Funeral WebSite</a></Button>
                             <Button className='callBtn'>
                                 Call us today
                                 <i>
@@ -98,8 +98,8 @@ const Funeral = () => {
                         }} gutter={[0, 32]}>
                             <Button
                                 className='buttonVis'
-                                onClick={() => { alert("TAD") }}
-                            >Wisit Funeral WebSite</Button>
+                                onClick={() => { }}
+                            ><a href="https://www.suleymaniyefunerals.com/en">Wisit Funeral WebSite</a></Button>
                             <Button className='callBtn'>
                                 Call us today
                                 <i>
@@ -122,16 +122,16 @@ const Funeral = () => {
                         </Col>
                         <Col className="right">
                             <Container>
-                                <Row>Suleymaniye Islamic Funeral Services</Row>
-                                <Row>London's one of the oldest Muslim funeral service, is based at Suleymaniye Mosque.</Row>
-                                <Row>Since 2000, we have been assisting the Muslim community by arranging and managing the funerals of their loved ones.</Row>
-                                <Row>We can advise on all aspects funeral and burial arrangements, and make any necessary arrangements, including the Janazah (funeral) prayer at here Suleymaniye Mosque.</Row>
-                                <Row>We provide burial service in the UK. Janazah collection, preparing, prayers and burial anywhere in the UK assisted by one our imam.</Row>
-                                <Row>We can repatriate your loved ones to their home country. (Turkey, North Cyprus, Bulgaria and other countries).</Row>
-                                <Row></Row>
-                                <Row></Row>
-                                <Row>
-                                    <Button className='callBtn'>
+                                <div style={{ fontSize: "14px", color: "white", textAlign: "justify" }}>
+                                    <Row style={{ fontSize: "28px", fontWeight: "600", borderBottom: "1px solid" }}>Suleymaniye Islamic Funeral Services</Row>
+                                    <Row style={{ marginTop: "10px" }} >London's one of the oldest Muslim funeral service, is based at Suleymaniye Mosque.</Row>
+                                    <Row style={{ marginTop: "10px" }} >Since 2000, we have been assisting the Muslim community by arranging and managing the funerals of their loved ones.</Row>
+                                    <Row style={{ marginTop: "10px" }} >We can advise on all aspects funeral and burial arrangements, and make any necessary arrangements, including the Janazah (funeral) prayer at here Suleymaniye Mosque.</Row>
+                                    <Row style={{ marginTop: "10px" }} >We provide burial service in the UK. Janazah collection, preparing, prayers and burial anywhere in the UK assisted by one our imam.</Row>
+                                    <Row style={{ marginTop: "10px" }} >We can repatriate your loved ones to their home country. (Turkey, North Cyprus, Bulgaria and other countries).</Row>
+                                </div>
+                                <Row style={{ marginTop: "18px" }}>
+                                    <Button className='callBtn' style={{ marginBottom: "12px" }}>
                                         Call us today
                                         <i>
                                             <svg data-bbox="-0.001 -0.824 512.001 513.653" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 512 512" height="20" data-type="shape">

@@ -53,19 +53,19 @@
 }
 
 .btn-primary {
-    background: #008696;
-    border-color: #008696;
+    background: #136833;
+    border-color: #136833;
 }
 
 .btn-secondary {
-    background: #009999;
-    border-color: #009999;
+    background: #136833;
+    border-color: #136833;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background: #24d4d4;
-    border-color: #24d4d4;
+    background: #136833;
+    border-color: #136833;
 }
 
 .btn-primary:focus,
@@ -75,11 +75,11 @@
 }
 
 .tm-bg-color-primary {
-    background-color: #008696;
+    background-color: #136833;
 }
 
 .tm-bg-color-secondary {
-    background-color: #009999;
+    background-color: #136833;
 }
 
 .tm-bg-color-gray {
@@ -87,7 +87,7 @@
 }
 
 .tm-text-color-primary {
-    color: #008696;
+    color: #136833;
 }
 
 .tm-text-color-white {
@@ -107,19 +107,15 @@
 }
 
 .form-control::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #666666;
     opacity: 1;
-    /* Firefox */
 }
 
 .form-control:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: #666666;
 }
 
 .form-control::-ms-input-placeholder {
-    /* Microsoft Edge */
     color: #666666;
 }
 
@@ -133,7 +129,7 @@
 }
 
 .tm-pricing-table {
-    border: 1px solid #009999;
+    border: 1px solid #136833;
     width: 100%;
     max-width: 340px;
 }
@@ -177,14 +173,6 @@
     margin: 0 auto;
 }
 
-.tm-contact-form {
-    padding: 68px;
-    background: white;
-    margin-top: -56px;
-    position: relative;
-    z-index: 900;
-}
-
 .form-control {
     color: #666;
     font-size: 1.2rem;
@@ -216,8 +204,6 @@
     font-size: 1rem;
 }
 
-/* Loader */
-
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -238,12 +224,8 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
-
     -webkit-animation: spin 2s linear infinite;
-    /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite;
-    /* Chrome, Firefox 16+, IE 10+, Opera */
-
     z-index: 1001;
 }
 
@@ -257,11 +239,8 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #e74c3c;
-
     -webkit-animation: spin 3s linear infinite;
-    /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 3s linear infinite;
-    /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 #loader:after {
@@ -274,11 +253,8 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #f9c922;
-
     -webkit-animation: spin 1.5s linear infinite;
-    /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite;
-    /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 #loader-wrapper .loader-section {
@@ -289,11 +265,8 @@
     background: #222222;
     z-index: 1000;
     -webkit-transform: translateX(0);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(0);
-    /* IE 9 */
     transform: translateX(0);
-    /* Firefox 16+, IE 10+, Opera */
 }
 
 #loader-wrapper .loader-section.section-left {
@@ -304,27 +277,18 @@
     right: 0;
 }
 
-/* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(-100%);
-    /* IE 9 */
     transform: translateX(-100%);
-    /* Firefox 16+, IE 10+, Opera */
-
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);
-    /* IE 9 */
     transform: translateX(100%);
-    /* Firefox 16+, IE 10+, Opera */
-
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
@@ -337,19 +301,13 @@
 
 .loaded #loader-wrapper {
     visibility: hidden;
-
     -webkit-transform: translateY(-100%);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(-100%);
-    /* IE 9 */
     transform: translateY(-100%);
-    /* Firefox 16+, IE 10+, Opera */
-
     -webkit-transition: all 0.3s 1s ease-out;
     transition: all 0.3s 1s ease-out;
 }
 
-/* JavaScript Turned Off */
 .no-js #loader-wrapper {
     display: none;
 }

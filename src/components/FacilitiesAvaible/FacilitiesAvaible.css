@@ -1,14 +1,14 @@
 .cont-class {
     border-radius: 36px !important;
     overflow: hidden;
-    box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #008696;
-    background-color: #008696;
+    box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #136833;
+    background-color: #136833;
     margin-bottom: 50px;
     padding: 15px;
 }
 
 .cont-div {
-    background-color: #008696;
+    background-color: #136833;
     color: white;
     height: 100%;
 }
