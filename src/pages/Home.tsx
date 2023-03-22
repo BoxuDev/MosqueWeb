@@ -16,7 +16,7 @@ function Home() {
             <FacilitiesAvaible />
             <HadisSlider />
             <AnotherContent />
-            <SubscribeEmail />
+            {/* <SubscribeEmail /> */}
         </>
     );
 }

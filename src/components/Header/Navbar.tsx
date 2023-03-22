@@ -6,10 +6,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
 import { Link } from "react-router-dom";
 import { NavDropdown } from 'react-bootstrap';
+import logo from '../../assets/logo.png'
 
 function MyNavbar() {
     const donateLink: string = 'https://www.paypal.com/donate/?hosted_button_id=G9CAQRRMGDQGN';
-    const Icon: ReactNode = <img src="https://static.wixstatic.com/media/9be301_e949f111d61b49eea05d8aa924d41b73~mv2.png/v1/fill/w_150,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/beyaz%20yatay%20logo%20suleymaniye.png" />;
+    const Icon: ReactNode = <img src={logo} width={128}/>;
 
     return (
         <Navbar bg="#4398c7" className='navbar-settings' expand="lg">
