@@ -21,12 +21,11 @@ function MyNavbar() {
                     <Nav className="me-auto" />
                     <Nav>
                         <Nav.Link><Link to="/Home">Home</Link></Nav.Link>
-                        <Nav.Link href="https://www.suleymaniye.org/earthquakeappeal">Earth Quake</Nav.Link>
                         <Nav.Link><Link to="/Ramadan">Ramadan</Link></Nav.Link>
                         <Nav.Link><Link to="/PrayerTime">PrayerTime</Link></Nav.Link>
-                        <NavDropdown title="Services">
-                            <NavDropdown.Item><Link to="/Funeral">Funeral</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/Merriage">Merriage</Link></NavDropdown.Item>
+                        <NavDropdown title="Imam Services">
+                            <NavDropdown.Item><Link to="/Chaplaincy">Chaplaincy</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Merriage">Marriage</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/HelalFood">Helal Food</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Education">Education</Link></NavDropdown.Item>
@@ -38,7 +37,7 @@ function MyNavbar() {
                             <NavDropdown.Item><Link to="/Donate/Qurbani">Qurbani</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Other">Other</Link></NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="More">
+                        <NavDropdown title="About Islam">
                             <NavDropdown.Item><Link to="/AboutIslam">About Islam</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/BriefIntroduction">Brief Introduction</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/PrayerIslam">Prayer Islam</Link></NavDropdown.Item>

@@ -15,7 +15,7 @@ const CharityDon = () => {
                         <Col className="right">
                             <Container>
                                 <div className='top-side' style={{ marginBottom: "20px" }}>
-                                    <h1>Charity</h1>
+                                    <h1>Sadaqa</h1>
                                     <p>Sadaqa is charity given voluntarily in order to please God. Sadaqa also describes a voluntary charitable act towards others, whether through generosity, love, compassion or faith. These acts are not necessarily physical or monetary. Simple good deeds such as a smile, or a helping hand, are seen as acts of sadaqa.</p>
                                 </div>
                                 <div className='list'>

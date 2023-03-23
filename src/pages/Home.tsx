@@ -13,9 +13,9 @@ function Home() {
             <Slider />
             <PrayerTimer />
             <ImageSlider />
-            <FacilitiesAvaible />
+            {/* <FacilitiesAvaible /> */}
             <HadisSlider />
-            <AnotherContent />
+            {/* <AnotherContent /> */}
             {/* <SubscribeEmail /> */}
         </>
     );

@@ -16,9 +16,9 @@ import PrayerTime from '../pages/PrayerTime';
 import BriefIntroduction from '../pages/BriefIntroduction';
 import EarthQuake from '../pages/EarthQuake';
 import Education from '../pages/Education';
-import Funeral from '../pages/Funeral';
+import Chaplaincy from '../pages/Chaplaincy';
 import HelalFood from '../pages/HelalFood';
-import Merriage from '../pages/Merriage';
+import Marriage from '../pages/Marriage';
 import PrayerIslam from '../pages/PrayerIslam';
 import Ramadan from '../pages/Ramadan';
 import OtherDon from '../pages/Donates/OtherDon';
@@ -113,15 +113,15 @@ function App() {
           </Content>
         </Route>
 
-        <Route path="/Funeral">
+        <Route path="/Chaplaincy">
           <Content>
-            <Funeral />
+            <Chaplaincy />
           </Content>
         </Route>
 
         <Route path="/Merriage">
           <Content>
-            <Merriage />
+            <Marriage />
           </Content>
         </Route>
 

@@ -16,7 +16,7 @@ const HelalFood = () => {
                 <Container className="cont-another" style={{ marginBottom: "50px" }}>
                     <Row className="group" style={{ borderRadius: "20px", overflow: "hidden" }}>
                         <Col className="left">
-                            <img src={b2} alt="" />
+                            <img src={b2} />
                         </Col>
                         <Col className="right">
                             <Container>
@@ -61,18 +61,16 @@ const HelalFood = () => {
                     <section className="row tm-section">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center ">
-                                <img src={b1} alt="" style={{ objectFit: "fill" }} />
+                                <img src={b1} style={{ objectFit: "fill" }} />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div className="tm-flex-center p-5" style={{ textAlign: "justify" }}>
-                                <img src="" alt="" />
                                 <h1>Fresh Lamb Products</h1>
                                 <p>All our products not just stamped halal, but guaranteed halal via our own cuts.</p>
                             </div>
                         </div>
                     </section>
-
                     <section className="row tm-section tm-col-md-reverse">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div className="tm-flex-center p-5">
@@ -88,16 +86,15 @@ const HelalFood = () => {
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center p-5 tm-bg-color-primary">
                                 <div className="tm-max-w-400 tm-flex-center tm-flex-col">
-                                    <img src={b5} alt="" />
+                                    <img src={b5} />
                                 </div>
                             </div>
                         </div>
                     </section>
-
                     <section className="row tm-section">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center p-5 tm-bg-color-primary tm-section-min-h">
-                                <img src={b4} alt="" />
+                                <img src={b4}/>
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -109,7 +106,6 @@ const HelalFood = () => {
                             </div>
                         </div>
                     </section>
-
                     <section className="row tm-section tm-col-md-reverse">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div className="tm-flex-center p-5">
@@ -121,12 +117,11 @@ const HelalFood = () => {
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center p-5 tm-bg-color-primary">
                                 <div className="tm-max-w-400 tm-flex-center tm-flex-col">
-                                    <img src={b3} alt="" />
+                                    <img src={b3}/>
                                 </div>
                             </div>
                         </div>
                     </section>
-
                 </div>
             </Container>
         </>
