@@ -1,7 +1,7 @@
 import { Col, Row } from 'antd';
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import './ZekahDon.css';
+import './ZakahDon.css';
 
 const IftarDon = () => {
     return (
@@ -17,15 +17,12 @@ const IftarDon = () => {
                                 <div className='top-side' style={{ marginBottom: "20px" }}>
                                     <h1>IFTAR</h1>
                                     <p>The Prophet (saw) said, ‘Whoever feeds a person breaking his fast will earn the same reward as him, without anything being lessened from the reward of the fasting person’. [Tirmidhi]</p>
+                                    <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66KJJM0'>5  €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66PKB1Z'>10 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66R0Q2T'>20 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66TJJDD'>30 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://pay.gocardless.com/AL0005N66Y6MXD'>50 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>50 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>100 €</a>
                                 </div>
-                                <a className='paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=G9CAQRRMGDQGN'>Paypal</a>
                             </Container>
                         </Col>
                     </Row>

@@ -18,22 +18,22 @@ export const Slider = () => {
                 className='cont'
                 effect='scrollx'
             >
-             
-             
                 <div>
-                    <div style={{
-                        backgroundImage: `url(${marr})`,
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                        height: "500px",
-                        display: "flex",
-                        justifyContent: "flex-start",
-                        alignItems: "center",
-                        flexDirection: "column",
-                        borderRadius: "18px",
-                        marginTop: "20px"
-                    }}>
+                    Islam in Ireland
+                    https://en.wikipedia.org/wiki/Islam_in_the_Republic_of_Ireland
+
+                </div>
+                <div>
+                    Croke Park Muslim Eid
+                    https://www.irishtimes.com/ireland/2022/07/09/eid-celebrations-at-croke-park-we-can-celebrate-our-irish-muslim-identity-in-the-most-iconic-irish-venue/
+                </div>
+                <div>
+                    Discover Ireland
+                    https://www.discoverireland.ie/
+                </div>
+
+                <div>
+                    <div style={{backgroundImage: `url(${marr})`}} className='slider-content-main'>
                         <Row style={{
                             color: "#136833",
                             fontSize: "36px",

@@ -32,19 +32,19 @@ function MyNavbar() {
                         </NavDropdown>
                         <NavDropdown title="Donate">
                             <NavDropdown.Item><Link to="/Donate/Zekah">Zekah</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/Donate/Charity">Charity</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Charity">Sadaqa</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Iftar">Iftar</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Qurbani">Qurbani</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Other">Other</Link></NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="About Islam">
-                            <NavDropdown.Item><Link to="/AboutIslam">About Islam</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/AboutIslam">Islam</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/BriefIntroduction">Brief Introduction</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/PrayerIslam">Prayer Islam</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/ZekahCharity">Zekah & Charity</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/Contact">Contact</Link></NavDropdown.Item>
+                            {/* <NavDropdown.Item><Link to="/ZekahCharity">Zekah & Charity</Link></NavDropdown.Item> */}
+                            {/* <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item> */}
+                            {/* <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item> */}
+                            {/* <NavDropdown.Item><Link to="/Contact">Contact</Link></NavDropdown.Item> */}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

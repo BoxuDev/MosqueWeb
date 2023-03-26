@@ -63,7 +63,7 @@ const Ramadan = () => {
                                                 />
                                             </svg>
                                         </i>
-                                        <Link to="../assets/Files/imsakiye.jpg" target="_blank" download>Download Imsakiye JPG | For Mobile</Link>
+                                        <Link to="..\assets\Files\imsakiye.pdf" target="_blank" download>Download Imsakiye JPG | For Mobile</Link>
                                     </div>
                                 </Row>
                             </Container>

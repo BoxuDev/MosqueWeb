@@ -15,17 +15,11 @@ const OtherDon = () => {
                         <Col className="right">
                             <Container>
                                 <div className='top-side'>
-                                    <h1>Donate</h1>
-                                    <p>Rasulullah (s.a.w) said:
-                                        Allah Ta’ala has made Sadaqa Fitr Wajib, in order to purify the faster from pointless, useless and foul words and to feed the poor and needy. Whoever gives their Sadaqa Fitr before Salat on Eid day, then that will be an accepted Fitra. However, if they give after the prayer on Eid day, then it would be counted as a normal donation.”</p>
+                                    <h1>Donate Us</h1>
+                                    <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='links'>
-                                    <a className='don-link' target='_blank' href='https://pay.gocardless.com/AL0005N66KJJM0'>5  € (Subscribe)</a>
-                                    <a className='don-link' target='_blank' href='https://pay.gocardless.com/AL0005N66PKB1Z'>10 € (Subscribe)</a>
-                                    <a className='don-link' target='_blank' href='https://pay.gocardless.com/AL0005N66R0Q2T'>20 € (Subscribe)</a>
-                                    <a className='don-link' target='_blank' href='https://pay.gocardless.com/AL0005N66TJJDD'>30 € (Subscribe)</a>
-                                    <a className='don-link' target='_blank' href='https://pay.gocardless.com/AL0005N66Y6MXD'>50 € (Subscribe)</a>
-                                    <a className='don-link paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=G9CAQRRMGDQGN'>Paypal</a>
+                                    <a className='don-link paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>PayPal</a>
                                 </div>
                             </Container>
                         </Col>

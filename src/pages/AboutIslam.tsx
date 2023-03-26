@@ -51,7 +51,6 @@ const AboutIslam = () => {
                             Prayers more familiar to other religions are the supplications a Muslim makes to God – known as Dua. These can be your own words, or some of the beautiful supplications mentioned in the Qur'an or made by Prophet Muhammad (Peace be upon him).</p>
                         <p>There are so many benefits in performing regular prayers. Prophet Muhammad (Peace be upon him) said, “If there was a river at your door and you took a bath in it five times a day, would you notice any dirt on you?” They said, “Not a trace of dirt would be left.” The Prophet said, “That is the parable of the five prayers by which Allah removes sins.”</p>
                         <br /><br />
-                        <h1 style={{}}>Prayers</h1>
                         <p>The Suleymaniye Mosque Mosque is open every day of the year for people to use our prayer facilities, including all five daily prayers, and the special prayers for Ramadan and Eid. The prayer halls are accessible from 10am, and close about half an hour after the last prayer of the day, ‘Isha. The main prayer hall is also open for Fajr, the morning prayer.
                             Congregational prayers
                             We hold congregational prayers at specific times, which you can find in our prayer timetable. There’s a more detailed explanation of our prayer times here. These prayers typically take 10–15 minutes.</p>

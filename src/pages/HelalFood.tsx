@@ -40,11 +40,10 @@ const HelalFood = () => {
                                         <p>All our products not just stamped halal, but guaranteed halal via our own cuts.</p>
                                         <p>You can also order some products online..</p>
                                         <br />
-                                        <button className='orderButton'><a href="https://tunafood.com/en/home-page/" target='_blank' className='linkOrder'>Order Online</a></button>
-                                        <br />
+                                        <h3 >torosdublin@gmail.com</h3>
                                         <span style={{
                                             color: "white",
-                                            fontSize: "25px",
+                                            fontSize: "20px",
                                             fontFamily: "reklamescriptw00-medium,cursive",
                                             marginBottom: "10px"
                                         }}>+353 (87) 406 6894</span>

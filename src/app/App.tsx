@@ -22,9 +22,9 @@ import Marriage from '../pages/Marriage';
 import PrayerIslam from '../pages/PrayerIslam';
 import Ramadan from '../pages/Ramadan';
 import OtherDon from '../pages/Donates/OtherDon';
-import ZekahDon from '../pages/Donates/ZekahDon';
+import ZakahDon from '../pages/Donates/ZakahDon';
 import IftarDon from '../pages/Donates/IftarDon';
-import CharityDon from '../pages/Donates/CharityDon';
+import SadaqaDon from '../pages/Donates/SadaqaDon';
 import QurbaniDon from '../pages/Donates/QurbaniDon';
 
 const { Content } = Layout;
@@ -151,13 +151,13 @@ function App() {
 
         <Route path="/Donate/Zekah">
           <Content>
-            <ZekahDon />
+            <ZakahDon />
           </Content>
         </Route>
 
         <Route path="/Donate/Charity">
           <Content>
-            <CharityDon />
+            <SadaqaDon />
           </Content>
         </Route>
 

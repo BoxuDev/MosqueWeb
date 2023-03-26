@@ -26,3 +26,15 @@
 .slick-slider .cont .slick-initialized {
     margin: 0 !important;
 }
+
+.slider-content-main {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 18px;
+}
