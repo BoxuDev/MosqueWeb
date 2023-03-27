@@ -1,7 +1,6 @@
 import { Row, Col } from 'antd';
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from "react-router-dom";
 import b1 from '../assets/Buthcer/Butcher (1).webp';
 import b2 from '../assets/Buthcer/Butcher (2).webp';
 import b3 from '../assets/Buthcer/Butcher (3).webp';

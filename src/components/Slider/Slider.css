@@ -38,3 +38,24 @@
     flex-direction: column;
     border-radius: 18px;
 }
+
+.row-title {
+    color: #136833;
+    font-size: 36px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+    margin-top: 36px;
+    font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+    font-weight: 700;
+    letter-spacing: "-0.02em";
+}
+
+.row-content-main {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 550;
+    background-color: #136833;
+    padding: 8px;
+    color: white;
+}

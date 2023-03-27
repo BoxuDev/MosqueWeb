@@ -1,12 +1,36 @@
 import { Col, Row } from 'antd';
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from "react-router-dom";
 import img from "../assets/Files/imsak.jpg"
+import { Link } from "react-router-dom";
+import ramadan from "../assets/Files/ramadanmain.webp"
+import iftar from '../assets/Ramadan/iftar.webp';
+import sadaqa from '../assets/Ramadan/sadaqafitra.webp';
+import zakah from '../assets/AboutIslam/zekah_charity.webp'
+import './Ramadan.css';
 
 const Ramadan = () => {
     return (
         <>
+            <div style={{
+                backgroundImage: `url("${ramadan}")`,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                height: "800px",
+                flexDirection: "column",
+                borderRadius: "18px",
+            }}>
+                <div style={{ backgroundColor: "#136833", padding: "20px", borderRadius: "16px" }}>
+                    <h1 style={{ fontSize: "50px", color: "white", fontWeight: "800", fontFamily: "tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif", letterSpacing: "0.01em" }}>Ramadan</h1>
+                    <br />
+                    <h1 style={{ fontSize: "50px", color: "white", fontWeight: "800", fontFamily: "tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif", letterSpacing: "0.01em" }}>Kareem</h1>
+                </div>
+            </div>
+
             <Container>
                 <Container className="cont-another" style={{ marginBottom: "50px" }}>
                     <Row className="group" style={{ borderRadius: "20px", overflow: "hidden" }}>
@@ -37,7 +61,7 @@ const Ramadan = () => {
                                                 />
                                             </svg>
                                         </i>
-                                        <Link to="../assets/Files/imsakiye.pdf" target="_blank" style={{ fontSize: "16px" }} download>Download Imsakiye PDF</Link>
+                                        <a href={require("../assets/Files/imsakiye.pdf")} style={{ fontSize: "16px" }} download='imsakiye'>Download Imsakiye PDF</a>
                                     </div>
                                 </Row>
                                 <br /><br /><br />
@@ -63,7 +87,7 @@ const Ramadan = () => {
                                                 />
                                             </svg>
                                         </i>
-                                        <Link to="..\assets\Files\imsakiye.pdf" target="_blank" download>Download Imsakiye JPG | For Mobile</Link>
+                                        <a href={img} target="_blank" download='imsakiye'>Download Imsakiye JPG | For Mobile</a>
                                     </div>
                                 </Row>
                             </Container>
@@ -72,8 +96,100 @@ const Ramadan = () => {
                 </Container>
             </Container>
 
+            <Container>
+                <Container className="cont-another" style={{ marginBottom: "50px" }}>
+                    <Row className="group" style={{ borderRadius: "20px", overflow: "hidden" }}>
+                        <Col className="left">
+                            <img src={sadaqa} />
+                        </Col>
+                        <Col className="right">
+                            <Container>
+                                <Row>
+                                    <h1 className='title-ramadan'>Sadaqa Fıtra</h1>
+                                    <p className='paragraph-ramadan'>Rasulullah (s.a.w) said: Allah Ta’ala has made Sadaqa Fitr Wajib, in order to purify the faster from pointless, useless and foul words and to feed the poor and needy. Whoever gives their Sadaqa Fitr before Salat on Eid day, then that will be an accepted Fitra. However, if they give after the prayer on Eid day, then it would be counted as a normal donation.” </p>
+                                </Row>
+                                <Row>
+                                    <Link
+                                        to="/Donate/Charity"
+                                        className='donate-go-link'
+                                        style={{
+                                            border: "1px solid",
+                                            padding: "16px",
+                                            marginBottom: "10px",
+                                            marginTop: "20px"
+                                        }}>DONATE NOW</Link>
+                                </Row>
+                            </Container>
+                        </Col>
+                    </Row>
+                </Container>
+            </Container>
 
 
+            <Container>
+                <Container className="cont-another" style={{ marginBottom: "50px" }}>
+                    <Row className="group" style={{ borderRadius: "20px", overflow: "hidden" }}>
+                        <Col className="left">
+                            <img src={iftar} />
+                        </Col>
+                        <Col className="right">
+                            <Container>
+                                <Row>
+                                    <h1 className='title-ramadan'>Iftar</h1>
+                                    <div>
+                                        <p className='paragraph-ramadan'>Would you give iftar/suhur to Quran students. </p>
+                                        <p className='paragraph-ramadan'>The Prophet (saw) said, ‘Whoever feeds a person breaking his fast will earn the same reward as him, without anything being lessened from the reward of the fasting person’. [Tirmidhi]</p>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <Link
+                                        to="/Donate/Iftar"
+                                        className='donate-go-link'
+                                        style={{
+                                            border: "1px solid",
+                                            padding: "16px",
+                                            marginBottom: "10px",
+                                            marginTop: "20px"
+                                        }}>DONATE NOW</Link>
+                                </Row>
+                            </Container>
+                        </Col>
+                    </Row>
+                </Container>
+            </Container>
+
+            <Container>
+                <Container className="cont-another" style={{ marginBottom: "50px" }}>
+                    <Row className="group" style={{ borderRadius: "20px", overflow: "hidden" }}>
+                        <Col className="left">
+                            <img src={zakah} />
+                        </Col>
+                        <Col className="right">
+                            <Container>
+                                <Row>
+                                    <div style={{ display: "flex", flexDirection: "column" }}>
+                                        <h1 className='title-ramadan'>Zakah</h1>
+                                        <br />
+                                        <p className='paragraph-ramadan'>All you need to fulfil fourth pillar</p>
+                                        <p className='paragraph-ramadan'>Zakat Info | Zakat Calculator | Pay you Zakat</p>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <Link
+                                        to="/Donate/Zekah"
+                                        className='donate-go-link'
+                                        style={{
+                                            border: "1px solid",
+                                            padding: "16px",
+                                            marginBottom: "10px",
+                                            marginTop: "20px"
+                                        }}>DONATE NOW</Link>
+                                </Row>
+                            </Container>
+                        </Col>
+                    </Row>
+                </Container>
+            </Container>
 
         </>
     );

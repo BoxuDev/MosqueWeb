@@ -1,0 +1,16 @@
+.donate-go-link:hover {
+    background-color: white;
+    color: #136833 !important;
+}
+
+.title-ramadan {
+    font-size: 41px;
+    line-height: 1.88em;
+    text-align: center;
+    color: white
+}
+
+.paragraph-ramadan {
+    color: white;
+    text-align: justify;
+}

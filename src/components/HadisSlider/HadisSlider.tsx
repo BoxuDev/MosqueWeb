@@ -38,7 +38,7 @@ export const HadisSlider = () => {
             <Container className='cont-hadith'>
                 <Carousel
                     autoplay
-                    autoplaySpeed={10000}
+                    autoplaySpeed={3500}
                     nextArrow={<ArrowRight />}
                     prevArrow={<ArrowLeft />}
                     effect="scrollx"

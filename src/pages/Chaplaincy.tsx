@@ -19,8 +19,7 @@ const Chaplaincy = () => {
                         justifyContent: "flex-start",
                         alignItems: "center",
                         flexDirection: "column",
-                        borderRadius: "18px",
-                        marginTop: "20px"
+                        borderRadius: "18px"
                     }}>
                         <br />
                         <Row style={{
