@@ -22,8 +22,8 @@ const QurbaniDon = () => {
                                 </div>
                                 
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=K6XANNTN9PWYA' style={{}}>Vajib Qurbani <br/> 130 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=66NPL6A3EM4F8' style={{minWidth: "140px"}}>Nafilah Qurbani <br/>  140 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=K6XANNTN9PWYA' style={{}}>Vajib Qurbani <br/> 130 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=66NPL6A3EM4F8' style={{minWidth: "140px"}}>Nafilah Qurbani <br/>  140 €</a>
                                 </div>
                             </Container>
                         </Col>

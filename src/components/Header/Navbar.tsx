@@ -9,8 +9,7 @@ import { NavDropdown } from 'react-bootstrap';
 import logo from '../../assets/logo.png'
 
 function MyNavbar() {
-    const donateLink: string = 'https://www.paypal.com/donate/?hosted_button_id=G9CAQRRMGDQGN';
-    const Icon: ReactNode = <img src={logo} width={128}/>;
+    const Icon: ReactNode = <img src={logo} width={128} alt='navbar_suleymaniye' />;
 
     return (
         <Navbar bg="#4398c7" className='navbar-settings' expand="lg">
@@ -41,10 +40,6 @@ function MyNavbar() {
                             <NavDropdown.Item><Link to="/AboutIslam">Islam</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/BriefIntroduction">Brief Introduction</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/PrayerIslam">Prayer Islam</Link></NavDropdown.Item>
-                            {/* <NavDropdown.Item><Link to="/ZekahCharity">Zekah & Charity</Link></NavDropdown.Item> */}
-                            {/* <NavDropdown.Item><Link to="/HajjUmrah">Hajj & Umrah</Link></NavDropdown.Item> */}
-                            {/* <NavDropdown.Item><Link to="/FastingRamadan">Fasting & Ramadan</Link></NavDropdown.Item> */}
-                            {/* <NavDropdown.Item><Link to="/Contact">Contact</Link></NavDropdown.Item> */}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

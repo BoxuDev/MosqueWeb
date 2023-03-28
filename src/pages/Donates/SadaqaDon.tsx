@@ -10,7 +10,7 @@ const SadaqaDon = () => {
                 <Container className="cont-another" style={{ marginBottom: "50px" }}>
                     <Row className="group" style={{ borderRadius: "20px", overflow: "hidden" }}>
                         <Col className="left">
-                            <img src="https://static.wixstatic.com/media/9be301_4fbbe1d29083454bacb6de40e364226d~mv2.jpeg/v1/fill/w_490,h_406,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9be301_4fbbe1d29083454bacb6de40e364226d~mv2.jpeg" alt="" />
+                            <img src="https://static.wixstatic.com/media/9be301_4fbbe1d29083454bacb6de40e364226d~mv2.jpeg/v1/fill/w_490,h_406,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9be301_4fbbe1d29083454bacb6de40e364226d~mv2.jpeg" alt="sadaqa" />
                         </Col>
                         <Col className="right">
                             <Container>
@@ -20,13 +20,13 @@ const SadaqaDon = () => {
                                     <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=59VYZZXVA3Z5E'>5  €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=PPUWTHJF9YXGW'>10 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=3XYZLR2BNDYFN'>20 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=2WKEBQV9EYS94'>30 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=EW5GJKGVU7ECA'>50 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=59VYZZXVA3Z5E'>5  €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=PPUWTHJF9YXGW'>10 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=3XYZLR2BNDYFN'>20 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=2WKEBQV9EYS94'>30 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=EW5GJKGVU7ECA'>50 €</a>
                                 </div>
-                                <a className='paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Paypal</a>
+                                <a className='paypal' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Paypal</a>
                             </Container>
                         </Col>
                     </Row>
