@@ -149,13 +149,13 @@ function App() {
           </Content>
         </Route>
 
-        <Route path="/Donate/Zekah">
+        <Route path="/Donate/Zakah">
           <Content>
             <ZakahDon />
           </Content>
         </Route>
 
-        <Route path="/Donate/Charity">
+        <Route path="/Donate/Sadaqa">
           <Content>
             <SadaqaDon />
           </Content>

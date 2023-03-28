@@ -20,8 +20,8 @@ const IftarDon = () => {
                                     <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>50 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>100 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=GVBX2CFU6URTJ'>50 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=EVDQVU55C2RYQ'>100 €</a>
                                 </div>
                             </Container>
                         </Col>

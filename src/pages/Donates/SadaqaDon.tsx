@@ -20,11 +20,11 @@ const SadaqaDon = () => {
                                     <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>5  €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>10 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>20 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>30 €</a>
-                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>50 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=59VYZZXVA3Z5E'>5  €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=PPUWTHJF9YXGW'>10 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=3XYZLR2BNDYFN'>20 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=2WKEBQV9EYS94'>30 €</a>
+                                    <a className='zekah-gc-link' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=EW5GJKGVU7ECA'>50 €</a>
                                 </div>
                                 <a className='paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Paypal</a>
                             </Container>

@@ -31,8 +31,8 @@ function MyNavbar() {
                             <NavDropdown.Item><Link to="/Education">Education</Link></NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Donate">
-                            <NavDropdown.Item><Link to="/Donate/Zekah">Zekah</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/Donate/Charity">Sadaqa</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Zakah">Zakah</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/Donate/Sadaqa">Sadaqa</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Iftar">Iftar</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Qurbani">Qurbani</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to="/Donate/Other">Other</Link></NavDropdown.Item>
