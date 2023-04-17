@@ -11,7 +11,7 @@ function Home() {
     return (
         <>
             <Slider />
-            <PrayerTimer />
+            {/* <PrayerTimer /> */}
             <ImageSlider />
             {/* <FacilitiesAvaible /> */}
             <HadisSlider />
