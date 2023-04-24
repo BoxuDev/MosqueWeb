@@ -29,9 +29,7 @@ export const FooterCom = () => {
                                 <p><Link to='/PrayerIslam' className='text-reset'>Salah</Link></p>
                                 <p><Link to='/ZekahCharity' className='text-reset'>Zekah</Link></p>
                                 <p><Link to='/HajjUmrah' className='text-reset'>Hajj</Link></p>
-                                <p><a href='https://www.suleymaniye.org/earthquakeappeal' target='_blank' className='text-reset'>Earth Quake</a></p>
                                 <p><a href='https://www.suleymaniyeaid.com/' target='_blank' className='text-reset'>Suleymaniye Aid</a></p>
-                                <p><a href='https://marathonschool.com/' target='_blank' className='text-reset'>Marathon School</a></p>
                             </MDBCol>
                             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
