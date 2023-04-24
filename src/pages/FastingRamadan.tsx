@@ -60,7 +60,7 @@ const FastingRamadan = () => {
                         <br />
                         <p>Fasting is a virtuous act of worship, compulsory (with some exceptions) during the month of Ramadan, and optional at other times. Muslims fast by abstaining from food, drink and sexual relations from dawn to sunset.</p>
                         <p>There are many benefits to fasting, as it also requires us to make the effort to give up bad habits, such as harsh speech, and to think about the food we eat. It is a time to become more conscious of our Creator, and to try and become a better person.</p>
-                        <p>In Ramadan, our sense of community increases, as does our attention to worship. Here at the Suleymaniye Mosque London, congregations increase during this month. Every day over 300 people come to the mosque to break fast together.</p>
+                        <p>In Ramadan, our sense of community increases, as does our attention to worship. Here at theSultanmecid masjid, Dublin, congregations increase during this month. Every day over 300 people come to the mosque to break fast together.</p>
                         <p>There is more to the month of Ramadan than fasting. There a special, optional prayers in the evening after the last of the compulsory prayers, known as Tarawih. In our mosque they last about two hours, and are led by Imams who recite the Qur’an very beautifully. Yet even though they are not compulsory, and come at the end of a long day of fasting, still thousands attend our mosque, and other mosques, every single night.</p>
                     </div>
                 </Container>

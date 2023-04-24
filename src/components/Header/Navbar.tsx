@@ -9,7 +9,7 @@ import { NavDropdown } from 'react-bootstrap';
 import logo from '../../assets/logo.png'
 
 function MyNavbar() {
-    const Icon: ReactNode = <img src={logo} width={128} alt='navbar_suleymaniye' />;
+    const Icon: ReactNode = <img src={logo} width={128} />;
 
     return (
         <Navbar bg="#4398c7" className='navbar-settings' expand="lg">

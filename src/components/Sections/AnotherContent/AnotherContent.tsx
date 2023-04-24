@@ -16,8 +16,8 @@ const AnotherContent = () => {
                             <Row>
                                 <Col className="title">
                                     <Container style={{ marginBottom: "20px" }}>
-                                        <span className="text-part-one">SULEYMANIYE</span>
-                                        <span className="text-part-two">AID</span>
+                                        <span className="text-part-one">DUBLIN</span>
+                                        <span className="text-part-two">MESCID</span>
                                     </Container>
                                 </Col>
                             </Row>

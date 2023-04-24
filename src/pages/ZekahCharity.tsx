@@ -48,8 +48,8 @@ const ZekahCharity = () => {
                         <span>The Qur'an, chapter 9, verse 60</span>
                         <p>At the core of Islam is the duty to look after the poor and needy. Zakah is a compulsory act or worship, the giving of a portion of one's wealth to those in the greatest need. It can only be spent on those mentioned in the above verse of the Qur'an; it cannot, for example, be used for other virtuous causes, such as building mosques.</p>
                         <p>The paying of Zakah is not seen as a burden, rather a blessing because it means Allah has been generous in giving us enough wealth; people below a certain level of wealth do not pay Zakah.</p>
-                        <p>The Suleymaniye Mosque London can collect and distribute Zakah.</p>
-                        <p>Zakah is not charity; charity (also known as Sadaqah in Islam) is the voluntary giving of one's wealth, but this so greatly recommended in Islam, and so highly rewarded, that Muslims have a very strong sense of the need to give charity. The Suleymaniye Mosque London collects charity to help deliver its services. It also hosts dozens of collections for UK charities every year, raising hundreds of thousand of pounds for charitable causes.</p>
+                        <p>The Sultanmecid Masjid, Dublin can collect and distribute Zakah.</p>
+                        <p>Zakah is not charity; charity (also known as Sadaqah in Islam) is the voluntary giving of one's wealth, but this so greatly recommended in Islam, and so highly rewarded, that Muslims have a very strong sense of the need to give charity. The Sultanmecid masjid, Dublin collects charity to help deliver its services. It also hosts dozens of collections for UK charities every year, raising hundreds of thousand of pounds for charitable causes.</p>
                     </div>
                 </Container>
             </div>

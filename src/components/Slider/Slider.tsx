@@ -126,7 +126,7 @@ export const Slider = () => {
                 <div>
                     <div style={{ backgroundImage: `url(${marr})` }} className='slider-content-main'>
                         <Row className='row-title'>Islamic Marriage</Row>
-                        <Row className='row-content-main'>For details of the Nikah process at the Suleymaniye Mosque London, including how to apply. +353 (87) 406 6894.</Row>
+                        <Row className='row-content-main'>For details of the Nikah process at the Sultanmecid masjid, Dublin, including how to apply. +353 (87) 406 6894.</Row>
                     </div>
                 </div>
 
