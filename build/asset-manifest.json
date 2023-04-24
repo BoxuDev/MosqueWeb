@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1bb13b4b.css",
-    "main.js": "/static/js/main.67d10f1d.js",
+    "main.js": "/static/js/main.21ffd6b0.js",
     "static/media/imsakiye.pdf": "/static/media/imsakiye.3d5bff7c7748f7d6f43c.pdf",
     "static/media/ramadanmain.webp": "/static/media/ramadanmain.38629051b392af55b94c.webp",
     "static/media/Picture7.jpg": "/static/media/Picture7.a79357eb347ec6ada9fd.jpg",
@@ -58,10 +58,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.1bb13b4b.css.map": "/static/css/main.1bb13b4b.css.map",
-    "main.67d10f1d.js.map": "/static/js/main.67d10f1d.js.map"
+    "main.21ffd6b0.js.map": "/static/js/main.21ffd6b0.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb13b4b.css",
-    "static/js/main.67d10f1d.js"
+    "static/js/main.21ffd6b0.js"
   ]
 }
