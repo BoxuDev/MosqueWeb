@@ -119,7 +119,7 @@ function App() {
           </Content>
         </Route>
 
-        <Route path="/Merriage">
+        <Route path="/Marriage">
           <Content>
             <Marriage />
           </Content>
