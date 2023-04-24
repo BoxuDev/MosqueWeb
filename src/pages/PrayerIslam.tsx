@@ -31,7 +31,7 @@ const PrayerIslam = () => {
                         <div className="tm-md-flex-center">
                             <h2 className="tm-text-color-primary mb-4">To pronounce Kalimah Al-Shahâdah</h2>
                             <br />
-                            <p>To pronounce Kalimah Al-Shahâdah, the first essential article of Islâm, reads as follows: ُ ه ُ ُ ول َس َر و ُ ه ُ ْد ب َ ً ا ع َّ د َ م ح ُ ن م َّ َ ُ ا َد اَ ْشه َ و ُ ل ّٰ الل َّ ِ ا َ ٰله ِ َ ْن ٰ ل ا ُ ا َد َ ْشه ا “Ash-hadu an lâ ilâha illallâh, wa ash-hadu anna Muhammadan ‘abduhû wa Rasûluhû”. Translation: I bear witness that there is none worthy of worship except Allâh and I bear witness that Muhammad صلى الله عليه وسلم is His servant and prophet.</p>
+                            <p>To pronounce Kalimah Al-Shahâdah, the first essential article of Islâm, reads as follows: ُ اَشْهَدُ اَنْ لَّآ اِلٰهَ اِلَّا اللهُ وَحْدَہٗ لَاشَرِيْكَ لَہٗ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهٗ وَرَسُولُہٗ Ash-hadu an lâ ilâha illallâh, wa ash-hadu anna Muhammadan ‘abduhû wa Rasûluhû”. Translation: I bear witness that there is none worthy of worship except Allâh and I bear witness that Muhammad صلى الله عليه وسلم is His servant and prophet.</p>
                             <Link to="/BriefIntroduction" className="btn btn-primary float-lg-right tm-md-align-center">Brief Introduction</Link>
                         </div>
                     </div>
