@@ -50,7 +50,8 @@ const AboutIslam = () => {
                             There are special prayers at other times, like on each of the two Eid mornings, when the whole family is encouraged to go to prayer.
                             Prayers more familiar to other religions are the supplications a Muslim makes to God – known as Dua. These can be your own words, or some of the beautiful supplications mentioned in the Qur'an or made by Prophet Muhammad (Peace be upon him).</p>
                         <p>There are so many benefits in performing regular prayers. Prophet Muhammad (Peace be upon him) said, “If there was a river at your door and you took a bath in it five times a day, would you notice any dirt on you?” They said, “Not a trace of dirt would be left.” The Prophet said, “That is the parable of the five prayers by which Allah removes sins.”</p>
-                        <br /><br />
+                        <br />
+                        <p>Sultanmecid masjid, Dublin open for 1st juma at <b>1.30 and 2nd Juma at 2.30 for now</b> (summer time)</p>
                         <p>On Fridays, the special Jumuah prayer (which replaces the Zuhr prayer) is preceded by a sermon (khutbah), which takes about half an hour. .
                             Facilities
                             There are separate prayer facilities for men and women: men pray in the first floor hall, and women in the second floor hall accessed through the second entrance labelled ladies entrance.</p>

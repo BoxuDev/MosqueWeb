@@ -87,7 +87,7 @@ const Ramadan = () => {
                                                 />
                                             </svg>
                                         </i>
-                                        <a href={img} target="_blank" download='imsakiye'>Download Imsakiye JPG | For Mobile</a>
+                                        <a href={img} target="_blank" rel="noopener noreferrer" download='imsakiye'>Download Imsakiye JPG | For Mobile</a>
                                     </div>
                                 </Row>
                             </Container>
@@ -171,7 +171,7 @@ const Ramadan = () => {
                                         <h1 className='title-ramadan'>Zakah</h1>
                                         <br />
                                         <p className='paragraph-ramadan'>All you need to fulfil fourth pillar</p>
-                                        <p className='paragraph-ramadan'>Zakat Info | Zakat Calculator | Pay you Zakat</p>
+                                        <p className='paragraph-ramadan'>Zakah Info | Zakah Calculator | Pay you Zakah</p>
                                     </div>
                                 </Row>
                                 <Row>

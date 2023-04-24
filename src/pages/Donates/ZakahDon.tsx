@@ -16,11 +16,11 @@ const ZekahDon = () => {
                             <Container>
                                 <div className='top-side' style={{ marginBottom: "20px" }}>
                                     <h1>Zakah</h1>
-                                    <p>sRasulullah (s.a.w) said:
+                                    <p>Rasulullah (s.a.w) said:
                                         Allah Ta’ala has made Sadaqa Fitr Wajib, in order to purify the faster from pointless, useless and foul words and to feed the poor and needy. Whoever gives their Sadaqa Fitr before Salat on Eid day, then that will be an accepted Fitra. However, if they give after the prayer on Eid day, then it would be counted as a normal donation.”</p>
                                     <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
-                                <a className='paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Donate Now</a>
+                                <a className='paypal' target='_blank' rel="noopener noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Donate Now</a>
                             </Container>
                         </Col>
                     </Row>

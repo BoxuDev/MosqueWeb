@@ -23,6 +23,7 @@ export const ImageSlider = () => {
     const [loading, setLoading] = useState<boolean>(false);
 
     useEffect(() => {
+        setLoading(false);
         let data: ImageObject[] = [];
         let tempImages = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11];
         tempImages.map(item => {
@@ -35,28 +36,30 @@ export const ImageSlider = () => {
     }, []);
 
     return (
-        <Container>
-            <Container className='cont-image-slide'>
-                {loading &&
-                    <Carousel
-                        data={images}
-                        time={3500}
-                        width="auto"
-                        height="500px"
-                        radius="36px"
-                        slideNumber={false}
-                        automatic={true}
-                        dots={true}
-                        pauseIconColor="white"
-                        pauseIconSize="40px"
-                        slideBackgroundColor="#136833"
-                        slideImageFit="cover"
-                        thumbnailWidth="100px"
-                        thumbnails={true}
-                        thumbnailsStyle
-                    />
-                }
-            </Container>
-        </Container>
+        <>
+            {loading &&
+                <Container>
+                    <Container className='cont-image-slide'>
+                        <Carousel
+                            data={images}
+                            time={2000}
+                            width="auto"
+                            height="500px"
+                            radius="36px"
+                            slideNumber={false}
+                            automatic={true}
+                            dots={true}
+                            pauseIconColor="white"
+                            pauseIconSize="40px"
+                            slideBackgroundColor="#136833"
+                            slideImageFit="cover"
+                            thumbnailWidth="100px"
+                            thumbnails={true}
+                            thumbnailsStyle
+                        />
+                    </Container>
+                </Container>
+            }
+        </>
     );
 }
