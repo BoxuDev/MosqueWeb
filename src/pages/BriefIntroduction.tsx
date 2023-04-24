@@ -58,7 +58,7 @@ const BriefIntroduction = () => {
                         <p>‘Îlâ al-Kalimatullâh: Striving to spread the Exalted Speech of Allâh and the Sunnah of His Prophet (sallallâhu alayhi wa sallam). Islâm is to obey Allâh تعالــى by acknowledging the messages communicated by Rasûlullâh, the Prophet of Allâh صلى الله عليه وسلم with the tongue and confirming them in the heart.</p>
                         <div>
                             <p>The essential articles of Islâm are fıve. In other words, Islâm is based upon five pillars:</p>
-                            <li>To pronounce Kalimah Al-Shahâdah, the first essential article of Islâm, reads as follows: ُ ه ُ ُ ول َس َر و ُ ه ُ ْد ب َ ً ا ع َّ د َ م ح ُ ن م َّ َ ُ ا َد اَ ْشه َ و ُ ل ّٰ الل َّ ِ ا َ ٰله ِ َ ْن ٰ ل ا ُ ا َد َ ْشه ا “Ash-hadu an lâ ilâha illallâh, wa ash-hadu anna Muhammadan ‘abduhû wa Rasûluhû”. Translation: I bear witness that there is none worthy of worship except Allâh and I bear witness that Muhammad صلى الله عليه وسلم is His servant and prophet.</li>
+                            <li>To pronounce Kalimah Al-Shahâdah, the first essential article of Islâm, reads as follows: ُ <b>اَشْهَدُ اَنْ لَّآ اِلٰهَ اِلَّا اللهُ وَحْدَہٗ لَاشَرِيْكَ لَہٗ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهٗ وَرَسُولُہٗ</b> “Ash-hadu an lâ ilâha illallâh, wa ash-hadu anna Muhammadan ‘abduhû wa Rasûluhû”. Translation: I bear witness that there is none worthy of worship except Allâh and I bear witness that Muhammad <b>صلى الله عليه وسلم</b> is His servant and prophet.</li>
                             <li>To perform Salâh,</li>
                             <li> To give Zakâh,</li>
                             <li>To fast in the month of Ramadhân,</li>

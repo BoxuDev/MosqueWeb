@@ -17,8 +17,8 @@ export const FooterCom = () => {
                             </MDBCol>
                             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4'>Donate</h6>
-                                <p><Link to='/Donate/Zekah' className='text-reset'>Zakah</Link></p>
-                                <p><Link to='/Donate/Charity' className='text-reset'>Sadaqa</Link></p>
+                                <p><Link to='/Donate/Zakah' className='text-reset'>Zakah</Link></p>
+                                <p><Link to='/Donate/Sadaqa' className='text-reset'>Sadaqa</Link></p>
                                 <p><Link to='/Donate/Iftar' className='text-reset'>Iftar</Link></p>
                                 <p><Link to='/Donate/Qurbani' className='text-reset'>Qurbani</Link></p>
                                 <p><Link to='/Donate/Other' className='text-reset'>Other</Link></p>

@@ -26,7 +26,7 @@ const SadaqaDon = () => {
                                     <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=2WKEBQV9EYS94'>30 €</a>
                                     <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=EW5GJKGVU7ECA'>50 €</a>
                                 </div>
-                                <a className='paypal' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Paypal</a>
+                                <a className='paypal' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Donate Now</a>
                             </Container>
                         </Col>
                     </Row>

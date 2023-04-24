@@ -19,7 +19,7 @@ const OtherDon = () => {
                                     <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='links'>
-                                    <a className='don-link paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>PayPal</a>
+                                    <a className='don-link paypal' target='_blank' href='https://www.paypal.com/donate/?hosted_button_id=QTLMF9YQB55VN'>Donate Now</a>
                                 </div>
                             </Container>
                         </Col>
