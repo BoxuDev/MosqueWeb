@@ -42,6 +42,22 @@ const imageObjects = [
     {
         original: P7,
         thumbnail: P7
+    },
+    {
+        original: P8,
+        thumbnail: P8
+    },
+    {
+        original: P9,
+        thumbnail: P9
+    },
+    {
+        original: P10,
+        thumbnail: P10
+    },
+    {
+        original: P11,
+        thumbnail: P11
     }
 ]
 
@@ -51,9 +67,8 @@ export const ImageSlider = () => {
             <Container className='cont-image-slide'>
                 <ImageGallery
                     items={imageObjects}
-                    //lazyLoad
+                    lazyLoad
                     infinite
-                    useTranslate3D={false}
                 />
             </Container>
         </Container>
