@@ -1,6 +1,6 @@
+import { Carousel } from 'react-carousel-minimal';
 import { Container } from 'react-bootstrap';
-import ImageGallery from 'react-image-gallery';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ImageSlider.css';
 import P1 from '../../assets/Slider/Picture1.jpg';
 import P2 from '../../assets/Slider/Picture2.jpg';
@@ -14,63 +14,52 @@ import P9 from '../../assets/Slider/Picture9.jpg';
 import P10 from '../../assets/Slider/Picture10.jpg';
 import P11 from '../../assets/Slider/Picture11.jpg';
 
-const imageObjects = [
-    {
-        original: P1,
-        thumbnail: P1
-    },
-    {
-        original: P2,
-        thumbnail: P2
-    },
-    {
-        original: P3,
-        thumbnail: P3
-    },
-    {
-        original: P4,
-        thumbnail: P4
-    },
-    {
-        original: P5,
-        thumbnail: P5
-    },
-    {
-        original: P6,
-        thumbnail: P6
-    },
-    {
-        original: P7,
-        thumbnail: P7
-    },
-    {
-        original: P8,
-        thumbnail: P8
-    },
-    {
-        original: P9,
-        thumbnail: P9
-    },
-    {
-        original: P10,
-        thumbnail: P10
-    },
-    {
-        original: P11,
-        thumbnail: P11
-    }
-]
+interface ImageObject {
+    image: any;
+}
 
 export const ImageSlider = () => {
+    const [images, setImages] = useState<ImageObject[]>([]);
+    const [loading, setLoading] = useState<boolean>(false);
+
+    useEffect(() => {
+        setLoading(false);
+        let data: ImageObject[] = [];
+        let tempImages = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11];
+        tempImages.map(item => {
+            data.push({
+                image: item
+            });
+        });
+        setImages(data);
+        setLoading(true);
+    }, []);
+
     return (
-        <Container>
-            <Container className='cont-image-slide'>
-                <ImageGallery
-                    items={imageObjects}
-                    lazyLoad
-                    infinite
-                />
-            </Container>
-        </Container>
+        <>
+            {loading &&
+                <Container>
+                    <Container className='cont-image-slide'>
+                        <Carousel
+                            data={images}
+                            time={2000}
+                            width="auto"
+                            height="500px"
+                            radius="36px"
+                            slideNumber={false}
+                            automatic={true}
+                            dots={true}
+                            pauseIconColor="white"
+                            pauseIconSize="40px"
+                            slideBackgroundColor="#136833"
+                            slideImageFit="cover"
+                            thumbnailWidth="100px"
+                            thumbnails={true}
+                            thumbnailsStyle
+                        />
+                    </Container>
+                </Container>
+            }
+        </>
     );
 }
