@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.68d59c5b.css",
-    "main.js": "/static/js/main.b3d9f4c4.js",
+    "main.css": "/static/css/main.e33abe11.css",
+    "main.js": "/static/js/main.f0a2eb1f.js",
     "static/media/imsakiye.pdf": "/static/media/imsakiye.3d5bff7c7748f7d6f43c.pdf",
     "static/media/ramadanmain.webp": "/static/media/ramadanmain.38629051b392af55b94c.webp",
     "static/media/Picture7.jpg": "/static/media/Picture7.a79357eb347ec6ada9fd.jpg",
@@ -57,11 +57,11 @@
     "static/media/outline-icons.woff": "/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff",
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
-    "main.68d59c5b.css.map": "/static/css/main.68d59c5b.css.map",
-    "main.b3d9f4c4.js.map": "/static/js/main.b3d9f4c4.js.map"
+    "main.e33abe11.css.map": "/static/css/main.e33abe11.css.map",
+    "main.f0a2eb1f.js.map": "/static/js/main.f0a2eb1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.68d59c5b.css",
-    "static/js/main.b3d9f4c4.js"
+    "static/css/main.e33abe11.css",
+    "static/js/main.f0a2eb1f.js"
   ]
 }
