@@ -20,7 +20,7 @@ const QurbaniDon = () => {
                                     <p>Please click on PayPal link below to donate regularly or any amount with your debit or credit card below</p>
                                 </div>
                                 <div className='list'>
-                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=K6XANNTN9PWYA' >Vajib Qurbani <br /> 130 €</a>
+                                    <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=K6XANNTN9PWYA' >Vajib Qurbani <br /> 120 €</a>
                                     <a className='zekah-gc-link' target='_blank' rel="noreferrer" href='https://www.paypal.com/donate/?hosted_button_id=66NPL6A3EM4F8' style={{ minWidth: "140px" }}>Nafilah Qurbani <br />  140 €</a>
                                 </div>
                             </Container>
