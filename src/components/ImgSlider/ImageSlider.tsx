@@ -38,15 +38,12 @@ export const ImageSlider = () => {
                     <Container className='cont-image-slide'>
                         <Carousel
                             data={images}
-                            time={20000}
+                            time={5000}
                             width="auto"
                             height="500px"
                             radius="36px"
                             slideNumber={false}
-                            automatic={true}
-                            dots={true}
-                            pauseIconColor="white"
-                            pauseIconSize="40px"
+                            dots
                             slideBackgroundColor="#136833"
                             slideImageFit="cover"
                             thumbnailWidth="100px"
