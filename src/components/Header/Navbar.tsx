@@ -21,12 +21,12 @@ function MyNavbar() {
                     <Nav>
                         <Nav.Link><Link to="/Home" >Home</Link></Nav.Link>
                         <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link>
-                        <NavDropdown title="Imam Services">         
+                        <NavDropdown title="Imam Services">
                             <Nav.Link><Link to="/Chaplaincy" >Chaplaincy</Link></Nav.Link>
                             <Nav.Link><Link to="/Marriage" >Marriage</Link></Nav.Link>
                             <Nav.Link><Link to="/HelalFood" >Helal Food</Link></Nav.Link>
                             <Nav.Link><Link to="/HajjUmrah" >Hajj & Umrah</Link></Nav.Link>
-                            <Nav.Link><Link to="/Education" >Education</Link></Nav.Link> 
+                            <Nav.Link><Link to="/Education" >Education</Link></Nav.Link>
                         </NavDropdown>
                         <NavDropdown title="Donate">
                             <Nav.Link><Link to="/Donate/Zakah" >Zakah</Link></Nav.Link>
