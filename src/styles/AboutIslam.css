@@ -7,10 +7,6 @@
     font-style: italic;
 }
 
-.container {
-    margin-top: 30px;
-}
-
 .tm-container-inner {
     margin: 0 auto;
     max-width: 880px;
@@ -337,11 +333,9 @@
         display: flex;
         flex-direction: column;
     }
-
     .tm-md-align-center {
         align-self: center;
     }
-
     .tm-pl-l {
         padding: 0 3rem;
     }
