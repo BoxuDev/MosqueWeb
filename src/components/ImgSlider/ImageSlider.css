@@ -5,3 +5,7 @@
     padding: 15px;
     border-radius: 36px;
 }
+
+.fade:not(.show) {
+    opacity: 1 !important;
+}

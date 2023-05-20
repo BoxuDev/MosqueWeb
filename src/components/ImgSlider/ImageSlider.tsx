@@ -44,7 +44,7 @@ export const ImageSlider = () => {
                             radius="36px"
                             slideNumber={false}
                             dots
-                            slideBackgroundColor="#136833"
+                            //slideBackgroundColor="#136833"
                             slideImageFit="cover"
                             thumbnailWidth="100px"
                             thumbnails={true}
