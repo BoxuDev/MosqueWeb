@@ -110,7 +110,7 @@ const Ramadan = () => {
                                 </Row>
                                 <Row>
                                     <Link
-                                        to="/Donate/Charity"
+                                        to="/Donate/Sadaqa"
                                         className='donate-go-link'
                                         style={{
                                             border: "1px solid",
@@ -124,7 +124,6 @@ const Ramadan = () => {
                     </Row>
                 </Container>
             </Container>
-
 
             <Container>
                 <Container className="cont-another" style={{ marginBottom: "50px" }}>
@@ -176,7 +175,7 @@ const Ramadan = () => {
                                 </Row>
                                 <Row>
                                     <Link
-                                        to="/Donate/Zekah"
+                                        to="/Donate/Zakah"
                                         className='donate-go-link'
                                         style={{
                                             border: "1px solid",
@@ -190,7 +189,6 @@ const Ramadan = () => {
                     </Row>
                 </Container>
             </Container>
-
         </>
     );
 }
