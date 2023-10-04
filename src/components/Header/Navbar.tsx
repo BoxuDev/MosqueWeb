@@ -9,7 +9,7 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
 function MyNavbar() {
-    const Icon: ReactNode = <Link to=""><img src={logo} width={128} /></Link>;
+    const Icon: ReactNode = <Link to="/"><img src={logo} width={212} alt="" /></Link>;
 
     return (
         <Navbar bg="#4398c7" className='navbar-settings' expand="lg">
@@ -21,13 +21,15 @@ function MyNavbar() {
                     <Nav>
                         <Nav.Link><Link to="/Home" >Home</Link></Nav.Link>
                         <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link>
-                        <NavDropdown title="Imam Services">
+                        <Nav.Link><Link to="/" >Photos</Link></Nav.Link> 
+                        <NavDropdown title="Services">
                             <Nav.Link><Link to="/Chaplaincy" >Chaplaincy</Link></Nav.Link>
                             <Nav.Link><Link to="/Marriage" >Marriage</Link></Nav.Link>
                             <Nav.Link><Link to="/HelalFood" >Helal Food</Link></Nav.Link>
                             <Nav.Link><Link to="/HajjUmrah" >Hajj & Umrah</Link></Nav.Link>
                             <Nav.Link><Link to="/Education" >Education</Link></Nav.Link>
                         </NavDropdown>
+                        {/* grid galeri */}
                         <NavDropdown title="Donate">
                             <Nav.Link><Link to="/Donate/Zakah" >Zakah</Link></Nav.Link>
                             <Nav.Link><Link to="/Donate/Sadaqa" >Sadaqa</Link></Nav.Link>
@@ -35,7 +37,8 @@ function MyNavbar() {
                             <Nav.Link><Link to="/Donate/Qurbani" >Qurbani</Link></Nav.Link>
                             <Nav.Link><Link to="/Donate/Other" >Other</Link></Nav.Link>
                         </NavDropdown>
-                        <NavDropdown title="About Islam">
+                        <Nav.Link><Link to="/" >Turkish Irish Relations</Link></Nav.Link>
+                        <NavDropdown title="About Us">
                             <Nav.Link><Link to="/AboutIslam" >Islam</Link></Nav.Link>
                             <Nav.Link><Link to="/BriefIntroduction" >Brief Introduction</Link></Nav.Link>
                             <Nav.Link><Link to="/PrayerIslam" >Prayer Islam</Link></Nav.Link>

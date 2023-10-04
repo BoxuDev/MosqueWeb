@@ -4,9 +4,9 @@ import { Container } from "react-bootstrap";
 import "./Slider.css";
 import marr from "../../assets/Files/marr.jpg";
 import croke from '../../assets/Slider/croke.jpeg';
-import islamire from '../../assets/Slider/islamire.jpg';
 import dscie from '../../assets/Slider/dscie.webp';
 import prisoner from '../../assets/Files/prisoner.jpeg';
+import otto from '../../assets/Slider/otto-human.jpg';
 
 export const Slider = () => {
     return (
@@ -20,8 +20,8 @@ export const Slider = () => {
                 effect='scrollx'
             >
                 <div>
-                    <div style={{ backgroundImage: `url(${islamire})` }} className='slider-content-main'>
-                        <Row className='row-title' style={{ backgroundColor: "white", padding: "8px" }}>Islam in Ireland</Row>
+                    <div style={{ backgroundImage: `url(${otto})` }} className='slider-content-main'>
+                        <Row className='row-title' style={{ backgroundColor: "white", padding: "8px" }}>Turkish Irısh Relations</Row>
                         <Row>
                             <Button style={{
                                 marginTop: "10px",
@@ -34,7 +34,7 @@ export const Slider = () => {
                                 fontSize: "16px",
                                 color: "white"
                             }}
-                                onClick={() => window.open('https://en.wikipedia.org/wiki/Islam_in_the_Republic_of_Ireland', '_blank')}>Go Wiki</Button>
+                                onClick={() => window.open('https://en.m.wikipedia.org/wiki/Ireland–Turkey_relations', '_blank')}>Go Wiki</Button>
                         </Row>
 
                     </div>
