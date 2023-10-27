@@ -13,6 +13,7 @@ function Home() {
             <Slider />
             {/* <PrayerTimer /> */}
             <ImageSlider />
+            {/* <FirebasePost /> */}
             {/* <FacilitiesAvaible /> */}
             <HadisSlider />
             {/* <AnotherContent /> */}

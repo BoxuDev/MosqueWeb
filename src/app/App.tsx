@@ -26,6 +26,7 @@ import ZakahDon from '../pages/Donates/ZakahDon';
 import IftarDon from '../pages/Donates/IftarDon';
 import SadaqaDon from '../pages/Donates/SadaqaDon';
 import QurbaniDon from '../pages/Donates/QurbaniDon';
+import SingIn from '../components/admin/SingIn';
 
 const { Content } = Layout;
 
@@ -171,6 +172,12 @@ function App() {
           <Content>
             <QurbaniDon />
           </Content>
+        </Route>
+
+        <Route path="/admin">
+          {/* <Content> */}
+            <SingIn />
+          {/* </Content> */}
         </Route>
 
         <FooterCom />
