@@ -17,23 +17,25 @@ export const auth = getAuth(initializeApp(firebaseConfig));
 const db = getFirestore();
 const colRef = collection(db, "posts");
 
-export const getData = () =>  {
-    getDocs(colRef).then((snapshot) => {
+export const getData = async () =>  {
+    let postsData = [];
+    await getDocs(colRef).then((snapshot) => {
         let posts = [];
         snapshot.docs.forEach((doc) => {
             posts.push({ ...doc.data(), id: doc.id });
         });
-        console.log(posts);
+        postsData = posts;
     }).catch();
+    return postsData;
 }
 
-export const postData = (data) => {
+export const postData = async (data) => {
     const finalData = {
         id: Math.random(),
         title: data.title,
         message: data.message,
-        picture: data.picture ?? "Not Found",
+        picture: data.image ?? "Not Found",
         date: Date.now()
     }
-    addDoc(colRef, finalData).then().catch();
+    await addDoc(colRef, finalData).then().catch();
 }

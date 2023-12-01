@@ -3,29 +3,19 @@ import { Button, Form, Input, Upload, UploadProps, message } from 'antd';
 import { RcFile, UploadChangeParam, UploadFile } from 'antd/es/upload';
 import { getData, postData } from '../../firebase';
 
-export const AddDoc = () => {
+export const AddDoc = ({ user, setUser }: any) => {
     const [form] = Form.useForm();
     const [imageBase64, setImageBase64] = useState<string>("");
-    const [base64Image, setBase64Image] = useState('');
     const [loading, setLoading] = useState(false);
 
-    const getBase64 = (img: RcFile, callback: (url: string) => void) => {
+    const convertToBase64 = (file: any, callback: any) => {
         const reader = new FileReader();
-        reader.addEventListener('load', () => callback(reader.result as string));
-        reader.readAsDataURL(img);
-    };
-
-    // const beforeUpload = (file: RcFile) => {
-    //     const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
-    //     if (!isJpgOrPng) {
-    //         message.error('You can only upload JPG/PNG file!');
-    //     }
-    //     const isLt2M = file.size / 1024 / 1024 < 5;
-    //     if (!isLt2M) {
-    //         message.error('Image must smaller than 2MB!');
-    //     }
-    //     return isJpgOrPng && isLt2M;
-    // };
+        reader.onload = function (e: any) {
+            const base64String = e.target!.result!.split(',')[1];
+            callback(base64String);
+        };
+        reader.readAsDataURL(file);
+    }
 
     const handleChange: UploadProps['onChange'] = (info: UploadChangeParam<UploadFile>) => {
         if (info.file.status === 'uploading') {
@@ -33,10 +23,8 @@ export const AddDoc = () => {
             return;
         }
         if (info.file.status === 'done') {
-            // Get this url from response in real world.
-            getBase64(info.file.originFileObj as RcFile, (url) => {
+            convertToBase64(info.file.originFileObj as RcFile, (url: any) => {
                 setLoading(false);
-                // setImageUrl(url);
                 setImageBase64(url);
             });
         }
@@ -51,34 +39,21 @@ export const AddDoc = () => {
         </div>
     );
 
-    const handleImageChange = (info: any) => {
-        if (info.file.status === 'done') {
-            // Image has been successfully uploaded
-            const reader: any = new FileReader();
-            reader.readAsDataURL(info.file.originFileObj);
-            reader.onload = () => {
-                setBase64Image(reader.result as string);
-            };
-        }
-    };
-
     const onFinish = async (values: any) => {
         console.log('Success:', values);
         const reqParams = {
             title: form.getFieldValue("title"),
             message: form.getFieldValue("message"),
-            image: imageBase64
+            image: form.getFieldValue("picture").file.thumbUrl.toString()
         }
 
         console.log(reqParams);
+        await postData(reqParams);
+        const data = await getData();
 
-        postData(reqParams);
-        getData();
-
+        console.log("arr data: ", data);
         //TO DO Send Req Params
     };
-
-    const undefBeforeUpload = () => false;
 
     return (
         <>
@@ -114,10 +89,9 @@ export const AddDoc = () => {
                         className="avatar-uploader"
                         multiple={false}
                         showUploadList={true}
-                        beforeUpload={undefBeforeUpload}
-                        onChange={handleImageChange}
+                        onChange={handleChange}
                     >
-                        {imageBase64 ? <img src={`data:image/jpeg;base64,${base64Image}`} alt="avatar" style={{ width: '100%' }} /> : uploadButton}
+                        {imageBase64 ? <img src={`data:image/jpeg;base64,${imageBase64}`} alt="avatar" style={{ width: '100%' }} /> : uploadButton}
                     </Upload>
                 </Form.Item>
 
@@ -127,6 +101,8 @@ export const AddDoc = () => {
                     </Button>
                 </Form.Item>
             </Form >
+
+
         </>
     );
 };

@@ -43,7 +43,7 @@ const SingIn = () => {
                             <button type="submit">Log In</button>
                         </form>
                     </div>
-                </> : <AddDoc />
+                </> : <AddDoc user={user} setUser={setUser} />
             }
         </>
     );
