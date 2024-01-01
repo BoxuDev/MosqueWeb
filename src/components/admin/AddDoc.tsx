@@ -101,8 +101,6 @@ export const AddDoc = ({ user, setUser }: any) => {
                     </Button>
                 </Form.Item>
             </Form >
-
-
         </>
     );
 };
