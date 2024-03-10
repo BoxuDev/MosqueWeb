@@ -27,7 +27,7 @@ const Ramadan = () => {
                 <div style={{ backgroundColor: "#136833", padding: "20px", borderRadius: "16px" }}>
                     <h1 style={{ fontSize: "50px", color: "white", fontWeight: "800", fontFamily: "tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif", letterSpacing: "0.01em" }}>Ramadan</h1>
                     <br />
-                    <h1 style={{ fontSize: "50px", color: "white", fontWeight: "800", fontFamily: "tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif", letterSpacing: "0.01em" }}>Kareem</h1>
+                    <h1 style={{ fontSize: "50px", color: "white", fontWeight: "800", fontFamily: "tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif", letterSpacing: "0.01em" }}>Kareem 2024</h1>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@ const Ramadan = () => {
                                                 />
                                             </svg>
                                         </i>
-                                        <a href={require("../assets/Files/imsakiye.pdf")} style={{ fontSize: "16px" }} download='imsakiye'>Download Imsakiye PDF</a>
+                                        <a href={require("../assets/imsakiye/imsakiye2024.pdf")} style={{ fontSize: "16px" }} download='imsakiye'>Download 2024 Imsakiye PDF</a>
                                     </div>
                                 </Row>
                                 <br /><br /><br />
@@ -87,7 +87,7 @@ const Ramadan = () => {
                                                 />
                                             </svg>
                                         </i>
-                                        <a href={img} target="_blank" rel="noopener noreferrer" download='imsakiye'>Download Imsakiye JPG | For Mobile</a>
+                                        <a href={require("../assets/imsakiye/imsakiye2024.png")} target="_blank" rel="noopener noreferrer" download='imsakiye2024'>Download Imsakiye PNG | For Mobile</a>
                                     </div>
                                 </Row>
                             </Container>
