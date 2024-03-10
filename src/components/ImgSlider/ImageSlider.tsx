@@ -26,7 +26,7 @@ export const ImageSlider = () => {
         setLoading(false);
         let data: ImageObject[] = [];
         let tempImages = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11];
-        tempImages.map(item => data.push({image: item}));
+        tempImages.map(item => data.push({ image: item }));
         setImages(data);
         setLoading(true);
     }, []);

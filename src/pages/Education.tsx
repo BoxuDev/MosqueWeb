@@ -2,7 +2,7 @@ import { Col, Row } from 'antd';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import '../styles/Education.css';
-import rahle from  '../assets/Files/rahle.jpg';
+import rahle from '../assets/Files/rahle.jpg';
 
 const Education = () => {
     return (

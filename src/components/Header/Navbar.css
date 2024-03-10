@@ -100,7 +100,7 @@ a {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-.dropdown-menu > a > a {
+.dropdown-menu>a>a {
     display: flex;
     flex: 1 1;
     flex-direction: row;

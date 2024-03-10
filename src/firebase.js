@@ -17,7 +17,7 @@ export const auth = getAuth(initializeApp(firebaseConfig));
 const db = getFirestore();
 const colRef = collection(db, "posts");
 
-export const getData = async () =>  {
+export const getData = async () => {
     let postsData = [];
     await getDocs(colRef).then((snapshot) => {
         let posts = [];

@@ -162,13 +162,13 @@ function App() {
           </Content>
         </Route>
 
-         <Route path="/Donate/Iftar">
+        <Route path="/Donate/Iftar">
           <Content>
             <IftarDon />
           </Content>
         </Route>
 
-         <Route path="/Donate/Qurbani">
+        <Route path="/Donate/Qurbani">
           <Content>
             <QurbaniDon />
           </Content>
@@ -176,7 +176,7 @@ function App() {
 
         <Route path="/admin">
           {/* <Content> */}
-            <SingIn />
+          <SingIn />
           {/* </Content> */}
         </Route>
 

@@ -92,7 +92,7 @@ const HelalFood = () => {
                     <section className="row tm-section">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center p-5 tm-bg-color-primary tm-section-min-h">
-                                <img src={b4}/>
+                                <img src={b4} />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -115,7 +115,7 @@ const HelalFood = () => {
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                             <div className="tm-flex-center p-5 tm-bg-color-primary">
                                 <div className="tm-max-w-400 tm-flex-center tm-flex-col">
-                                    <img src={b3}/>
+                                    <img src={b3} />
                                 </div>
                             </div>
                         </div>

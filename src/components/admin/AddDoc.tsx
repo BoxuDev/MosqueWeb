@@ -81,7 +81,7 @@ export const AddDoc = ({ user, setUser }: any) => {
                 >
                     <Input.TextArea />
                 </Form.Item>
- 
+
                 <Form.Item label="Upload" name="picture" valuePropName="file" >
                     <Upload
                         listType="picture-card"

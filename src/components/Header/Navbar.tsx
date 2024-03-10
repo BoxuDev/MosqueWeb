@@ -21,7 +21,8 @@ function MyNavbar() {
                     <Nav>
                         <Nav.Link><Link to="/Home" >Home</Link></Nav.Link>
                         <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link>
-                        <Nav.Link><Link to="/" >Photos</Link></Nav.Link> 
+                        <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link>
+                        <Nav.Link><Link to="/" >Photos</Link></Nav.Link>
                         <NavDropdown title="Services">
                             <Nav.Link><Link to="/Chaplaincy" >Chaplaincy</Link></Nav.Link>
                             <Nav.Link><Link to="/Marriage" >Marriage</Link></Nav.Link>
