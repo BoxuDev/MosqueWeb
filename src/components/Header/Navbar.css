@@ -2,6 +2,14 @@ a {
     color: white !important;
 }
 
+.happy-hover > * {
+    background-color: #136833 !important;
+}
+
+.pop-up-close {
+    visibility: hidden;
+}
+
 .navbar-nav {
     font-weight: bolder;
 }
