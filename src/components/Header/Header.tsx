@@ -6,10 +6,10 @@ import "./Navbar.css";
 export const HeaderComp = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const dates: any = [
-        { date: '2024-03-18', event: 'New Version Released' },
         { date: '2024-03-19', event: 'New Version Released' },
         { date: '2024-03-20', event: 'New Version Released' },
-        { date: '2024-0', event: '' },
+        { date: '2024-03-21', event: 'New Version Released' },
+        { date: '2024-04-05', event: 'Qadr Night' },
         { date: '2024-0', event: '' },
         { date: '2024-0', event: '' },
         { date: '2024-0', event: '' },
@@ -42,11 +42,12 @@ export const HeaderComp = () => {
             <Modal
                 title="Information"
                 open={isModalOpen}
+                bodyStyle={{ minHeight: "250px" }}
                 onOk={handleOk}
                 okText="Okay"
                 onCancel={handleCancel}
                 cancelButtonProps={{ className: "pop-up-close" }}
-                okButtonProps={{ type: 'primary', color: "" }}
+                okButtonProps={{ type: 'primary', style: { backgroundColor: "#14a44d" } }}
                 closeIcon={(<></>)}
                 className='happy-hover'
             >

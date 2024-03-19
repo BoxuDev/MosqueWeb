@@ -2,8 +2,18 @@ a {
     color: white !important;
 }
 
-.happy-hover > * {
+.happy-hover>* {
     background-color: #136833 !important;
+    color: white !important;
+}
+
+.ant-modal-content > .ant-modal-header {
+    background-color: #136833 !important;
+    color: white !important;
+}
+
+.ant-modal-header > .ant-modal-title {
+    color: white !important;
 }
 
 .pop-up-close {
