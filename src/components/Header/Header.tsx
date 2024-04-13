@@ -9,15 +9,7 @@ export const HeaderComp = () => {
         { date: '2024-03-19', event: 'New Version Released' },
         { date: '2024-03-20', event: 'New Version Released' },
         { date: '2024-03-21', event: 'New Version Released' },
-        { date: '2024-04-05', event: 'Qadr Night' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' },
-        { date: '2024-0', event: '' }
+        { date: '2024-04-05', event: 'Mubarak Qadr Night' }
     ];
 
     const handleOk = () => {
@@ -51,7 +43,7 @@ export const HeaderComp = () => {
                 closeIcon={(<></>)}
                 className='happy-hover'
             >
-                <p>{dates.find((date: any) => date.date === new Date().toISOString().split('T')[0]).event}</p>
+                <p>{dates.find((date: any) => date.date === new Date().toISOString().split('T')[0])?.event}</p>
             </Modal>
             <MyNavbar />
         </>
