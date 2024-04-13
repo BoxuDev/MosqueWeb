@@ -1,6 +1,6 @@
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore"
+import { getFirestore, collection, getDocs, addDoc, deleteDoc } from "firebase/firestore"
 
 const firebaseConfig = {
     apiKey: "AIzaSyBC7aUv0arH0Q-WSRkD6gl8UzjcuX138Vs",
@@ -14,8 +14,8 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 export const auth = getAuth(initializeApp(firebaseConfig));
 
-const db = getFirestore();
-const colRef = collection(db, "posts");
+export const db = getFirestore();
+export const colRef = collection(db, "posts");
 
 export const getData = async () => {
     let postsData = [];
@@ -38,4 +38,9 @@ export const postData = async (data) => {
         date: Date.now()
     }
     await addDoc(colRef, finalData).then().catch();
+}
+
+export const deleteData = async (id) => {
+    console.log(colRef.id(id))
+    await colRef.id(id);
 }
