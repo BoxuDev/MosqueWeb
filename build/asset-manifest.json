@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a519376c.css",
-    "main.js": "/static/js/main.3cc6a6cf.js",
+    "main.css": "/static/css/main.4e23818b.css",
+    "main.js": "/static/js/main.2205c604.js",
     "static/media/ramadanmain.webp": "/static/media/ramadanmain.38629051b392af55b94c.webp",
     "static/media/Picture7.jpg": "/static/media/Picture7.a79357eb347ec6ada9fd.jpg",
     "static/media/Picture11.jpg": "/static/media/Picture11.134e2da89412aaf9076c.jpg",
@@ -58,11 +58,11 @@
     "static/media/outline-icons.woff": "/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff",
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
-    "main.a519376c.css.map": "/static/css/main.a519376c.css.map",
-    "main.3cc6a6cf.js.map": "/static/js/main.3cc6a6cf.js.map"
+    "main.4e23818b.css.map": "/static/css/main.4e23818b.css.map",
+    "main.2205c604.js.map": "/static/js/main.2205c604.js.map"
   },
   "entrypoints": [
-    "static/css/main.a519376c.css",
-    "static/js/main.3cc6a6cf.js"
+    "static/css/main.4e23818b.css",
+    "static/js/main.2205c604.js"
   ]
 }
