@@ -14,10 +14,9 @@ const SingIn = () => {
         signInWithEmailAndPassword(auth, form.getFieldValue("email"), form.getFieldValue("password"))
             .then((userCredential) => {
                 setUser(userCredential);
-
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
             });
     };
 
@@ -55,8 +54,7 @@ const SingIn = () => {
                             </Button>
                         </Form.Item>
                     </Form>
-                </Container>
-                :
+                </Container> :
                 <AddDoc user={user} setUser={setUser} />
             }
         </>

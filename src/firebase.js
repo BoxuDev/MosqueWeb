@@ -1,6 +1,6 @@
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, addDoc, deleteDoc } from "firebase/firestore"
+import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "firebase/firestore"
 
 const firebaseConfig = {
     apiKey: "AIzaSyBC7aUv0arH0Q-WSRkD6gl8UzjcuX138Vs",
@@ -15,32 +15,84 @@ initializeApp(firebaseConfig);
 export const auth = getAuth(initializeApp(firebaseConfig));
 
 export const db = getFirestore();
-export const colRef = collection(db, "posts");
+const colPostRef = collection(db, "posts");
+const colSliderRef = collection(db, "slider");
+const colGalleryRef = collection(db, "gallery");
 
-export const getData = async () => {
+export const getPostData = async () => {
     let postsData = [];
-    await getDocs(colRef).then((snapshot) => {
-        let posts = [];
+    await getDocs(colPostRef).then((snapshot) => {
+        let data = [];
         snapshot.docs.forEach((doc) => {
-            posts.push({ ...doc.data(), id: doc.id });
+            data.push({ ...doc.data(), id: doc.id });
         });
-        postsData = posts;
+        postsData = data;
     }).catch();
     return postsData;
 }
 
-export const postData = async (data) => {
-    const finalData = {
-        id: Math.random(),
-        title: data.title,
-        message: data.message,
-        picture: data.image ?? "Not Found",
-        date: Date.now()
-    }
-    await addDoc(colRef, finalData).then().catch();
+export const getSliderData = async () => {
+    let sliderData = [];
+    await getDocs(colSliderRef).then((snapshot) => {
+        let data = [];
+        snapshot.docs.forEach((doc) => {
+            data.push({ ...doc.data(), id: doc.id });
+        });
+        sliderData = data;
+    }).catch();
+    return sliderData;
 }
 
-export const deleteData = async (id) => {
-    console.log(colRef.id(id))
-    await colRef.id(id);
+export const getGalleryData = async () => {
+    let sliderData = [];
+    await getDocs(colGalleryRef).then((snapshot) => {
+        let data = [];
+        snapshot.docs.forEach((doc) => {
+            data.push({ ...doc.data(), id: doc.id });
+        });
+        sliderData = data;
+    }).catch();
+    return sliderData;
+}
+
+export const addPostData = async (data) => {
+    const finalData = {
+        title: data.title,
+        message: data.message,
+        picture: data.picture,
+        date: new Date().toISOString()
+    }
+    await addDoc(colPostRef, finalData).then().catch();
+}
+
+export const addSliderData = async (data) => {
+    const finalData = {
+        ...data,
+        date: new Date().toISOString()
+    }
+    await addDoc(colSliderRef, finalData).then().catch();
+}
+
+export const addGalleryData = async (data) => {
+    const finalData = {
+        date: new Date().toISOString(),
+        fileName: data.fileName,
+        image: data.image
+    }
+    await addDoc(colGalleryRef, finalData).then().catch();
+}
+
+export const deletePostData = async (id) => {
+    const docRef = doc(db, "posts", id);
+    deleteDoc(docRef);
+}
+
+export const deleteSliderData = async (id) => {
+    const docRef = doc(db, "slider", id);
+    deleteDoc(docRef);
+}
+
+export const deleteGalleryData = async (id) => {
+    const docRef = doc(db, "gallery", id);
+    deleteDoc(docRef);
 }

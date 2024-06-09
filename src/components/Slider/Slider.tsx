@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Carousel, Row } from "antd";
 import { Container } from "react-bootstrap";
 import "./Slider.css";
@@ -7,8 +7,19 @@ import croke from '../../assets/Slider/croke.jpeg';
 import dscie from '../../assets/Slider/dscie.webp';
 import prisoner from '../../assets/Files/prisoner.jpeg';
 import otto from '../../assets/Slider/otto-human.jpg';
+import { getSliderData } from '../../firebase';
 
 export const Slider = () => {
+    const [sliders, setSliders] = useState<any>();
+
+    useEffect(() => {
+        const getSliders = async () => {
+            const data = await getSliderData();
+            setSliders(data);
+        }
+        getSliders();
+    }, []);
+
     return (
         <Container>
             <Carousel
@@ -19,6 +30,56 @@ export const Slider = () => {
                 className='cont'
                 effect='scrollx'
             >
+                {
+                    sliders && sliders.map((slider: any) => (
+                        <>
+                            <div>
+                                <div style={{
+                                    backgroundImage: `url(${slider.background})`,
+                                    backgroundPosition: 'center',
+                                    backgroundSize: 'cover',
+                                    backgroundRepeat: 'no-repeat',
+                                    height: "500px",
+                                    display: "flex",
+                                    justifyContent: "flex-start",
+                                    alignItems: "center",
+                                    flexDirection: "column",
+                                    borderRadius: "18px"
+                                }}>
+                                    <br />
+                                    <Row style={{
+                                        color: "#136833",
+                                        fontSize: "36px",
+                                        display: "flex",
+                                        justifyContent: "flex-start",
+                                        backgroundColor: "white",
+                                        marginLeft: "12px",
+                                        padding: "16px",
+                                        marginTop: "36px",
+                                        fontFamily: "helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
+                                        fontWeight: "700",
+                                        letterSpacing: "-0.02em"
+                                    }}>{slider.title}</Row>
+                                    <Row style={{
+                                        fontSize: "16px",
+                                        marginTop: "20px",
+                                        fontWeight: "550",
+                                        backgroundColor: "#136833",
+                                        padding: "8px",
+                                        color: "white"
+                                    }}>
+                                        {slider.info}
+                                    </Row>
+                                    <br /><br />
+                                    <Button className='callBtn'>
+                                        {slider.link}
+                                    </Button>
+                                </div>
+                            </div>
+                        </>
+                    ))
+                }
+
                 <div>
                     <div style={{ backgroundImage: `url(${otto})` }} className='slider-content-main'>
                         <Row className='row-title' style={{ backgroundColor: "white", padding: "8px" }}>Turkish Irısh Relations</Row>
@@ -67,7 +128,16 @@ export const Slider = () => {
                             fontWeight: "700",
                             letterSpacing: "-0.02em"
                         }}>Chaplaincy</Row>
-                        <Row style={{ fontSize: "16px", marginTop: "20px", fontWeight: "550", backgroundColor: "#136833", padding: "8px", color: "white" }}>We provide Imam for religious ceremonies, patients at hospitals, or prison etc…</Row>
+                        <Row style={{
+                            fontSize: "16px",
+                            marginTop: "20px",
+                            fontWeight: "550",
+                            backgroundColor: "#136833",
+                            padding: "8px",
+                            color: "white"
+                        }}>
+                            We provide Imam for religious ceremonies, patients at hospitals, or prison etc…
+                        </Row>
                         <br /><br />
                         <Button className='callBtn'>
                             +353 (87) 406 6894
@@ -105,7 +175,14 @@ export const Slider = () => {
 
                 <div>
                     <div style={{ backgroundImage: `url(${dscie})` }} className='slider-content-main'>
-                        <Row className='row-title' style={{ backgroundColor: "#136833", padding: "8px", color: "white" }}>Discover Ireland</Row>
+                        <Row
+                            className='row-title'
+                            style={{
+                                backgroundColor: "#136833",
+                                padding: "8px",
+                                color: "white"
+                            }}
+                        >Discover Ireland</Row>
                         <Row>
                             <Button style={{
                                 marginTop: "10px",

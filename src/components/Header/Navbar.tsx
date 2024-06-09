@@ -20,7 +20,7 @@ function MyNavbar() {
                     <Nav className="me-auto" />
                     <Nav>
                         <Nav.Link><Link to="/Home" >Home</Link></Nav.Link>
-                        <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link>
+                        {/* <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link> */}
                         <Nav.Link><Link to="/Donate/Sadaqa" >Quick Donate</Link></Nav.Link>
                         <NavDropdown title="Services">
                             <Nav.Link><Link to="/Chaplaincy" >Chaplaincy</Link></Nav.Link>
@@ -29,7 +29,7 @@ function MyNavbar() {
                             <Nav.Link><Link to="/HajjUmrah" >Hajj & Umrah</Link></Nav.Link>
                             <Nav.Link><Link to="/Education" >Education</Link></Nav.Link>
                         </NavDropdown>
-                        <Nav.Link><Link to="/" >Photo Gallery</Link></Nav.Link>
+                        <Nav.Link><Link to="/Gallery" >Photo Gallery</Link></Nav.Link>
                         <NavDropdown title="Donate">
                             <Nav.Link><Link to="/Donate/Zakah" >Zakah</Link></Nav.Link>
                             <Nav.Link><Link to="/Donate/Sadaqa" >Sadaqa</Link></Nav.Link>
@@ -37,7 +37,7 @@ function MyNavbar() {
                             <Nav.Link><Link to="/Donate/Qurbani" >Qurbani</Link></Nav.Link>
                             <Nav.Link><Link to="/Donate/Other" >Other</Link></Nav.Link>
                         </NavDropdown>
-                        <Nav.Link><Link to="/" >Turkish Irish Relations</Link></Nav.Link>
+                        <Nav.Link target='_blank' rel='noopener' href='https://en.wikipedia.org/wiki/Ireland%E2%80%93Turkey_relations'>Turkish Irish Relations</Nav.Link>
                         <NavDropdown title="About Us">
                             <Nav.Link><Link to="/AboutIslam" >Islam</Link></Nav.Link>
                             <Nav.Link><Link to="/BriefIntroduction" >Brief Introduction</Link></Nav.Link>
