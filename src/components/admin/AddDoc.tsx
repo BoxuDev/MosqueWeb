@@ -1,31 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Form, Input, Table, Upload, UploadProps, Divider, Image } from 'antd';
+import { Button, Form, Input, Table, Divider, Image, message } from 'antd';
 import { addGalleryData, addPostData, addSliderData, deleteGalleryData, deletePostData, deleteSliderData, getGalleryData, getPostData, getSliderData } from '../../firebase';
 import { Container } from 'react-bootstrap';
 import { Typography } from "antd";
-import { convertDate } from '../../utils/helpers/time-helper';
-import "../FacilitiesAvaible/FacilitiesAvaible.css";
-import { ImageViewerMini } from '../../utils/helpers/ImageVıewerMini';
+import { imgBackString } from '../Utils/imgNotFound';
 
-export const AddDoc = ({ user, setUser }: any) => {
+export const AddDoc = () => {
+    const [messageApi, contextHolder] = message.useMessage();
     const [formPost] = Form.useForm();
     const [formSlider] = Form.useForm();
 
-    const [postsData, setPostsData] = useState<any>();
-    const [sliderData, setSliderData] = useState<any>();
-    const [galleryData, setGalleryData] = useState<any>();
+    const [postsData, setPostsData] = useState<any>([]);
+    const [sliderData, setSliderData] = useState<any>([]);
+    const [galleryData, setGalleryData] = useState<any>([]);
 
     const [refreshPost, setRefreshPost] = useState<boolean>(false);
     const [refreshSlider, setRefreshSlider] = useState<boolean>(false);
     const [refreshGallery, setRefreshGallery] = useState<boolean>(false);
 
-    const [imgPost, setImgPost] = useState<string>("");
-    const [imgSlider, setImgSlider] = useState<string>("");
-    const [imgGallery, setImgGallery] = useState<string>("");
+    const [imgPost, setImgPost] = useState<string>(imgBackString);
+    const [imgSlider, setImgSlider] = useState<string>(imgBackString);
+    const [imgGallery, setImgGallery] = useState<string>(imgBackString);
 
     useEffect(() => {
         const getAndSetPosts = async () => {
             const postData: any = await getPostData();
+            postData.forEach((post: any) => {
+                post.picture = <Image src={post.picture} width={64} height={64} />
+            });
             setPostsData(postData);
         }
         getAndSetPosts();
@@ -34,6 +36,9 @@ export const AddDoc = ({ user, setUser }: any) => {
     useEffect(() => {
         const getAndSetSliders = async () => {
             const sliderData: any = await getSliderData();
+            sliderData.forEach((slider: any) => {
+                slider.background = <Image src={slider.background} width={64} height={64} />
+            });
             setSliderData(sliderData);
         }
         getAndSetSliders();
@@ -42,6 +47,9 @@ export const AddDoc = ({ user, setUser }: any) => {
     useEffect(() => {
         const getAndSetGallery = async () => {
             const galleryData: any = await getGalleryData();
+            galleryData.forEach((gallery: any) => {
+                gallery.image = <Image src={gallery.image} width={64} height={64} />
+            });
             setGalleryData(galleryData);
         }
         getAndSetGallery();
@@ -67,8 +75,7 @@ export const AddDoc = ({ user, setUser }: any) => {
         {
             title: 'Image',
             dataIndex: 'picture',
-            key: 'picture',
-            render: (record: any) => <ImageViewerMini picture={record.picture} />
+            key: 'picture'
         },
         {
             title: 'Action',
@@ -94,6 +101,11 @@ export const AddDoc = ({ user, setUser }: any) => {
             key: 'link'
         },
         {
+            title: 'Slider Button Name',
+            dataIndex: 'bname',
+            key: 'bname'
+        },
+        {
             title: 'Date',
             dataIndex: 'date',
             key: 'date'
@@ -101,8 +113,7 @@ export const AddDoc = ({ user, setUser }: any) => {
         {
             title: 'Image',
             dataIndex: 'background',
-            key: 'background',
-            render: (record: any) => <ImageViewerMini picture={record.background} />
+            key: 'background'
         },
         {
             title: 'Action',
@@ -120,14 +131,12 @@ export const AddDoc = ({ user, setUser }: any) => {
         {
             title: 'Date',
             dataIndex: 'date',
-            key: 'date',
-            render: (record: any) => <p>{new Date(record.date).toDateString()}</p>
+            key: 'date'
         },
         {
             title: 'Image',
             dataIndex: 'image',
-            key: 'image',
-            //render: (record: any) => <ImageViewerMini picture={record.image} />
+            key: 'image'
         },
         {
             title: 'Action',
@@ -164,6 +173,20 @@ export const AddDoc = ({ user, setUser }: any) => {
     }
 
     const handleFileChange = (e: any, imagePath: string) => {
+        const file = e.target.files[0];
+
+        if (file?.size > 1024 * 1024) {
+            messageApi.open({
+                type: 'warning',
+                content: 'File cannot be larger than 1 MB !!',
+                style: {
+                    backgroundColor: "red",
+                    marginTop: '10vh'
+                }
+            });
+            return;
+        }
+
         const data: any = new FileReader();
         data.addEventListener('load', () => {
             switch (imagePath) {
@@ -225,7 +248,8 @@ export const AddDoc = ({ user, setUser }: any) => {
             background: imgSlider,
             info: formSlider.getFieldValue("sliderInfo"),
             link: formSlider.getFieldValue("sliderLink"),
-            title: formSlider.getFieldValue("sliderTitle")
+            title: formSlider.getFieldValue("sliderTitle"),
+            bname: formSlider.getFieldValue("sliderBName")
         }
         await addSliderData(reqParams);
         reFecthSlider();
@@ -242,6 +266,7 @@ export const AddDoc = ({ user, setUser }: any) => {
 
     return (
         <>
+            {contextHolder}
             <Container>
                 <Container className='cont-class'>
                     <Button onClick={() => window.location.reload()}>Exit User</Button>
@@ -279,6 +304,7 @@ export const AddDoc = ({ user, setUser }: any) => {
                         </Form.Item>
                     </Form>
                     <Table
+                        pagination={false}
                         columns={columnsPost}
                         dataSource={postsData}
                     />
@@ -291,6 +317,7 @@ export const AddDoc = ({ user, setUser }: any) => {
                     <UploadButton imgPath="gallery" />
                     <Button type='primary' onClick={onFinishGallery}>Save</Button>
                     <Table
+                        pagination={false}
                         columns={columnsGallery}
                         dataSource={galleryData}
                     />
@@ -330,6 +357,12 @@ export const AddDoc = ({ user, setUser }: any) => {
                             <Input />
                         </Form.Item>
                         <Form.Item
+                            label="Slider Button Name"
+                            name="sliderBName"
+                        >
+                            <Input />
+                        </Form.Item>
+                        <Form.Item
                             label="Slider Background"
                             name="sliderBack"
                             rules={[{ required: true, message: 'Please input your Slider Background!' }]}
@@ -339,6 +372,7 @@ export const AddDoc = ({ user, setUser }: any) => {
                         <Button type='primary' onClick={onFinishSlider}>Save</Button>
                     </Form>
                     <Table
+                        pagination={false}
                         columns={columnsSlider}
                         dataSource={sliderData}
                     />

@@ -3,8 +3,9 @@ import { auth } from "../../firebase";
 import React, { useState } from 'react';
 import { AddDoc } from './AddDoc';
 import { Container } from 'react-bootstrap';
-import { Button, Form, Input, Typography } from 'antd';
+import { Button, ConfigProvider, Divider, Flex, Form, Input, Typography } from 'antd';
 import "../FacilitiesAvaible/FacilitiesAvaible.css";
+import { TinyColor } from '@ctrl/tinycolor';
 
 const SingIn = () => {
     const [form] = Form.useForm();
@@ -20,6 +21,15 @@ const SingIn = () => {
             });
     };
 
+    const getHoverColors = (colors: string[]) =>
+        colors.map((color) => new TinyColor(color).lighten(5).toString());
+    const getActiveColors = (colors: string[]) =>
+        colors.map((color) => new TinyColor(color).darken(5).toString());
+
+    const colors1 = ['#6253E1', '#04BEFE'];
+    const colors2 = ['#fc6076', '#ff9a44', '#ef9d43', '#e75516'];
+    const colors3 = ['#40e495', '#30dd8a', '#2bb673'];
+
     return (
         <>
             {!user ?
@@ -33,7 +43,10 @@ const SingIn = () => {
                         initialValues={{ remember: true }}
                         onFinish={signIn}
                     >
-                        <Typography.Title level={3}>Log In to your Account</Typography.Title>
+                        <Flex justify='center' >
+                            <Typography.Title level={3}>Login to your Account</Typography.Title>
+                        </Flex>
+                        <Divider />
                         <Form.Item
                             label="E-Mail"
                             name="email"
@@ -46,17 +59,32 @@ const SingIn = () => {
                             name="password"
                             rules={[{ required: true, message: 'Please input your Password!' }]}
                         >
-                            <Input />
+                            <Input.Password visibilityToggle />
                         </Form.Item>
                         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                            <Button type="primary" htmlType="submit">
-                                Submit
-                            </Button>
+                            <ConfigProvider
+                                theme={{
+                                    components: {
+                                        Button: {
+                                            colorPrimary: `linear-gradient(116deg,  ${colors3.join(', ')})`,
+                                            colorPrimaryHover: `linear-gradient(116deg, ${getHoverColors(colors3).join(', ')})`,
+                                            colorPrimaryActive: `linear-gradient(116deg, ${getActiveColors(colors3).join(', ')})`,
+                                            lineWidth: 0,
+                                        },
+                                    },
+                                }}
+                            >
+                                <Button type="primary" htmlType='submit' size="large" onClick={signIn}>
+                                    Log In
+                                </Button>
+                            </ConfigProvider>
                         </Form.Item>
                     </Form>
-                </Container> :
-                <AddDoc user={user} setUser={setUser} />
+                </Container>
+                :
+                <AddDoc />
             }
+
         </>
     );
 }

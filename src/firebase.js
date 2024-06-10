@@ -1,7 +1,9 @@
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "firebase/firestore"
+import { Image } from "antd";
 
+//** Test Firebase */
 const firebaseConfig = {
     apiKey: "AIzaSyBC7aUv0arH0Q-WSRkD6gl8UzjcuX138Vs",
     authDomain: "dublinmec-a5789.firebaseapp.com",
@@ -11,10 +13,22 @@ const firebaseConfig = {
     appId: "1:398045927683:web:f8be0f1c02fb5184b53136"
 };
 
+//** DublinMecid Firebase - PRODUCTION */
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDTCgGvYNkOImwkmzO1t502a4vu4p5ztDE",
+//     authDomain: "dublin-mecid.firebaseapp.com",
+//     projectId: "dublin-mecid",
+//     storageBucket: "dublin-mecid.appspot.com",
+//     messagingSenderId: "317256112312",
+//     appId: "1:317256112312:web:b252693933d951a3b5fc4d",
+//     measurementId: "G-WSKQQ92GG7"
+// };
+
 initializeApp(firebaseConfig);
+
 export const auth = getAuth(initializeApp(firebaseConfig));
 
-export const db = getFirestore();
+const db = getFirestore();
 const colPostRef = collection(db, "posts");
 const colSliderRef = collection(db, "slider");
 const colGalleryRef = collection(db, "gallery");
@@ -28,6 +42,10 @@ export const getPostData = async () => {
         });
         postsData = data;
     }).catch();
+    postsData.forEach((post) => {
+        post.date = post.date.toDate().toUTCString();
+    });
+    postsData = postsData.sort((a, b) => new Date(b.date) - new Date(a.date));
     return postsData;
 }
 
@@ -40,19 +58,27 @@ export const getSliderData = async () => {
         });
         sliderData = data;
     }).catch();
+    sliderData.forEach((slider) => {
+        slider.date = slider.date.toDate().toUTCString();
+    });
+    sliderData = sliderData.sort((a, b) => new Date(b.date) - new Date(a.date));
     return sliderData;
 }
 
 export const getGalleryData = async () => {
-    let sliderData = [];
+    let galleryData = [];
     await getDocs(colGalleryRef).then((snapshot) => {
         let data = [];
         snapshot.docs.forEach((doc) => {
             data.push({ ...doc.data(), id: doc.id });
         });
-        sliderData = data;
+        galleryData = data;
     }).catch();
-    return sliderData;
+    galleryData.forEach((gallery) => {
+        gallery.date = gallery.date.toDate().toUTCString();
+    });
+    galleryData = galleryData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    return galleryData;
 }
 
 export const addPostData = async (data) => {
@@ -60,7 +86,7 @@ export const addPostData = async (data) => {
         title: data.title,
         message: data.message,
         picture: data.picture,
-        date: new Date().toISOString()
+        date: new Date()
     }
     await addDoc(colPostRef, finalData).then().catch();
 }
@@ -68,14 +94,14 @@ export const addPostData = async (data) => {
 export const addSliderData = async (data) => {
     const finalData = {
         ...data,
-        date: new Date().toISOString()
+        date: new Date()
     }
     await addDoc(colSliderRef, finalData).then().catch();
 }
 
 export const addGalleryData = async (data) => {
     const finalData = {
-        date: new Date().toISOString(),
+        date: new Date(),
         fileName: data.fileName,
         image: data.image
     }

@@ -1,1 +1,0 @@
-export const HealthCheck = () => <p>Application Healty</p>;

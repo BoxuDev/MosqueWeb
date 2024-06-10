@@ -27,7 +27,7 @@ import IftarDon from '../pages/Donates/IftarDon';
 import SadaqaDon from '../pages/Donates/SadaqaDon';
 import QurbaniDon from '../pages/Donates/QurbaniDon';
 import SingIn from '../components/admin/SingIn';
-import { GalleryPage } from '../components/Gallery/GallerPage';
+import { GalleryPage } from '../components/Gallery/GallerPage';;
 
 const { Content } = Layout;
 
@@ -176,15 +176,13 @@ function App() {
         </Route>
 
         <Route path="/admin">
-          {/* <Content> */}
           <SingIn />
-          {/* </Content> */}
         </Route>
 
         <Route path="/Gallery">
-          {/* <Content> */}
-          <GalleryPage />
-          {/* </Content> */}
+          <Content>
+            <GalleryPage />
+          </Content>
         </Route>
 
         <FooterCom />
