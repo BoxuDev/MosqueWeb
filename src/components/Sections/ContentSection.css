@@ -55,7 +55,7 @@ img {
     flex-direction: row;
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 768px) {
     .left {
         display: contents;
         float: none;
@@ -131,4 +131,21 @@ img {
 
 .cont {
     box-shadow: 0 1px 20px 0 gray, 0 1px 20px 0 #008696;
+}
+
+.post-cont {
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+    .right-post {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .right-post {
+        width: 100%;
+    }
 }

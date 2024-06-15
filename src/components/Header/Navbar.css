@@ -7,12 +7,12 @@ a {
     color: white !important;
 }
 
-.ant-modal-content > .ant-modal-header {
+.ant-modal-content>.ant-modal-header {
     background-color: #136833 !important;
     color: white !important;
 }
 
-.ant-modal-header > .ant-modal-title {
+.ant-modal-header>.ant-modal-title {
     color: white !important;
 }
 
