@@ -20,7 +20,6 @@ function MyNavbar() {
                     <Nav className="me-auto" />
                     <Nav>
                         <Nav.Link><Link to="/Home" >Home</Link></Nav.Link>
-                        {/* <Nav.Link><Link to="/Ramadan" >Ramadan</Link></Nav.Link> */}
                         <Nav.Link><Link to="/Donate/Sadaqa" >Quick Donate</Link></Nav.Link>
                         <NavDropdown title="Services">
                             <Nav.Link><Link to="/Chaplaincy" >Chaplaincy</Link></Nav.Link>

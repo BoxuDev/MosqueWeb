@@ -1,15 +1,9 @@
 .right-post {
     display: flex;
     width: 50%;
-    /* border: 1px solid red; */
 }
 
 .title-post {
-    /* border: 1px solid red; */
     font-weight: 700;
     color: white !important;
-}
-
-.message-post {
-    /* border: 1px solid red; */
 }

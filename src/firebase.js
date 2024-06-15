@@ -1,7 +1,7 @@
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "firebase/firestore"
-import { Image } from "antd";
+import imgBackString from "./components/Utils/imageBackExport";
 
 //** Test Firebase */
 const firebaseConfig = {
@@ -84,8 +84,8 @@ export const getGalleryData = async () => {
 export const addPostData = async (data) => {
     const finalData = {
         title: data.title,
-        message: data.message,
-        picture: data.picture,
+        message: data.message ?? "",
+        picture: data.picture ?? imgBackString,
         date: new Date()
     }
     await addDoc(colPostRef, finalData).then().catch();
@@ -102,7 +102,7 @@ export const addSliderData = async (data) => {
 export const addGalleryData = async (data) => {
     const finalData = {
         date: new Date(),
-        fileName: data.fileName,
+        fileName: data.fileName ?? "Invalid File Name",
         image: data.image
     }
     await addDoc(colGalleryRef, finalData).then().catch();

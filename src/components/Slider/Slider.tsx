@@ -32,8 +32,8 @@ export const Slider = () => {
     return (
         <Container>
             <Carousel
-                autoplay
-                autoplaySpeed={3000}
+                //autoplay
+                //autoplaySpeed={3000}
                 arrows
                 draggable
                 className="cont"
@@ -90,7 +90,7 @@ export const Slider = () => {
                                     </Row>
                                     <br />
                                     <br />
-                                    <Button
+                                    <a
                                         style={{
                                             marginTop: "10px",
                                             backgroundColor: "#136833",
@@ -101,13 +101,14 @@ export const Slider = () => {
                                             fontWeight: "600",
                                             fontSize: "16px",
                                             color: "white",
+                                            display: "flex",
+                                            placeContent: "center",
+                                            alignItems: "center"
                                         }}
-                                        onClick={() => {
-                                            window.open(isValidUrl(slider.link) ? slider.link : "Not valid URL", "_blank");
-                                        }}
+                                        href={isValidUrl(slider.link) ? slider.link : "Not valid URL"}
                                     >
                                         {slider.bname === "" ? "Go to page" : slider.bname}
-                                    </Button>
+                                    </a>
                                 </div>
                             </div>
                         </>
