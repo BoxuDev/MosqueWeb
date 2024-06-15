@@ -14,7 +14,6 @@ import ZekahCharity from '../pages/ZekahCharity';
 import HajjUmrah from '../pages/HajjUmrah';
 import PrayerTime from '../pages/PrayerTime';
 import BriefIntroduction from '../pages/BriefIntroduction';
-import EarthQuake from '../pages/EarthQuake';
 import Education from '../pages/Education';
 import Chaplaincy from '../pages/Chaplaincy';
 import HelalFood from '../pages/HelalFood';
@@ -27,7 +26,7 @@ import IftarDon from '../pages/Donates/IftarDon';
 import SadaqaDon from '../pages/Donates/SadaqaDon';
 import QurbaniDon from '../pages/Donates/QurbaniDon';
 import SingIn from '../components/admin/SingIn';
-import { GalleryPage } from '../components/Gallery/GallerPage';;
+import { GalleryPage } from '../components/Gallery/GalleryPage';;
 
 const { Content } = Layout;
 
@@ -64,12 +63,6 @@ function App() {
         <Route path="/Contact">
           <Content>
             <RespContent />
-          </Content>
-        </Route>
-
-        <Route path="/EarthQuake">
-          <Content>
-            <EarthQuake />
           </Content>
         </Route>
 

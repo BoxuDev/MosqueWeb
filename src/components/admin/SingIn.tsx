@@ -3,13 +3,23 @@ import { auth } from "../../firebase";
 import React, { useState } from 'react';
 import { AddDoc } from './AddDoc';
 import { Container } from 'react-bootstrap';
-import { Button, ConfigProvider, Divider, Flex, Form, Input, Typography } from 'antd';
+import { Button, ConfigProvider, Divider, Flex, Form, Input, notification, Typography } from 'antd';
 import "../FacilitiesAvaible/FacilitiesAvaible.css";
 import { TinyColor } from '@ctrl/tinycolor';
+
+type NotificationType = 'success' | 'info' | 'warning' | 'error';
 
 const SingIn = () => {
     const [form] = Form.useForm();
     const [user, setUser] = useState<any>(null);
+    const [api, contextHolder] = notification.useNotification();
+
+    const openNotificationWithIcon = (type: NotificationType) => {
+        api[type]({
+            message: 'Log-In Failed !',
+            description: 'Please control your credentials.',
+        });
+    };
 
     const signIn = () => {
         signInWithEmailAndPassword(auth, form.getFieldValue("email"), form.getFieldValue("password"))
@@ -17,21 +27,18 @@ const SingIn = () => {
                 setUser(userCredential);
             })
             .catch((error) => {
+                openNotificationWithIcon("warning");
                 console.error(error);
             });
     };
 
-    const getHoverColors = (colors: string[]) =>
-        colors.map((color) => new TinyColor(color).lighten(5).toString());
-    const getActiveColors = (colors: string[]) =>
-        colors.map((color) => new TinyColor(color).darken(5).toString());
-
-    const colors1 = ['#6253E1', '#04BEFE'];
-    const colors2 = ['#fc6076', '#ff9a44', '#ef9d43', '#e75516'];
+    const getHoverColors = (colors: string[]) => colors.map((color) => new TinyColor(color).lighten(5).toString());
+    const getActiveColors = (colors: string[]) => colors.map((color) => new TinyColor(color).darken(5).toString());
     const colors3 = ['#40e495', '#30dd8a', '#2bb673'];
 
     return (
         <>
+            {contextHolder}
             {!user ?
                 <Container className="cont-class">
                     <Form
@@ -74,7 +81,7 @@ const SingIn = () => {
                                     },
                                 }}
                             >
-                                <Button type="primary" htmlType='submit' size="large" onClick={signIn}>
+                                <Button type="primary" htmlType='submit' size="large">
                                     Log In
                                 </Button>
                             </ConfigProvider>
@@ -82,7 +89,7 @@ const SingIn = () => {
                     </Form>
                 </Container>
                 :
-                <AddDoc />
+                <AddDoc user={user} />
             }
 
         </>
