@@ -21,7 +21,9 @@ export const GalleryPage = () => {
                     {
                         imgList && imgList.map((img: any) => (
                             <Image
-                                width={200}
+                                style={{ padding: "12px" }}
+                                height={250}
+                                width={250}
                                 src={img.image}
                             />
                         ))

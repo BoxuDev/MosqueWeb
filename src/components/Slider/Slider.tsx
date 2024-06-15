@@ -76,39 +76,43 @@ export const Slider = () => {
                                     >
                                         {slider.title}
                                     </Row>
-                                    <Row
-                                        style={{
-                                            fontSize: "16px",
-                                            marginTop: "20px",
-                                            fontWeight: "550",
-                                            backgroundColor: "#136833",
-                                            padding: "8px",
-                                            color: "white",
-                                        }}
-                                    >
-                                        {slider.info}
-                                    </Row>
+                                    {
+                                        slider.info && <Row
+                                            style={{
+                                                fontSize: "16px",
+                                                marginTop: "20px",
+                                                fontWeight: "550",
+                                                backgroundColor: "#136833",
+                                                padding: "8px",
+                                                color: "white",
+                                            }}
+                                        >
+                                            {slider.info}
+                                        </Row>
+                                    }
                                     <br />
                                     <br />
-                                    <a
-                                        style={{
-                                            marginTop: "10px",
-                                            backgroundColor: "#136833",
-                                            border: "1px solid green",
-                                            borderRadius: "16px",
-                                            height: "50px",
-                                            width: "250px",
-                                            fontWeight: "600",
-                                            fontSize: "16px",
-                                            color: "white",
-                                            display: "flex",
-                                            placeContent: "center",
-                                            alignItems: "center"
-                                        }}
-                                        href={isValidUrl(slider.link) ? slider.link : "Not valid URL"}
-                                    >
-                                        {slider.bname === "" ? "Go to page" : slider.bname}
-                                    </a>
+                                    {
+                                        slider.bname && <a
+                                            style={{
+                                                marginTop: "10px",
+                                                backgroundColor: "#136833",
+                                                border: "1px solid green",
+                                                borderRadius: "16px",
+                                                height: "50px",
+                                                width: "250px",
+                                                fontWeight: "600",
+                                                fontSize: "16px",
+                                                color: "white",
+                                                display: "flex",
+                                                placeContent: "center",
+                                                alignItems: "center"
+                                            }}
+                                            href={isValidUrl(slider.link) ? slider.link : "Not valid URL"}
+                                        >
+                                            {slider.bname === "" ? "Go to page" : slider.bname}
+                                        </a>
+                                    }
                                 </div>
                             </div>
                         </>

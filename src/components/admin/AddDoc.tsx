@@ -6,6 +6,12 @@ import { Typography } from "antd";
 import { imgBackString } from '../Utils/imgNotFound';
 import { TinyColor } from '@ctrl/tinycolor';
 
+interface UpImage {
+    type: string;
+    data: string;
+    fileName: string;
+}
+
 export const AddDoc = ({ user }: any) => {
     const [messageApi, contextHolder] = message.useMessage();
     const [formPost] = Form.useForm();
@@ -19,18 +25,15 @@ export const AddDoc = ({ user }: any) => {
     const [refreshSlider, setRefreshSlider] = useState<boolean>(false);
     const [refreshGallery, setRefreshGallery] = useState<boolean>(false);
 
-    const [imgPost, setImgPost] = useState<string>(imgBackString);
-    const [imgSlider, setImgSlider] = useState<string>(imgBackString);
-    const [imgGallery, setImgGallery] = useState<string>(imgBackString);
+    const [imgPost, setImgPost] = useState<UpImage>({ type: "post", data: imgBackString, fileName: "" });
+    const [imgSlider, setImgSlider] = useState<UpImage>({ type: "slider", data: imgBackString, fileName: "" });
+    const [imgGallery, setImgGallery] = useState<UpImage>({ type: "gallery", data: imgBackString, fileName: "" });
 
     const getHoverColors = (colors: string[]) => colors.map((color) => new TinyColor(color).lighten(5).toString());
     const getActiveColors = (colors: string[]) => colors.map((color) => new TinyColor(color).darken(5).toString());
     const colors3 = ['#40e495', '#30dd8a', '#2bb673'];
 
     useEffect(() => {
-
-        console.log('user', user);
-
         const getAndSetPosts = async () => {
             const postData: any = await getPostData();
             postData.forEach((post: any) => {
@@ -195,19 +198,20 @@ export const AddDoc = ({ user }: any) => {
             return;
         }
 
+        const fileName: string = file.name;
         const data: any = new FileReader();
         data.addEventListener('load', () => {
             switch (imagePath) {
                 case "post":
-                    setImgPost(data.result);
+                    setImgPost({ data: data.result, fileName: fileName, type: "post" });
                     break;
 
                 case "slider":
-                    setImgSlider(data.result);
+                    setImgSlider({ data: data.result, fileName: fileName, type: "slider" });
                     break;
 
                 case "gallery":
-                    setImgGallery(data.result);
+                    setImgGallery({ data: data.result, fileName: fileName, type: "gallery" });
                     break;
 
                 default:
@@ -221,20 +225,20 @@ export const AddDoc = ({ user }: any) => {
         let img: string = "";
 
         if (imgPath === "post") {
-            img = imgPost;
+            img = imgPost.data;
         }
 
         if (imgPath === "slider") {
-            img = imgSlider;
+            img = imgSlider.data;
         }
 
         if (imgPath === "gallery") {
-            img = imgGallery;
+            img = imgGallery.data;
         }
 
         return (
             <div>
-                <input type='file' onChange={(e) => handleFileChange(e, imgPath)} />
+                <input type='file' onChange={(e) => handleFileChange(e, imgPath)} accept="image/*" />
                 <br />
                 <img src={img} height="200px" width="200px" />
             </div>
@@ -242,19 +246,29 @@ export const AddDoc = ({ user }: any) => {
     }
 
     const checkNullOrUndefined = (obj: any) => {
+        let checker: boolean = false;
         for (const key in obj) {
             if (obj[key] === null || obj[key] === undefined) {
-                messageApi.open({
-                    type: 'warning',
-                    content: 'Please fill all area',
-                });
+                checker = true;
             }
+        }
+
+        if (checker) {
+            // messageApi.open({
+            //     type: 'warning',
+            //     content: 'Please fill all area',
+            // });
         }
     }
 
     const imgIsNull = (data: any): boolean => {
-        let isNull: boolean = data ? false : true;
-        if (data === null || data === undefined || data.trim() === "" || data === imgBackString) {
+        let isNull: boolean = false;
+        if (
+            data === null ||
+            data === undefined ||
+            data.trim() === "" ||
+            data === imgBackString
+        ) {
             isNull = true;
         }
 
@@ -272,15 +286,15 @@ export const AddDoc = ({ user }: any) => {
         const reqParams = {
             title: formPost.getFieldValue("title"),
             message: formPost.getFieldValue("message"),
-            picture: imgPost
+            picture: imgPost.data
         }
         checkNullOrUndefined(reqParams);
-        imgIsNull(imgPost);
+        const nullData: boolean = imgIsNull(imgPost.data);
 
-        if (!imgIsNull(imgPost)) {
+        if (!nullData) {
             await addPostData(reqParams);
             formPost.resetFields();
-            setImgPost(imgBackString);
+            setImgPost({ data: imgBackString, fileName: "", type: "" } as UpImage);
         }
 
         reFecthPost();
@@ -288,34 +302,35 @@ export const AddDoc = ({ user }: any) => {
 
     const onFinishSlider = async () => {
         const reqParams = {
-            background: imgSlider,
-            info: formSlider.getFieldValue("sliderInfo"),
-            link: formSlider.getFieldValue("sliderLink"),
+            background: imgSlider.data,
+            info: formSlider.getFieldValue("sliderInfo") ?? "",
+            link: formSlider.getFieldValue("sliderLink") ?? "",
             title: formSlider.getFieldValue("sliderTitle"),
-            bname: formSlider.getFieldValue("sliderBName")
+            bname: formSlider.getFieldValue("sliderBName") ?? ""
         }
         checkNullOrUndefined(reqParams);
-        imgIsNull(imgSlider);
+        const nullData: boolean = imgIsNull(imgSlider.data);
 
-        if (!imgIsNull(imgSlider)) {
+        if (!nullData) {
             await addSliderData(reqParams);
             formSlider.resetFields();
-            setImgPost(imgBackString);
+            setImgSlider({ data: imgBackString, fileName: "", type: "" } as UpImage);
         }
+
         reFecthSlider();
     }
 
     const onFinishGallery = async () => {
         const reqParams = {
-            image: imgGallery,
-            fileName: "test"
+            image: imgGallery.data,
+            fileName: imgGallery.fileName
         }
         checkNullOrUndefined(reqParams);
-        imgIsNull(imgGallery);
+        const nullData: boolean = imgIsNull(imgGallery.data);
 
-        if (!imgIsNull(imgGallery)) {
+        if (!nullData) {
             await addGalleryData(reqParams);
-            setImgGallery(imgBackString);
+            setImgGallery({ data: imgBackString, fileName: "", type: "" } as UpImage);
         }
         reFecthGallery();
     }
@@ -349,6 +364,7 @@ export const AddDoc = ({ user }: any) => {
                         <Form.Item
                             label="Post Message"
                             name="message"
+                            rules={[{ required: true, message: 'Please input your post message!' }]}
                         >
                             <Input.TextArea />
                         </Form.Item>

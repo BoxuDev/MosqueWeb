@@ -4,25 +4,25 @@ import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "fireb
 import imgBackString from "./components/Utils/imageBackExport";
 
 //** Test Firebase */
-const firebaseConfig = {
-    apiKey: "AIzaSyBC7aUv0arH0Q-WSRkD6gl8UzjcuX138Vs",
-    authDomain: "dublinmec-a5789.firebaseapp.com",
-    projectId: "dublinmec-a5789",
-    storageBucket: "dublinmec-a5789.appspot.com",
-    messagingSenderId: "398045927683",
-    appId: "1:398045927683:web:f8be0f1c02fb5184b53136"
-};
+// const firebaseConfig = {
+//     apiKey: "AIzaSyBC7aUv0arH0Q-WSRkD6gl8UzjcuX138Vs",
+//     authDomain: "dublinmec-a5789.firebaseapp.com",
+//     projectId: "dublinmec-a5789",
+//     storageBucket: "dublinmec-a5789.appspot.com",
+//     messagingSenderId: "398045927683",
+//     appId: "1:398045927683:web:f8be0f1c02fb5184b53136"
+// };
 
 //** DublinMecid Firebase - PRODUCTION */
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDTCgGvYNkOImwkmzO1t502a4vu4p5ztDE",
-//     authDomain: "dublin-mecid.firebaseapp.com",
-//     projectId: "dublin-mecid",
-//     storageBucket: "dublin-mecid.appspot.com",
-//     messagingSenderId: "317256112312",
-//     appId: "1:317256112312:web:b252693933d951a3b5fc4d",
-//     measurementId: "G-WSKQQ92GG7"
-// };
+const firebaseConfig = {
+    apiKey: "AIzaSyDTCgGvYNkOImwkmzO1t502a4vu4p5ztDE",
+    authDomain: "dublin-mecid.firebaseapp.com",
+    projectId: "dublin-mecid",
+    storageBucket: "dublin-mecid.appspot.com",
+    messagingSenderId: "317256112312",
+    appId: "1:317256112312:web:b252693933d951a3b5fc4d",
+    measurementId: "G-WSKQQ92GG7"
+};
 
 initializeApp(firebaseConfig);
 
