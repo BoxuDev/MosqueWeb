@@ -1,6 +1,7 @@
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "firebase/firestore"
+import imgBackString from "./components/Utils/imageBackExport";
 
 //** Firebase - PRODUCTION */
 const firebaseConfig = {
@@ -9,8 +10,8 @@ const firebaseConfig = {
     projectId: "",
     storageBucket: "",
     messagingSenderId: "",
-    appId: "",
-    measurementId: ""    
+    appId: ":",
+    measurementId: ""
 };
 
 initializeApp(firebaseConfig);

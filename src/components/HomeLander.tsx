@@ -29,7 +29,7 @@ export const HomeLander = () => {
                                     <Container>
                                         <Typography.Title level={3}>{post.title}</Typography.Title>
                                         <Divider />
-                                        <p>{post.message}</p>
+                                        <p style={{ color: "white" }}>{post.message}</p>
                                     </Container>
                                 </Col>
                             </Row>

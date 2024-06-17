@@ -16,14 +16,21 @@ export const GalleryPage = () => {
 
     return (
         <div style={{ marginBottom: "32px" }}>
-            <Container>
+            <Container style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                alignContent: "center",
+                flexWrap: "wrap"
+            }}>
                 <Image.PreviewGroup>
                     {
                         imgList && imgList.map((img: any) => (
                             <Image
                                 style={{ padding: "12px" }}
-                                height={250}
-                                width={250}
+                                height={210}
+                                width={210}
                                 src={img.image}
                             />
                         ))

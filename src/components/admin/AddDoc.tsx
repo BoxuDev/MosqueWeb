@@ -25,6 +25,8 @@ export const AddDoc = ({ user }: any) => {
     const [refreshSlider, setRefreshSlider] = useState<boolean>(false);
     const [refreshGallery, setRefreshGallery] = useState<boolean>(false);
 
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
     const [imgPost, setImgPost] = useState<UpImage>({ type: "post", data: imgBackString, fileName: "" });
     const [imgSlider, setImgSlider] = useState<UpImage>({ type: "slider", data: imgBackString, fileName: "" });
     const [imgGallery, setImgGallery] = useState<UpImage>({ type: "gallery", data: imgBackString, fileName: "" });
@@ -292,11 +294,13 @@ export const AddDoc = ({ user }: any) => {
         const nullData: boolean = imgIsNull(imgPost.data);
 
         if (!nullData) {
+            setIsLoading(false);
             await addPostData(reqParams);
             formPost.resetFields();
             setImgPost({ data: imgBackString, fileName: "", type: "" } as UpImage);
         }
 
+        setIsLoading(true);
         reFecthPost();
     };
 
@@ -312,11 +316,13 @@ export const AddDoc = ({ user }: any) => {
         const nullData: boolean = imgIsNull(imgSlider.data);
 
         if (!nullData) {
+            setIsLoading(false);
             await addSliderData(reqParams);
             formSlider.resetFields();
             setImgSlider({ data: imgBackString, fileName: "", type: "" } as UpImage);
         }
 
+        setIsLoading(true);
         reFecthSlider();
     }
 
@@ -329,9 +335,12 @@ export const AddDoc = ({ user }: any) => {
         const nullData: boolean = imgIsNull(imgGallery.data);
 
         if (!nullData) {
+            setIsLoading(false);
             await addGalleryData(reqParams);
             setImgGallery({ data: imgBackString, fileName: "", type: "" } as UpImage);
         }
+
+        setIsLoading(true);
         reFecthGallery();
     }
 
@@ -384,7 +393,7 @@ export const AddDoc = ({ user }: any) => {
                                     },
                                 }}
                             >
-                                <Button type="primary" htmlType="submit" size="large">Save</Button>
+                                <Button type="primary" htmlType="submit" size="large" disabled={!isLoading}>Save</Button>
                             </ConfigProvider>
                         </Form.Item>
                     </Form>
@@ -413,7 +422,7 @@ export const AddDoc = ({ user }: any) => {
                             },
                         }}
                     >
-                        <Button type="primary" onClick={onFinishGallery} size="large">Save</Button>
+                        <Button type="primary" onClick={onFinishGallery} size="large" disabled={!isLoading}>Save</Button>
                     </ConfigProvider>
                     <Divider />
                     <Table
@@ -454,7 +463,7 @@ export const AddDoc = ({ user }: any) => {
                             label="Slider Button Link"
                             name="sliderLink"
                         >
-                            <Input />
+                            <Input placeholder='http://www.example.com/*' />
                         </Form.Item>
                         <Form.Item
                             label="Slider Button Name"
@@ -481,7 +490,7 @@ export const AddDoc = ({ user }: any) => {
                                 },
                             }}
                         >
-                            <Button type="primary" onClick={onFinishSlider} size="large">Save</Button>
+                            <Button type="primary" onClick={onFinishSlider} size="large" disabled={!isLoading}>Save</Button>
                         </ConfigProvider>
                     </Form>
                     <Divider />
